@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -12,5 +16,17 @@ a {
 }
 
 * {
+  scroll-behavior: smooth;
   box-sizing: border-box;
+}
+
+/* ######################################### STYLES ################################ */
+
+.no_existingo {
+  display: flex;
+  flex-direction: column;
+  justify-self: flex-end;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 10rem;
 }

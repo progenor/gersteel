@@ -1,0 +1,27 @@
+//VARIABLES
+$cl-green: #008000;
+.nav1 {
+  background-color: $cl-green;
+  padding: 15px;
+
+  img {
+    height: 4vh;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+  .link_container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  a {
+    font-size: 25px;
+  }
+}
