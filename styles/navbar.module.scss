@@ -1,9 +1,13 @@
 //VARIABLES
 $cl-green-nav1: #8bc43f;
-$cl-green-nav2: #8bc83e;
+$cl-green-nav2: #8ac43f8c;
 
 .all {
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
   font-family: "Montserrat", sans-serif;
+  font-weight: 800;
 }
 
 .nav1 {
@@ -41,7 +45,6 @@ $cl-green-nav2: #8bc83e;
 .nav2 {
   padding: 5px;
   background-color: $cl-green-nav2;
-  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.4);
   // height: 4vh; TODO: height
   z-index: 2;
   a {

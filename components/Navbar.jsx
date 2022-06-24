@@ -8,7 +8,7 @@ import { MdLanguage } from "react-icons/md";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-const Navbar = () => {
+const Navbar = ({ ShowModal, setShowModal }) => {
   //creating animation variants for the products
   const pr_variant = {
     hidden: {
@@ -41,6 +41,10 @@ const Navbar = () => {
           <MdLanguage
             size={35}
             style={{ color: "white", marginLeft: "4rem" }}
+            onClick={() => {
+              if (ShowModal) setShowModal(false);
+              else setShowModal(true);
+            }}
           />
           {/* FIXME: WHITE */}
         </div>
