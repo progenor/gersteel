@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=League+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap%27");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+
 html,
 body {
   padding: 0;
@@ -16,6 +20,9 @@ a {
 }
 
 * {
+  /* font-family: "League Gothic", sans-serif; */
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
   scroll-behavior: smooth;
   box-sizing: border-box;
 }
@@ -29,4 +36,20 @@ a {
   align-items: center;
   margin: 0 auto;
   margin-top: 10rem;
+}
+
+.bigass {
+  background-color: #dadbdd;
+  padding: 3rem 5.5rem;
+}
+
+.shits {
+  background-color: #eeee;
+  width: fit-content;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+}
+
+nav {
+  z-index: 1000;
 }

@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  h1 {
+    color: #8bc43f;
+    margin: 5rem auto;
+    font-size: 3rem;
+  }
+
+  .contact_links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+
+    a {
+      width: 15vw;
+      height: auto;
+      background-color: #8bc43f;
+      padding: 1.5rem;
+      border-radius: 30px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      color: white;
+
+      &:hover {
+        background-color: #467b003d;
+        transition: 0s ease-in;
+      }
+      h2 {
+        font-size: 25px;
+      }
+      span {
+        font-size: 20px;
+        margin-top: -15px;
+      }
+    }
+
+    .line {
+      border: 2px solid rgba(136, 136, 136, 0.268);
+      height: 25vh;
+    }
+  }
+}

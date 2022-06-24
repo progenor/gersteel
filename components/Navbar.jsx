@@ -1,5 +1,9 @@
+import { useState } from "react";
+
 import sty from "../styles/navbar.module.scss";
-import { GrLanguage } from "react-icons/gr";
+import { GrClose } from "react-icons/gr";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { MdLanguage } from "react-icons/md";
 
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -18,43 +22,109 @@ const Navbar = () => {
     },
   };
 
+  const [isactive, setIsactive] = useState(false);
+
+  const handleHamburgerMenu = () => {
+    if (isactive) setIsactive(false);
+    else setIsactive(true);
+  };
+
   return (
-    <>
+    <div className={sty.all}>
       <nav className={sty.nav1}>
-        <Link href="/products">
-          <a>Products</a>
-        </Link>
         <Link href="/">
-          <img src="/assets/images/logo_gersteel.png" alt="" />
+          <img src="/assets/images/logo_gersteel2.png" alt="" />
         </Link>
         <div className={sty.link_container}>
-          <Link href="/about">
-            <a>About</a>
-          </Link>
-          <Link href="/contact">
-            <a>Contact</a>
-          </Link>
-          <GrLanguage size={38} />
+          <a href="#about">ABOUT US</a>
+          <a href="#contact">CONTACT</a>
+          <MdLanguage
+            size={35}
+            style={{ color: "white", marginLeft: "4rem" }}
+          />
+          {/* FIXME: WHITE */}
         </div>
       </nav>
+
+      {/* nav2 */}
+
       <nav className={sty.nav2}>
-        <Link href="/products/steel">
-          <a>Steel</a>
-        </Link>
-        <Link href="/products/concrete">
-          <a>Concrete</a>
-        </Link>
-        <Link href="/products/pipes">
-          <a>Pipe</a>
-        </Link>
-        <Link href="/products/plastic">
-          <a>Plastic</a>
-        </Link>
-        <Link href="/products/grinding-balls">
-          <a>Grinding Balls</a>
-        </Link>
+        <div className={sty.products_ham} onClick={handleHamburgerMenu}>
+          {!isactive ? (
+            <>
+              <GiHamburgerMenu size={18} />
+            </>
+          ) : (
+            <>
+              <GrClose size={18} />
+              <a className={sty.prod}>Products</a>
+              <div className={sty.prod_links}>
+                <ul>
+                  <li>
+                    <Link href="/products/steel">
+                      <a>Steel</a>
+                    </Link>
+                  </li>
+                  <ul>
+                    <li>egy</li>
+                    <li>egy</li>
+                    <li>egy</li>
+                    <li>egy</li>
+                  </ul>
+                  <li>
+                    <Link href="/products/concrete">
+                      <a>Concrete</a>
+                    </Link>
+                    <ul>
+                      <li>ketto</li>
+                      <li>ketto</li>
+                      <li>ketto</li>
+                      <li>ketto</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <Link href="/products/pipes">
+                      <a>Pipe</a>
+                    </Link>
+                    <ul>
+                      <li>harom</li>
+                      <li>harom</li>
+                      <li>harom</li>
+                      <li>harom</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <Link href="/products/plastic">
+                      <a>Plastic</a>
+                    </Link>
+                    <ul>
+                      <li>negy</li>
+                      <li>negy</li>
+                      <li>negy</li>
+                      <li>negy</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <Link href="/products/grinding-balls">
+                      <a>Grinding Balls</a>
+                    </Link>
+                    <ul>
+                      <li>ot</li>
+                      <li>ot</li>
+                      <li>ot</li>
+                      <li>ot</li>
+                      <li>ot</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </>
+          )}
+
+          {!isactive ? <a className={sty.prod}>Products</a> : ""}
+        </div>
       </nav>
-    </>
+    </div>
   );
 };
 
