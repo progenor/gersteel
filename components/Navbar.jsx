@@ -11,11 +11,21 @@ import NavNormal from "./NavNormal";
 import Link from "next/link";
 
 const Navbar = () => {
-  const [isactive, setIsactive] = useState(false);
+  const [isactiveLan, setIsactiveLan] = useState(false);
 
   const handleHamburgerMenu = () => {
     if (isactive) setIsactive(false);
     else setIsactive(true);
+  };
+
+  const handleLan = () => {
+    if (isactiveLan) setIsactiveLan(false);
+    else setIsactiveLan(true);
+  };
+
+  const chLan = () => {
+    if (isactiveLan) setIsactiveLan(false);
+    else setIsactiveLan(true);
   };
 
   return (
@@ -28,13 +38,37 @@ const Navbar = () => {
         <div>
           <NavNormal />
           <NavMobile />
-          <MdLanguage size={30} color="white" className={sty.language} />
+          {isactiveLan ? (
+            <>
+              <MdLanguage
+                size={30}
+                color="white"
+                className={sty.language}
+                onClick={handleLan}
+              />
+              <div className={sty.backDropp} onClick={handleLan}>
+                <div className={sty.menu_lan}>
+                  <h1>Chose a language!</h1>
+                  <a onClick={chLan}>Hungarian</a>
+                  <a onClick={chLan}>Roman</a>
+                  <a onClick={chLan}>English</a>
+                </div>
+              </div>
+            </>
+          ) : (
+            <MdLanguage
+              size={30}
+              color="white"
+              className={sty.language}
+              onClick={handleLan}
+            />
+          )}
         </div>
       </nav>
 
       {/* nav2 */}
 
-      <nav className={sty.nav2}>
+      {/* <nav className={sty.nav2}>
         <div className={sty.products_ham} onClick={handleHamburgerMenu}>
           {!isactive ? (
             <>
@@ -50,7 +84,7 @@ const Navbar = () => {
 
           {!isactive ? <a className={sty.prod}>Products</a> : ""}
         </div>
-      </nav>
+      </nav> */}
     </div>
   );
 };
