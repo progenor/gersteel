@@ -34,6 +34,11 @@
   .map {
     img {
       max-width: 20rem;
+      @media (max-width: 370px) {
+        & {
+          max-width: 16rem;
+        }
+      }
     }
     h3 {
       color: white;
@@ -50,11 +55,26 @@
 
   .logo_stuff {
     img {
-      width: 28rem;
+      max-width: 25rem;
     }
     justify-content: space-around;
     a {
       margin-left: 3rem;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    & {
+      flex-direction: column;
+      justify-content: center;
+    }
+    .logo_stuff,
+    .map,
+    .information {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      font-size: 23px;
     }
   }
 }

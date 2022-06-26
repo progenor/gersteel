@@ -44,5 +44,23 @@
       border: 2px solid rgba(136, 136, 136, 0.268);
       height: 25vh;
     }
+
+    @media (max-width: 1200px) {
+      flex-direction: column;
+      margin: 0 auto;
+      .line {
+        display: none;
+      }
+      a {
+        width: 20rem;
+        height: 20rem;
+      }
+    }
+    @media (max-width: 500px) {
+      a {
+        width: 15rem;
+        height: 15rem;
+      }
+    }
   }
 }
