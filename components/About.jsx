@@ -1,10 +1,14 @@
 import sty from "../styles/about.module.scss";
 import React, { useEffect } from "react";
 
-const About = () => {
+import useTranslation from "next-translate/useTranslation";
+
+const About = ({ title }) => {
+  let { t, lang } = useTranslation();
+
   return (
     <div className={sty.about_main} id="about">
-      <h1>About</h1>
+      <h1>{t("common:title")}</h1>
       <div className={sty.about_container}>
         <p>
           Lorem ipsum est cillum labore qui non incididunt veniam magna enim

@@ -1,16 +1,19 @@
 import { useState } from "react";
-
-import sty from "../styles/navbar.module.scss";
-import { GrClose } from "react-icons/gr";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { MdLanguage } from "react-icons/md";
+import { useRouter } from "next/router";
+import Link from "next/link";
 
 import NavMobile from "./NavMobile";
 import NavNormal from "./NavNormal";
 
-import Link from "next/link";
+import sty from "../styles/navbar.module.scss";
+
+import { GrClose } from "react-icons/gr";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { MdLanguage } from "react-icons/md";
 
 const Navbar = () => {
+  let router = useRouter();
+
   const [isactiveLan, setIsactiveLan] = useState(false);
 
   const handleHamburgerMenu = () => {
@@ -49,9 +52,15 @@ const Navbar = () => {
               <div className={sty.backDropp} onClick={handleLan}>
                 <div className={sty.menu_lan}>
                   <h1>Chose a language!</h1>
-                  <a onClick={chLan}>Hungarian</a>
-                  <a onClick={chLan}>Roman</a>
-                  <a onClick={chLan}>English</a>
+                  <Link href={router.asPath} locale="en">
+                    <a>English</a>
+                  </Link>
+                  <Link href={router.asPath} locale="ro">
+                    <a>Romana</a>
+                  </Link>
+                  <Link href={router.asPath} locale="hu">
+                    <a>Magyar</a>
+                  </Link>
                 </div>
               </div>
             </>
