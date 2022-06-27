@@ -47,6 +47,10 @@ a:active {
 }
 
 .bigass {
+  padding-top: 2rem;
+}
+
+/* .bigass {
   background-color: #dadbdd;
   padding: 3rem clamp(1rem, 1px + 10vw, 5.5rem);
 }
@@ -56,16 +60,16 @@ a:active {
   width: fit-content;
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.4);
   padding: clamp(0.5rem, 1px + 10vw, 2rem);
-}
+} */
 
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
   .bigass {
     padding: 1.5rem;
   }
   .shits {
     padding: 0.5rem;
   }
-}
+} */
 
 nav {
   z-index: 1000;

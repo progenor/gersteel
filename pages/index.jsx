@@ -1,6 +1,7 @@
 import Head from "next/head";
 import About from "../components/About";
 import Contact from "../components/Contact";
+import HomeComp from "../components/HomeComp";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       </Head>
       <main className="bigass">
         <div className="shits">
+          <HomeComp />
           <About />
           <Contact />
         </div>

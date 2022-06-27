@@ -1,0 +1,33 @@
+.home_cont {
+  background-color: black;
+  height: fit-content;
+  margin: 2rem auto 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 1rem;
+
+  @media (max-width: 950px) {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 0;
+  }
+}
+
+.box_container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+
+  @media (max-width: 950px) {
+    height: 60vh;
+  }
+
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(88, 88, 88, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
