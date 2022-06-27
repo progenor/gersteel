@@ -1,6 +1,8 @@
+/* eslint-disable @next/next/no-img-element */
 import { useState } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import Image from "next/image";
 
 import NavMobile from "./NavMobile";
 import NavNormal from "./NavNormal";
@@ -15,18 +17,14 @@ const Navbar = () => {
   let router = useRouter();
 
   const [isactiveLan, setIsactiveLan] = useState(false);
+  const [isActive, setisActive] = useState(false);
 
   const handleHamburgerMenu = () => {
-    if (isactive) setIsactive(false);
-    else setIsactive(true);
+    if (isActive) setisActive(false);
+    else setisActive(true);
   };
 
   const handleLan = () => {
-    if (isactiveLan) setIsactiveLan(false);
-    else setIsactiveLan(true);
-  };
-
-  const chLan = () => {
     if (isactiveLan) setIsactiveLan(false);
     else setIsactiveLan(true);
   };
@@ -35,65 +33,58 @@ const Navbar = () => {
     <div className={sty.all}>
       <nav className={sty.nav1}>
         <Link href="/">
-          <img src="/assets/images/logo_gersteel2.png" alt="" />
+          <img
+            src="/assets/images/logo_gersteel.png"
+            alt=""
+            className={sty.logo}
+          />
         </Link>
 
-        <div>
+        <div className={sty.beBlack}>
           <NavNormal />
           <NavMobile />
           {isactiveLan ? (
             <>
-              <MdLanguage
-                size={30}
-                color="white"
-                className={sty.language}
+              <img
+                src={`/assets/svgs/${router.locale}.svg`}
                 onClick={handleLan}
+                className={sty.outside_flag}
+                alt=""
               />
               <div className={sty.backDropp} onClick={handleLan}>
                 <div className={sty.menu_lan}>
-                  <h1>Chose a language!</h1>
-                  <Link href={router.asPath} locale="en">
-                    <a>English</a>
-                  </Link>
-                  <Link href={router.asPath} locale="ro">
-                    <a>Romana</a>
-                  </Link>
-                  <Link href={router.asPath} locale="hu">
-                    <a>Magyar</a>
-                  </Link>
+                  <div>
+                    <img src="/assets/svgs/ro.svg" alt="romaninan flag" />
+                    <Link href={router.asPath} locale="ro">
+                      <a>Romana</a>
+                    </Link>
+                  </div>
+                  <div>
+                    <img src="/assets/svgs/hu.svg" alt="hungarian" />
+                    <Link href={router.asPath} locale="hu">
+                      <a>Magyar</a>
+                    </Link>
+                  </div>
+
+                  <div>
+                    <img src="/assets/svgs/en.svg" alt="uk flag" />
+                    <Link href={router.asPath} locale="en">
+                      <a>English</a>
+                    </Link>
+                  </div>
                 </div>
               </div>
             </>
           ) : (
-            <MdLanguage
-              size={30}
-              color="white"
-              className={sty.language}
+            <img
+              src={`/assets/svgs/${router.locale}.svg`}
               onClick={handleLan}
+              className={sty.outside_flag}
+              alt=""
             />
           )}
         </div>
       </nav>
-
-      {/* nav2 */}
-
-      {/* <nav className={sty.nav2}>
-        <div className={sty.products_ham} onClick={handleHamburgerMenu}>
-          {!isactive ? (
-            <>
-              <GiHamburgerMenu size={18} />
-            </>
-          ) : (
-            <>
-              <GrClose size={18} />
-              <a className={sty.prod}>Products</a>
-              <div className={sty.prod_links}></div>
-            </>
-          )}
-
-          {!isactive ? <a className={sty.prod}>Products</a> : ""}
-        </div>
-      </nav> */}
     </div>
   );
 };

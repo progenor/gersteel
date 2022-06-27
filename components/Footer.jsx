@@ -31,6 +31,7 @@ const Footer = () => {
           <h3>Information</h3>
           <a href="#about">About us</a>
           <a href="#contact">Contact</a>
+          <img src="/assets/images/logo_G.png" alt="" />
         </div>
       </div>
 

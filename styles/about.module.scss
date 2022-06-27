@@ -1,3 +1,5 @@
+$color: #006b38ff;
+
 .about_main {
   margin-top: 3rem;
   display: flex;
@@ -5,12 +7,12 @@
   align-items: center;
 
   h1 {
-    color: #8bc43f;
+    color: $color;
     font-size: clamp(2.5rem, 1px + 10vw, 3rem);
   }
 
   .about_container {
-    background-color: #8bc43f;
+    background-color: $color;
     width: 70%;
     height: fit-content;
 
@@ -24,7 +26,7 @@
 
     p {
       color: #fff;
-      font-size: clamp(17px, 6vw, 30px);
+      font-size: clamp(15px, 5vw, 25px);
     }
 
     @media (max-width: 500px) {
