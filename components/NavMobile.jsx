@@ -1,9 +1,12 @@
 import { useState } from "react";
+import Link from "next/link";
 
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineClose, MdLanguage } from "react-icons/md";
+import { IoMdArrowDropdown } from "react-icons/io";
 
 import sty from "../styles/navbar.module.scss";
+import NavProdItems from "./NavProdItems";
 
 const NavMobile = () => {
   const [isActive, setisActive] = useState(false);

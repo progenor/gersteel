@@ -1,11 +1,17 @@
+$color: #006b38ff;
+$color2: #101820ff;
 .home_cont {
-  background-color: black;
+  background-image: url("../public/assets/images/home_bg.jpg");
+  background-repeat: repeat;
+  // background-size: cover;
+  background-position: center;
+
   height: fit-content;
   margin: 2rem auto 0 auto;
 
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  row-gap: 1rem;
+  // row-gap: 1rem;
 
   @media (max-width: 950px) {
     grid-template-columns: 1fr 1fr;
@@ -18,16 +24,45 @@
   flex-direction: column;
   height: 100vh;
   align-items: center;
+  text-align: center;
+  // padding: 5px;
+  img {
+    position: relative;
+    top: 2.3rem;
+    width: 22vw;
+    height: 80vh;
+  }
+
+  h1 {
+    font-size: x-large;
+    letter-spacing: 1.5px;
+    font-family: "Chakra Petch", sans-serif;
+    color: black;
+  }
 
   @media (max-width: 950px) {
     height: 60vh;
   }
 
-  background: rgb(0, 0, 0);
   background: linear-gradient(
     90deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(88, 88, 88, 1) 100%,
-    rgba(0, 212, 255, 1) 100%
+    // rgba(0, 0, 0, 0.7) 0%,
+    rgba(88, 88, 88, 0.7) 100%
   );
+
+  &:hover {
+    background-color: gray;
+  }
+}
+
+.black {
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  height: 100%;
+  h1 {
+    font-size: x-large;
+    letter-spacing: 1.5px;
+    font-family: "Chakra Petch", sans-serif;
+    color: white;
+  }
 }
