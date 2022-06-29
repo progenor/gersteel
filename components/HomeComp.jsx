@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Link from "next/link";
 import sty from "../styles/home.module.scss";
 
 function HomeComp() {
@@ -6,52 +7,62 @@ function HomeComp() {
     <div className={sty.home_cont} id="home">
       <BoxContainer
         title="Prestressing steal spring wires"
-        smallText="wtf is going on"
-        img="/assets/images/bartos.png"
+        smallText="Categories"
+        img="/assets/images/gray.jpg"
         multiple={true}
-      />
+      >
+        <li style={{ marginLeft: "20px" }}>
+          <Link href="/">PC strands</Link>
+        </li>
+        <li style={{ marginLeft: "0" }}>
+          <Link href="/">PC wires</Link>
+        </li>
+        <li style={{ marginLeft: "-22px" }}>
+          <Link href="/">Spring wires</Link>
+        </li>
+      </BoxContainer>
       <BoxContainer
         title="Protective foil"
-        smallText="wtf is going on"
-        img="/assets/images/bartos.png"
+        smallText="Read more"
+        img="/assets/images/gray.jpg"
       />
       <BoxContainer
         title="Concrete spacers"
         smallText="wtf is going on"
-        img="/assets/images/bartos.png"
+        img="/assets/images/gray.jpg"
       />
       <BoxContainer
         title="Plastic spacers"
         smallText="wtf is going on"
-        img="/assets/images/bartos.png"
+        img="/assets/images/gray.jpg"
       />
       <BoxContainer
         title="Corrugated pipes/ducts"
         smallText="wtf is going on"
-        img="/assets/images/bartos.png"
+        img="/assets/images/gray.jpg"
         multiple={true}
       />
       <BoxContainer
         title="PVC sheats, leveling plastic spacers"
         smallText="wtf is going on"
-        img="/assets/images/bartos.png"
+        img="/assets/images/gray.jpg"
         multiple={true}
       />
       <BoxContainer
         title="Steal grinding balls"
         smallText="wtf is going on"
-        img="/assets/images/bartos.png"
+        img="/assets/images/gray.jpg"
       />
       <BoxContainer
         title="Post-tensioning"
         smallText="wtf is going on"
-        img="/assets/images/bartos.png"
+        img="/assets/images/gray.jpg"
       />
     </div>
   );
 }
 
-function BoxContainer({ smallText, title, img, multiple }) {
+function BoxContainer({ children, smallText, title, img, multiple }) {
   const [isOpen, setisOpen] = useState(false);
   return (
     <>
@@ -64,19 +75,10 @@ function BoxContainer({ smallText, title, img, multiple }) {
             }}
             id="home"
           >
-            {isOpen ? (
-              <>
-                <div className={sty.black}>
-                  <h1>{title}</h1>
-                </div>
-              </>
-            ) : (
-              <>
-                <h1>{title}</h1>
-                <img src={img} alt="" />
-                <p>{smallText}</p>
-              </>
-            )}
+            <h1>{title}</h1>
+            <img src={img} alt="" />
+            <p>{smallText}</p>
+            <ul>{children}</ul>
           </div>
         </>
       ) : (
@@ -85,7 +87,6 @@ function BoxContainer({ smallText, title, img, multiple }) {
           id="home"
           onClick={() => {
             setisOpen(!isOpen);
-            console.log("clicked");
           }}
         >
           <h1>{title}</h1>

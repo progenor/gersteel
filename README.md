@@ -1,7 +1,7 @@
-# what i have to do
+# what I have to do
 
-- navbar triangle
 - bartos inline
 - animation
-  - float down up -> the stuff
-  - title up down
+  - categories animation fade in later
+  - li elemnts get in
+  - list elements

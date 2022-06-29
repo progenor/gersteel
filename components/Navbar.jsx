@@ -41,6 +41,7 @@ const Navbar = () => {
         </Link>
 
         <div className={sty.beBlack}>
+          <div className={sty.angle}></div>
           <NavNormal />
           <NavMobile />
           {isactiveLan ? (

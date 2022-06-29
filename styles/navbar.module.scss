@@ -13,11 +13,24 @@ $cl-green-nav1: #006b38ff;
   background-color: $cl-green-nav1;
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.4);
   height: 4rem;
+  // overflow: hidden;
 
   .beBlack {
     background-color: black;
-    width: 73%;
+    width: 70vw;
     height: 100%;
+    position: relative;
+    // overflow: hidden;
+  }
+
+  .angle {
+    background-color: black;
+    width: 10rem;
+    height: 100%;
+    position: absolute;
+    left: -10.1rem;
+    top: 0;
+    transform: rotate(45deg) translateY(-4.19rem);
   }
 
   div {
@@ -27,7 +40,7 @@ $cl-green-nav1: #006b38ff;
   }
 
   .logo {
-    margin-left: 6rem;
+    margin-left: calc(90vw * 0.05);
   }
 
   img {
@@ -45,6 +58,7 @@ $cl-green-nav1: #006b38ff;
     flex-direction: row;
     gap: 2.5rem;
     margin: auto 0;
+    // position: relative;
   }
   .mob_link_container {
     display: none;
@@ -69,7 +83,7 @@ $cl-green-nav1: #006b38ff;
     justify-content: space-between;
   }
 
-  @media (max-width: 900px) {
+  @media (max-width: 1100px) {
     .link_container {
       display: none;
     }
@@ -138,6 +152,7 @@ $cl-green-nav1: #006b38ff;
   }
 
   .menu_lan {
+    box-sizing: border-box;
     position: relative;
     top: -15%;
     margin: 0 auto;
@@ -179,6 +194,7 @@ $cl-green-nav1: #006b38ff;
     }
 
     div {
+      box-sizing: border-box;
       display: inline;
       &:hover {
         border: 3px solid gray;
