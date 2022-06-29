@@ -25,6 +25,7 @@ function HomeComp() {
         title="Protective foil"
         smallText="Read more"
         img="/assets/images/gray.jpg"
+        go="/2/pfoil"
       />
       <BoxContainer
         title="Concrete spacers"
@@ -62,7 +63,7 @@ function HomeComp() {
   );
 }
 
-function BoxContainer({ children, smallText, title, img, multiple }) {
+function BoxContainer({ children, smallText, title, img, multiple, go }) {
   const [isOpen, setisOpen] = useState(false);
   return (
     <>
@@ -91,7 +92,9 @@ function BoxContainer({ children, smallText, title, img, multiple }) {
         >
           <h1>{title}</h1>
           <img src={img} alt="" />
-          <p>{smallText}</p>
+          <p style={{ top: "20vh" }}>
+            <Link href={`/products${go}`}>{smallText}</Link>
+          </p>
         </div>
       )}
     </>

@@ -38,6 +38,7 @@ const NavMobile = () => {
             }}
             size={30}
             color="white"
+            className={sty.hamMenu}
           />
         </>
       )}

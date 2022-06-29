@@ -20,6 +20,7 @@ $cl-green-nav1: #006b38ff;
     width: 70vw;
     height: 100%;
     position: relative;
+    z-index: 5;
     // overflow: hidden;
   }
 
@@ -29,6 +30,7 @@ $cl-green-nav1: #006b38ff;
     height: 100%;
     position: absolute;
     left: -10.1rem;
+    z-index: -1;
     top: 0;
     transform: rotate(45deg) translateY(-4.19rem);
   }
@@ -41,6 +43,32 @@ $cl-green-nav1: #006b38ff;
 
   .logo {
     margin-left: calc(90vw * 0.05);
+  }
+
+  @media (max-width: 1200px) {
+    .logo {
+      margin-left: 10px;
+    }
+    .beBlack {
+      width: 60vw;
+    }
+  }
+  @media (max-width: 800px) {
+    .beBlack {
+      width: 42vw;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .logo {
+      max-width: 47vw;
+    }
+  }
+
+  @media (max-width: 450px) {
+    .beBlack {
+      width: 30vw;
+    }
   }
 
   img {
@@ -73,6 +101,7 @@ $cl-green-nav1: #006b38ff;
     img {
       height: 3vh;
       margin-left: 0;
+      margin-right: 10px;
     }
     div {
       gap: 0.5rem;
@@ -135,6 +164,9 @@ $cl-green-nav1: #006b38ff;
 
     .menu_close {
       align-self: flex-end;
+    }
+    .hamMenu {
+      z-index: 10;
     }
   }
 
