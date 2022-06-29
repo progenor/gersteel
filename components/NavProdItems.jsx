@@ -13,7 +13,7 @@ function NavProdItems() {
         <IoMdArrowDropdown color="white" size={size} className={sty.icon} />
         <ul className={sty.small_ul}>
           <li className={sty.small_li}>
-            <Link href="/products/1/pcstands">PC strands</Link>
+            <Link href="/products/1/pcstrands">PC strands</Link>
           </li>
           <li className={sty.small_li}>
             <Link href="/products/1/pcwires">PC wires</Link>
