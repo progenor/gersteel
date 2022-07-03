@@ -7,13 +7,10 @@
 <!-- TODO: main stuff -->
 
 - create separate pages for the products
-- hamburger menu products dynamic
 
 <!-- FIXME: main stuff -->
 
-- navbar prod items diferent font sizes
-- navbar second not where it should be
-- home elements z index
+- navbar second not where it should be -> word wrap small width screen problem
 
 <!-- TODO: ask for stuff -->
 
