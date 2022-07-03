@@ -7,63 +7,82 @@ function HomeComp() {
     <div className={sty.home_cont} id="home">
       <BoxContainer
         title="Prestressing steal spring wires"
-        smallText="Categories"
         img="/assets/images/gray.jpg"
         multiple={true}
       >
         <li style={{ marginLeft: "20px" }}>
-          <Link href="/">PC strands</Link>
+          <Link href="/products/1/pcstrands">PC strands</Link>
         </li>
         <li style={{ marginLeft: "0" }}>
-          <Link href="/">PC wires</Link>
+          <Link href="/products/1/pcwires">PC wires</Link>
         </li>
         <li style={{ marginLeft: "-22px" }}>
-          <Link href="/">Spring wires</Link>
+          <Link href="/products/1/springwires">Spring wires</Link>
         </li>
       </BoxContainer>
       <BoxContainer
         title="Protective foil"
-        smallText="Read more"
         img="/assets/images/gray.jpg"
         go="/2/pfoil"
       />
       <BoxContainer
         title="Concrete spacers"
-        smallText="wtf is going on"
         img="/assets/images/gray.jpg"
+        go="/3/concspacers"
       />
       <BoxContainer
         title="Plastic spacers"
-        smallText="wtf is going on"
         img="/assets/images/gray.jpg"
+        go="/4/plasspacers"
       />
       <BoxContainer
         title="Corrugated pipes/ducts"
-        smallText="wtf is going on"
         img="/assets/images/gray.jpg"
         multiple={true}
-      />
+      >
+        <li style={{ marginLeft: "20px" }}>
+          <Link href="/products/5/rccp">Round corrugated cavity pipes</Link>
+        </li>
+        <li style={{ marginLeft: "0" }}>
+          <Link href="/products/5/rcp">Rectengular cavity pipes</Link>
+        </li>
+        <li style={{ marginLeft: "-22px" }}>
+          <Link href="/products/5/rlw">Round longitudinally welded</Link>
+        </li>
+        <li style={{ marginLeft: "-30px" }}>
+          <Link href="/products/5/vft">Void forming tubes</Link>
+        </li>
+        <li style={{ marginLeft: "-35px" }}>
+          <Link href="/products/5/shs">Shuttering systemms</Link>
+        </li>
+      </BoxContainer>
       <BoxContainer
         title="PVC sheats, leveling plastic spacers"
-        smallText="wtf is going on"
         img="/assets/images/gray.jpg"
         multiple={true}
-      />
+      >
+        <li style={{ marginLeft: "-50px" }}>
+          <Link href="/products/6/pvcsheats">PVC sheats</Link>
+        </li>
+        <li style={{ marginLeft: "-62px" }}>
+          <Link href="/products/6/lps">Leveling plastic spacers</Link>
+        </li>
+      </BoxContainer>
       <BoxContainer
         title="Steal grinding balls"
-        smallText="wtf is going on"
         img="/assets/images/gray.jpg"
+        go="/7/grindingballs"
       />
       <BoxContainer
         title="Post-tensioning"
-        smallText="wtf is going on"
         img="/assets/images/gray.jpg"
+        go="/8/pt"
       />
     </div>
   );
 }
 
-function BoxContainer({ children, smallText, title, img, multiple, go }) {
+function BoxContainer({ children, title, img, multiple, go }) {
   const [isOpen, setisOpen] = useState(false);
   return (
     <>
@@ -78,7 +97,7 @@ function BoxContainer({ children, smallText, title, img, multiple, go }) {
           >
             <h1>{title}</h1>
             <img src={img} alt="" />
-            <p>{smallText}</p>
+            <p>Categories</p>
             <ul>{children}</ul>
           </div>
         </>
@@ -93,7 +112,7 @@ function BoxContainer({ children, smallText, title, img, multiple, go }) {
           <h1>{title}</h1>
           <img src={img} alt="" />
           <p style={{ top: "20vh" }}>
-            <Link href={`/products${go}`}>{smallText}</Link>
+            <Link href={`/products${go}`}>Read more</Link>
           </p>
         </div>
       )}

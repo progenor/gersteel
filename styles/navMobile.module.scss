@@ -1,0 +1,28 @@
+.main {
+  margin-left: 70px;
+  h2 {
+    color: white;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: -70px;
+  }
+
+  .big_ul,
+  .small_ul {
+    list-style: none;
+  }
+
+  .big_li {
+    cursor: pointer;
+  }
+
+  .big_li,
+  .small_li {
+    font-size: 23px;
+    color: white;
+    a {
+      font-size: 23px;
+    }
+  }
+}
