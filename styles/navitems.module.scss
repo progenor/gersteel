@@ -22,11 +22,12 @@ $color2: #006b38ff;
 .big_li:hover > .small_ul {
   display: inline-block;
   // position: relative;
-  left: 24.4rem;
-  margin-top: -0.5rem;
+  left: 23.5rem;
+  margin-top: -0.7rem;
 }
 
 .big_li {
+  display: flex;
   border: 2px solid black;
   padding: 5px;
   &:hover {

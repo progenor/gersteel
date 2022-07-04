@@ -83,10 +83,15 @@ $cl-green-nav1: #006b38ff;
 
   .link_container {
     display: flex;
-    flex-direction: row;
+    // flex-direction: row;
+    // display: inline;
     gap: 2.5rem;
     margin: auto 0;
     // position: relative;
+    a {
+      // display: inline;
+      display: flex;
+    }
   }
   .mob_link_container {
     display: none;

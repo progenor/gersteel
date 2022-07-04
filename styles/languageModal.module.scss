@@ -29,36 +29,14 @@
     padding: 1rem 1.5rem;
     border-radius: 10px;
 
-    p {
-      cursor: pointer;
-      font-size: 25px;
-      color: white;
-      padding: 4px;
-
-      &:hover {
-        background-color: rgba(128, 128, 128, 0.349);
-        border-radius: 5px;
-        border-left: 4px solid green;
-      }
+    div {
+      display: flex;
     }
 
     img {
-      margin-right: 5px;
-      margin-bottom: 5px;
+      // margin-right: 5px;
+      // margin-bottom: 5px;
+      width: 10px;
     }
-
-    .magyar_flag {
-      width: 30px;
-      height: 30px;
-    }
-    .roman_flag {
-      width: 30px;
-      height: 30px;
-    }
-  }
-}
-
-@media screen and (max-width: 1050px) {
-  .language_box {
   }
 }

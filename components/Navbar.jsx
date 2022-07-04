@@ -54,7 +54,7 @@ const Navbar = () => {
               />
               <div className={sty.backDropp} onClick={handleLan}>
                 <div className={sty.menu_lan}>
-                  <div>
+                  <div className=" flex">
                     <img src="/assets/svgs/ro.svg" alt="romaninan flag" />
                     <Link href={router.asPath} locale="ro">
                       <a>Romana</a>
