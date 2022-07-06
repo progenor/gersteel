@@ -1,4 +1,4 @@
-$color: #006b38ff;
+@import "./globalVariables.module.scss";
 
 .ftr {
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.4);
@@ -7,7 +7,7 @@ $color: #006b38ff;
 }
 
 .main {
-  background-color: $color;
+  background-color: $clr-pri;
   display: flex;
   flex-direction: row;
 
@@ -91,10 +91,9 @@ $color: #006b38ff;
 .createdby {
   background-color: black;
   color: white;
-  font-size: 23px;
+  font-size: 20px;
   text-align: center;
   line-height: 1px;
-
   a:hover {
     color: goldenrod;
   }

@@ -13,8 +13,8 @@ $color2: #006b38ff;
 .big_ul,
 .small_ul {
   color: white;
-  font-size: 17px;
   list-style: none;
+  width: -moz-fit-content;
   width: fit-content;
   padding: 0;
 }
@@ -67,4 +67,5 @@ $color2: #006b38ff;
 
 .icon {
   transform: rotate(-90deg);
+  margin-top: 4px;
 }

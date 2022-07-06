@@ -1,4 +1,4 @@
-$color: #006b38ff;
+@import "./globalVariables.module.scss";
 
 .container {
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.4);
@@ -10,7 +10,7 @@ $color: #006b38ff;
   padding-bottom: 5rem;
 
   h1 {
-    color: $color;
+    color: $clr-pri;
     margin: 1rem auto 4rem auto;
     font-size: 3rem;
   }
@@ -24,7 +24,7 @@ $color: #006b38ff;
     a {
       width: 15vw;
       height: auto;
-      background-color: $color;
+      background-color: $clr-pri;
       padding: 1.5rem;
       border-radius: 30px;
 

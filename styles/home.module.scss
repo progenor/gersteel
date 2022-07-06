@@ -1,5 +1,3 @@
-$color: #006b38ff;
-$color2: #101820ff;
 .home_cont {
   background-image: url("../public/assets/images/home_bg_white3.png");
   background-repeat: no-repeat;
@@ -34,6 +32,7 @@ $color2: #101820ff;
     width: 22vw;
     height: 80vh;
     transition: transform 1s ease-out;
+    z-index: 10;
   }
 
   transition: background 1s ease-in-out;
@@ -82,8 +81,8 @@ $color2: #101820ff;
   ul {
     position: absolute;
     list-style: none;
-    bottom: 25%;
-    left: 35%;
+    bottom: 13%;
+    left: 32%;
     display: none;
 
     li {
