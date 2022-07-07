@@ -1,4 +1,5 @@
 import sty from "../styles/footer.module.scss";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -30,8 +31,9 @@ const Footer = () => {
         <div className={sty.information}>
           <h3>Information</h3>
           <a href="#home">Home</a>
-          <a href="#about">About us</a>
-          <a href="#contact">Contact</a>
+          <Link href="/About">About us</Link>
+          <Link href="/Contact">Contact</Link>
+
           <img src="/assets/images/logo_G.png" alt="" />
         </div>
       </div>

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Link from "next/link";
 
 import sty from "../styles/navbar.module.scss";
 // import { MdOutlineKeyboardArrowDown } from "react-icons/md";
@@ -23,8 +24,8 @@ const NavNormal = () => {
           </a>
         </div>
         {isactive ? <NavProdItems /> : ""}
-        <a href="#about">ABOUT US</a>
-        <a href="#contact">CONTACT</a>
+        <Link href="/About">ABOUT US</Link>
+        <Link href="/Contact">Contact</Link>
       </div>
     </>
   );

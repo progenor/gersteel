@@ -178,8 +178,8 @@ const NavMobile = () => {
               className={sty.menu_close}
             />
             <div>
-              <a href="#about">ABOUT US</a>
-              <a href="#contact">CONTACT</a>
+              <Link href="/About">ABOUT US</Link>
+              <Link href="/Contact">Contact</Link>
 
               <ProdItemsMobile />
             </div>

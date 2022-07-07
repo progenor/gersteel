@@ -1,6 +1,4 @@
 import Head from "next/head";
-import About from "../components/About";
-import Contact from "../components/Contact";
 import HomeComp from "../components/HomeComp";
 
 export default function Home() {
@@ -14,8 +12,6 @@ export default function Home() {
       <main className="bigass">
         <div className="shits">
           <HomeComp />
-          <About />
-          <Contact />
         </div>
       </main>
     </div>
