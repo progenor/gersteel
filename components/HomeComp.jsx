@@ -7,94 +7,87 @@ function HomeComp() {
     <div className={sty.home_cont} id="home">
       <BoxContainer
         title="Prestressing steal spring wires"
-        img="/assets/images/steel.png"
+        img="/assets/images/strand.png"
         multiple={true}
       >
-        <li style={{ marginLeft: "20px" }}>
+        <li>
+          <br />
+        </li>
+        <li style={{ marginLeft: "-80%" }}>
           <Link href="/products/1/pcstrands">PC strands</Link>
         </li>
-        <li style={{ marginLeft: "0" }}>
+        <li style={{ marginLeft: "-38px" }}>
           <Link href="/products/1/pcwires">PC wires</Link>
         </li>
-        <li style={{ marginLeft: "-22px" }}>
+        <li style={{ marginLeft: "-10px" }}>
           <Link href="/products/1/springwires">Spring wires</Link>
         </li>
+      </BoxContainer>
+      <BoxContainer
+        title="Corrugated pipes/ducts"
+        img="/assets/images/cavity_pipe.png"
+        multiple={true}
+      >
+        <li style={{ marginLeft: "-120px" }}>
+          <Link href="/products/5/rccp">Round corrugated cavity pipes</Link>
+        </li>
+        <li style={{ marginLeft: "-84px" }}>
+          <Link href="/products/5/rlw">Round longitudinally welded</Link>
+        </li>
+        <li style={{ marginLeft: "-48px" }}>
+          <Link href="/products/5/rcp">Rectengular cavity pipes</Link>
+        </li>
+        <li style={{ marginLeft: "-17px" }}>
+          <Link href="/products/5/shs">Shuttering systemms</Link>
+        </li>
+        <li style={{ marginLeft: "12px" }}>
+          <Link href="/products/5/vft">Void forming tubes</Link>
+        </li>
+      </BoxContainer>
+
+      <BoxContainer
+        title="Concrete/Plastic spacers"
+        img="/assets/images/conc_plas_spacer.png"
+        go="/3/concspacers"
+      />
+      <BoxContainer
+        title="PVC sheats, leveling plastic spacers"
+        img="/assets/images/strand.png"
+        multiple={true}
+      >
         <li>
           <br />
         </li>
         <li>
           <br />
         </li>
-        <li>
-          <br />
+        <li style={{ marginLeft: "-100px" }}>
+          <Link href="/products/6/pvcsheats">PVC sheats</Link>
+        </li>
+        <li style={{ marginLeft: "-60px" }}>
+          <Link href="/products/6/lps">Leveling plastic spacers</Link>
         </li>
       </BoxContainer>
       <BoxContainer
         title="Protective foil"
-        img="/assets/images/steel.png"
+        img="/assets/images/pfoil.png"
         go="/2/pfoil"
       />
-      <BoxContainer
-        title="Concrete spacers"
-        img="/assets/images/steel.png"
-        go="/3/concspacers"
-      />
-      <BoxContainer
-        title="Plastic spacers"
-        img="/assets/images/steel.png"
-        go="/4/plasspacers"
-      />
-      <BoxContainer
-        title="Corrugated pipes/ducts"
-        img="/assets/images/steel.png"
-        multiple={true}
-      >
-        <li style={{ marginLeft: "15px" }}>
-          <Link href="/products/5/shs">Shuttering systemms</Link>
-        </li>
-        <li style={{ marginLeft: "-15px" }}>
-          <Link href="/products/5/rcp">Rectengular cavity pipes</Link>
-        </li>
-        <li style={{ marginLeft: "-40px" }}>
-          <Link href="/products/5/vft">Void forming tubes</Link>
-        </li>
-        <li style={{ marginLeft: "-68px" }}>
-          <Link href="/products/5/rlw">Round longitudinally welded</Link>
-        </li>
-        <li style={{ marginLeft: "-90px" }}>
-          <Link href="/products/5/rccp">Round corrugated cavity pipes</Link>
-        </li>
-      </BoxContainer>
-      <BoxContainer
-        title="PVC sheats, leveling plastic spacers"
-        img="/assets/images/steel.png"
-        multiple={true}
-      >
-        <li style={{ marginLeft: "0px" }}>
-          <Link href="/products/6/pvcsheats">PVC sheats</Link>
-        </li>
-        <li style={{ marginLeft: "-20px" }}>
-          <Link href="/products/6/lps">Leveling plastic spacers</Link>
-        </li>
-        <li>
-          <br />
-        </li>
-        <li>
-          <br />
-        </li>
-        <li>
-          <br />
-        </li>
-      </BoxContainer>
+
       <BoxContainer
         title="Steal grinding balls"
-        img="/assets/images/steel.png"
+        img="/assets/images/balls.png"
         go="/7/grindingballs"
       />
       <BoxContainer
         title="Post-tensioning"
-        img="/assets/images/steel.png"
+        img="/assets/images/strand.png"
         go="/8/pt"
+      />
+      <BoxContainer
+        title="Others"
+        img="/assets/images/strand.png"
+        go="/4/others"
       />
     </div>
   );
@@ -115,7 +108,6 @@ function BoxContainer({ children, title, img, multiple, go }) {
           >
             <h1>{title}</h1>
             <img src={img} alt="" />
-            <p>Categories</p>
             <ul>{children}</ul>
           </div>
         </>

@@ -1,5 +1,7 @@
 @import "./globalVariables.module.scss";
-
+.main_container {
+  padding-top: 4rem;
+}
 .about_main {
   display: flex;
   flex-direction: column;
@@ -19,10 +21,12 @@
   h1 {
     color: $clr-pri;
     font-size: clamp(2.5rem, 1px + 10vw, 3rem);
+    margin-bottom: 0;
   }
 
   .about_container {
     // background-color: $color;
+    margin-top: 0;
     width: 70%;
     height: fit-content;
 

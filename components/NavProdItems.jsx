@@ -24,15 +24,6 @@ function NavProdItems() {
         </ul>
       </li>
       <li className={sty.big_li}>
-        <Link href="/products/2/pfoil">Protective foil</Link>
-      </li>
-      <li className={sty.big_li}>
-        <Link href="/products/3/concspacers">Concrete spacers</Link>
-      </li>
-      <li className={sty.big_li}>
-        <Link href="/products/4/plasspacers">Plastic spacers</Link>
-      </li>
-      <li className={sty.big_li}>
         Corrugated pipes/ducts
         <IoMdArrowDropdown
           color="white"
@@ -58,6 +49,14 @@ function NavProdItems() {
           </li>
         </ul>
       </li>
+
+      <li className={sty.big_li}>
+        <Link href="/products/3/concspacers">Concrete/plastic spacers</Link>
+      </li>
+
+      <li className={sty.big_li}>
+        <Link href="/products/2/pfoil">Protective foil</Link>
+      </li>
       <li className={sty.big_li}>
         PVC sheats, leveling plastic spacers
         <IoMdArrowDropdown
@@ -80,6 +79,9 @@ function NavProdItems() {
       </li>
       <li className={sty.big_li}>
         <Link href="products/8/pt">Post-tensioning(materials & services)</Link>
+      </li>
+      <li className={sty.big_li}>
+        <Link href="/products/4/others">Others</Link>
       </li>
     </ul>
   );
