@@ -8,9 +8,11 @@
 
 <!-- TODO: main stuff -->
 
+- max width
+- onmouse leave
 - remove watermark watermark [watermark remover](https://www.watermarkremover.io/)
 - click items when clicked exit navbar
-- create separate pages for the products
+
 - footer about 4 icons fit in somewhere -> flag remove
 - corrugated pipes -> steel corrugated pipes
 - one type of spacers

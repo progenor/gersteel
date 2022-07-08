@@ -60,8 +60,8 @@
   h1 {
     font-size: clamp(1rem, 4vw, 1.5rem);
     letter-spacing: 1.5px;
-    font-family: "Chakra Petch", sans-serif;
-    color: black;
+    color: rgba(0, 0, 0, 0.813);
+    font-family: "Abril Fatface", cursive;
     transition: all ease-in 100ms;
   }
 
@@ -89,6 +89,7 @@
       font-size: clamp(15px, 3vw, 20px);
       opacity: 0;
       transform: translateX(-150px);
+      font-family: "Bebas Neue", cursive;
     }
   }
 

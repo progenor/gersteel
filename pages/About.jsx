@@ -34,6 +34,7 @@ const About = ({ title }) => {
             in exercitation
           </p>
         </div>
+        <img src="/assets/svgs/about_us.svg" alt="" />
       </div>
     </div>
   );

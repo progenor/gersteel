@@ -14,8 +14,8 @@ const NavNormal = () => {
       <div className={sty.link_container}>
         <div>
           <a
-            onClick={() => {
-              setIsactive(!isactive);
+            onMouseEnter={() => {
+              setIsactive(true);
             }}
           >
             PRODUCTS
@@ -23,9 +23,19 @@ const NavNormal = () => {
             <IoMdArrowDropdown color="white" size={20} />
           </a>
         </div>
-        {isactive ? <NavProdItems /> : ""}
+        {isactive ? (
+          <span
+            onMouseLeave={() => {
+              setIsactive(!isactive);
+            }}
+          >
+            <NavProdItems />
+          </span>
+        ) : (
+          ""
+        )}
         <Link href="/About">ABOUT US</Link>
-        <Link href="/Contact">Contact</Link>
+        <Link href="/Contact">CONTACT</Link>
       </div>
     </>
   );

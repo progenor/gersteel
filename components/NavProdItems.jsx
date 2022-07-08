@@ -9,7 +9,7 @@ function NavProdItems() {
   return (
     <ul className={sty.big_ul}>
       <li className={sty.big_li}>
-        Prestressing steal, spring wires
+        <span>Prestressing steal, spring wires</span>
         <IoMdArrowDropdown color="white" size={size} className={sty.icon} />
         <ul className={sty.small_ul}>
           <li className={sty.small_li}>
@@ -24,7 +24,7 @@ function NavProdItems() {
         </ul>
       </li>
       <li className={sty.big_li}>
-        Corrugated pipes/ducts
+        <span>Corrugated pipes/ducts</span>
         <IoMdArrowDropdown
           color="white"
           size={size}
@@ -58,7 +58,7 @@ function NavProdItems() {
         <Link href="/products/2/pfoil">Protective foil</Link>
       </li>
       <li className={sty.big_li}>
-        PVC sheats, leveling plastic spacers
+        <span>PVC sheats, leveling plastic spacers</span>
         <IoMdArrowDropdown
           color="white"
           size={size}
