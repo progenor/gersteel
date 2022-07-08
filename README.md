@@ -15,7 +15,9 @@
 
 <!-- TODO: ask for stuff -->
 
+- what we need and what we dont need to write in from the stuff
 - redirects pages
+- scroll
 <!-- - contact information -->
 - texts (about us)
 - footer icons {iso icons}
