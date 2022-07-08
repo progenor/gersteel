@@ -21,7 +21,7 @@
 
   h1 {
     color: $clr-pri;
-    font-size: clamp(2.5rem, 1px + 10vw, 3rem);
+    font-size: $title-size;
     margin-bottom: 0;
   }
 

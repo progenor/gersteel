@@ -2,6 +2,8 @@ $clr-pri: #006b38ff;
 $clr-bg-pri: #dadbdd;
 $clr-bg-sec: #eeee;
 
+$title-size: clamp(27px, 2.5vw, 50px);
+
 :export {
   clrPri: $clr-pri;
 }

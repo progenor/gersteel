@@ -14,6 +14,7 @@ const NavMobile = () => {
   const [isOpen1, setisOpen1] = useState(false);
   const [isOpen2, setisOpen2] = useState(false);
   const [isOpen3, setisOpen3] = useState(false);
+
   const ProdItemsMobile = () => {
     const size = 15;
     return (
@@ -35,13 +36,28 @@ const NavMobile = () => {
                   className={styy.icon}
                 />
                 <ul className={styy.small_ul}>
-                  <li className={styy.small_li}>
+                  <li
+                    className={styy.small_li}
+                    onClick={() => {
+                      setisActive(!isActive);
+                    }}
+                  >
                     <Link href="/products/1/pcstrands">PC strands</Link>
                   </li>
-                  <li className={styy.small_li}>
+                  <li
+                    className={styy.small_li}
+                    onClick={() => {
+                      setisActive(!isActive);
+                    }}
+                  >
                     <Link href="/products/1/pcwires">PC wires</Link>
                   </li>
-                  <li className={styy.small_li}>
+                  <li
+                    className={styy.small_li}
+                    onClick={() => {
+                      setisActive(!isActive);
+                    }}
+                  >
                     <Link href="/products/1/springwires">Spring wires</Link>
                   </li>
                 </ul>
@@ -56,15 +72,6 @@ const NavMobile = () => {
                 />
               </>
             )}
-          </li>
-          <li className={styy.big_li}>
-            <Link href="/products/2/pfoil">Protective foil</Link>
-          </li>
-          <li className={styy.big_li}>
-            <Link href="/products/3/concspacers">Concrete spacers</Link>
-          </li>
-          <li className={styy.big_li}>
-            <Link href="/products/4/plasspacers">Plastic spacers</Link>
           </li>
           <li
             className={styy.big_li}
@@ -82,23 +89,48 @@ const NavMobile = () => {
                   className={styy.icon}
                 />
                 <ul className={styy.small_ul}>
-                  <li className={styy.small_li}>
+                  <li
+                    className={styy.small_li}
+                    onClick={() => {
+                      setisActive(!isActive);
+                    }}
+                  >
                     <Link href="products/5/rccp">
                       Round corrugated cavity pipes
                     </Link>
                   </li>
-                  <li className={styy.small_li}>
+                  <li
+                    className={styy.small_li}
+                    onClick={() => {
+                      setisActive(!isActive);
+                    }}
+                  >
                     <Link href="products/5/rcp">Rectengular cavity pipes</Link>
                   </li>
-                  <li className={styy.small_li}>
+                  <li
+                    className={styy.small_li}
+                    onClick={() => {
+                      setisActive(!isActive);
+                    }}
+                  >
                     <Link href="products/5/rlw">
                       Round longitudinally welded
                     </Link>
                   </li>
-                  <li className={styy.small_li}>
+                  <li
+                    className={styy.small_li}
+                    onClick={() => {
+                      setisActive(!isActive);
+                    }}
+                  >
                     <Link href="products/5/vft">Void forming tubes</Link>
                   </li>
-                  <li className={styy.small_li}>
+                  <li
+                    className={styy.small_li}
+                    onClick={() => {
+                      setisActive(!isActive);
+                    }}
+                  >
                     <Link href="products/5/shs">Shuttering systemms</Link>
                   </li>
                 </ul>
@@ -118,6 +150,22 @@ const NavMobile = () => {
           <li
             className={styy.big_li}
             onClick={() => {
+              setisActive(!isActive);
+            }}
+          >
+            <Link href="/products/3/concspacers">Concrete/plastic spacers</Link>
+          </li>
+          <li
+            className={styy.big_li}
+            onClick={() => {
+              setisActive(!isActive);
+            }}
+          >
+            <Link href="/products/2/pfoil">Protective foil</Link>
+          </li>
+          <li
+            className={styy.big_li}
+            onClick={() => {
               setisOpen3(!isOpen3);
             }}
           >
@@ -131,10 +179,20 @@ const NavMobile = () => {
                   className={styy.icon}
                 />
                 <ul className={styy.small_ul}>
-                  <li className={styy.small_li}>
+                  <li
+                    className={styy.small_li}
+                    onClick={() => {
+                      setisActive(!isActive);
+                    }}
+                  >
                     <Link href="/products/6/pvcsheats">PVC sheats</Link>
                   </li>
-                  <li className={styy.small_li}>
+                  <li
+                    className={styy.small_li}
+                    onClick={() => {
+                      setisActive(!isActive);
+                    }}
+                  >
                     <Link href="/products/6/lps">Leveling plastic spacers</Link>
                   </li>
                 </ul>
@@ -151,10 +209,20 @@ const NavMobile = () => {
               </>
             )}
           </li>
-          <li className={styy.big_li}>
+          <li
+            className={styy.big_li}
+            onClick={() => {
+              setisActive(!isActive);
+            }}
+          >
             <Link href="products/7/grindingballs">Steel grinding balls</Link>
           </li>
-          <li className={styy.big_li}>
+          <li
+            className={styy.big_li}
+            onClick={() => {
+              setisActive(!isActive);
+            }}
+          >
             <Link href="products/8/pt">
               Post-tensioning(materials & services)
             </Link>
@@ -178,10 +246,18 @@ const NavMobile = () => {
               className={sty.menu_close}
             />
             <div>
-              <Link href="/About">ABOUT US</Link>
-              <Link href="/Contact">Contact</Link>
+              <div
+                onClick={() => {
+                  setisActive(!isActive);
+                }}
+              >
+                <Link href="/About">ABOUT US</Link>
+                <Link href="/Contact">CONTACT</Link>
+              </div>
 
-              <ProdItemsMobile />
+              <div>
+                <ProdItemsMobile />
+              </div>
             </div>
           </div>
         </>

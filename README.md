@@ -8,19 +8,7 @@
 
 <!-- TODO: main stuff -->
 
-- max width
-- onmouse leave
-- remove watermark watermark [watermark remover](https://www.watermarkremover.io/)
-- click items when clicked exit navbar
-
-- footer about 4 icons fit in somewhere -> flag remove
-- corrugated pipes -> steel corrugated pipes
-- one type of spacers
-
 <!-- FIXME: main stuff -->
-
-- home 1 row al6l -> must be seen in one page view -> double column design with picture
-- navbar second not where it should be -> word wrap small width screen problem
 
 <!-- TODO: ask for stuff -->
 

@@ -1,10 +1,10 @@
 .home_cont {
-  background-image: url("../public/assets/images/home_bg_white3.png");
+  background-image: url("../public/assets/images/home_bg_white3_t.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
-  height: fit-content;
+  height: 95vh;
   margin: 2rem auto 0 auto;
 
   display: grid;
@@ -27,6 +27,8 @@
   overflow: hidden;
   position: relative;
   img {
+    width: 96%;
+    height: 100%;
     position: absolute;
     top: 5rem;
     transition: transform 1s ease-out;
@@ -37,7 +39,7 @@
 
   &:hover {
     img {
-      transform: rotate(45deg) translateX(-20%) translateY(90%);
+      transform: rotate(45deg) translateX(-20%) translateY(70%);
     }
     p {
       opacity: 1;
@@ -71,7 +73,7 @@
     left: 6vw;
     opacity: 0;
     font-size: clamp(20px, 4vw, 28px);
-    transform: rotate(30deg);
+    transform: rotate(45deg);
     // opacity: 0;
     transition: opacity 200ms ease-in-out;
   }
