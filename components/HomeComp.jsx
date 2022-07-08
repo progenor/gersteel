@@ -2,6 +2,8 @@ import { useState } from "react";
 import Link from "next/link";
 import sty from "../styles/home.module.scss";
 
+import { BsFillArrowRightCircleFill } from "react-icons";
+
 function HomeComp() {
   return (
     <div className={sty.home_cont} id="home">
@@ -16,7 +18,7 @@ function HomeComp() {
         <li style={{ marginLeft: "-80%" }}>
           <Link href="/products/1/pcstrands">PC strands</Link>
         </li>
-        <li style={{ marginLeft: "-38px" }}>
+        <li style={{ marginLeft: "-28px" }}>
           <Link href="/products/1/pcwires">PC wires</Link>
         </li>
         <li style={{ marginLeft: "-10px" }}>
@@ -61,10 +63,10 @@ function HomeComp() {
         <li>
           <br />
         </li>
-        <li style={{ marginLeft: "-100px" }}>
+        <li style={{ marginLeft: "-60px" }}>
           <Link href="/products/6/pvcsheats">PVC sheats</Link>
         </li>
-        <li style={{ marginLeft: "-60px" }}>
+        <li style={{ marginLeft: "-20px" }}>
           <Link href="/products/6/lps">Leveling plastic spacers</Link>
         </li>
       </BoxContainer>
@@ -121,7 +123,7 @@ function BoxContainer({ children, title, img, multiple, go }) {
         >
           <h1>{title}</h1>
           <img src={img} alt="" />
-          <p style={{ top: "20vh" }}>
+          <p style={{ top: "18vh" }} className={sty.readMore}>
             <Link href={`/products${go}`}>Read more</Link>
           </p>
         </div>

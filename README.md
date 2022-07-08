@@ -10,6 +10,9 @@
 
 <!-- FIXME: main stuff -->
 
+- after uploading dosnt work the nav and other stuff
+- firefox problems
+
 <!-- TODO: ask for stuff -->
 
 - redirects pages
