@@ -21,7 +21,7 @@ const NavMobile = () => {
     const size = 15;
     return (
       <div className={styy.main}>
-        <h2>CATEGORIES</h2>
+        <h2>Products:</h2>
         <ul className={styy.big_ul}>
           <li
             className={styy.big_li}
@@ -31,7 +31,7 @@ const NavMobile = () => {
           >
             {isOpen1 ? (
               <>
-                Prestressing steal, spring wires
+                Prestressing steal, spring <br /> wires
                 <IoMdArrowDropdown
                   color="white"
                   size={size}
@@ -66,7 +66,7 @@ const NavMobile = () => {
               </>
             ) : (
               <>
-                Prestressing steal, spring wires
+                Prestressing steal, spring <br /> wires
                 <IoMdArrowDropdown
                   color="white"
                   size={size}
@@ -173,7 +173,7 @@ const NavMobile = () => {
           >
             {isOpen3 ? (
               <>
-                PVC sheets, leveling plastic spacers
+                PVC sheets, leveling plastic <br /> spacers
                 <IoMdArrowDropdown
                   color="white"
                   size={size}
@@ -201,7 +201,7 @@ const NavMobile = () => {
               </>
             ) : (
               <>
-                PVC sheets, leveling plastic spacers
+                PVC sheets, leveling plastic <br /> spacers
                 <IoMdArrowDropdown
                   color="white"
                   size={size}
@@ -225,9 +225,7 @@ const NavMobile = () => {
               setisActive(!isActive);
             }}
           >
-            <Link href="products/8/pt">
-              Post-tensioning(materials & services)
-            </Link>
+            <Link href="products/8/pt">Post-tensioning</Link>
           </li>
         </ul>
       </div>
@@ -253,8 +251,8 @@ const NavMobile = () => {
                   setisActive(!isActive);
                 }}
               >
-                <Link href="/About">ABOUT US</Link>
-                <Link href="/Contact">CONTACT</Link>
+                <Link href="/About">About us</Link>
+                <Link href="/Contact">Contact</Link>
               </div>
 
               <div>

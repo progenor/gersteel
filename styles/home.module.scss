@@ -21,7 +21,8 @@
 .box_container {
   display: flex;
   flex-direction: column;
-  height: 45vh;
+  // height: 45vh;
+  // height: fit-content;
   align-items: center;
   text-align: center;
   // padding: 5px;
@@ -31,10 +32,24 @@
     width: 86%;
     height: 100%;
     position: absolute;
-    top: 5.3rem;
+    top: 5rem;
     transition: transform 1s ease-out;
     z-index: 10;
     border: 2px solid rgba(0, 0, 0, 0.649);
+
+    @media (max-width: 1150px) {
+      height: 80%;
+    }
+    @media (max-width: 580px) {
+      height: 60%;
+    }
+    @media (max-width: 450px) {
+      height: 60%;
+      top: 3.5rem;
+    }
+  }
+
+  @media (max-width: 450px) {
   }
 
   transition: background 1s ease-in-out;
@@ -42,6 +57,10 @@
   &:hover {
     img {
       transform: rotate(45deg) translateX(-20%) translateY(70%);
+
+      @media (max-width: 450px) {
+        transform: rotate(45deg) translateX(-20%) translateY(90%);
+      }
     }
     p {
       opacity: 1;
@@ -65,7 +84,8 @@
     font-size: clamp(1rem, 4vw, 1.5rem);
     letter-spacing: 1.5px;
     color: rgba(0, 0, 0, 0.813);
-    font-family: "Abril Fatface", cursive;
+    // font-family: "Abril Fatface", cursive;
+    font-family: "Bebas Neue", cursive;
     transition: all ease-in 100ms;
   }
 
@@ -87,6 +107,11 @@
       background-color: $clr-pri;
       color: #eee;
       animation: bounce 400ms ease-in forwards;
+    }
+
+    @media (max-width: 450px) {
+      top: 35% !important;
+      font-size: 19px;
     }
 
     @keyframes bounce {
@@ -114,6 +139,11 @@
     left: 26%;
     display: none;
 
+    @media (max-width: 450px) {
+      top: 24% !important;
+      left: 45% !important;
+    }
+
     li {
       text-align: left;
       margin: 7px 0;
@@ -121,6 +151,26 @@
       opacity: 0;
       transform: translateX(-150px);
       font-family: "Bebas Neue", cursive;
+
+      @media (max-width: 450px) {
+        font-size: 13px;
+
+        &:nth-child(1) {
+          margin-left: -110px !important;
+        }
+        &:nth-child(2) {
+          margin-left: -90px !important;
+        }
+        &:nth-child(3) {
+          margin-left: -70px !important;
+        }
+        &:nth-child(4) {
+          margin-left: -56px !important;
+        }
+        &:nth-child(5) {
+          margin-left: -33px !important;
+        }
+      }
 
       &:hover {
         color: rgb(193, 193, 193);
@@ -144,6 +194,9 @@
 
   @media (max-width: 950px) {
     height: 60vh;
+  }
+  @media (max-width: 450px) {
+    height: 30vh;
   }
 
   background: linear-gradient(

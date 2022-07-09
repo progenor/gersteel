@@ -7,21 +7,34 @@
     margin-bottom: 0;
   }
 
-  .big_ul,
-  .small_ul {
+  .big_ul {
     list-style: none;
   }
+  .small_ul {
+    color: white;
+  }
 
+  $colorr: rgb(158, 158, 158);
   .big_li {
     cursor: pointer;
+    color: $colorr;
+
+    a {
+      color: $colorr;
+    }
+  }
+  .small_li {
+    a {
+      color: white;
+    }
   }
 
   .big_li,
   .small_li {
-    font-size: 23px;
-    color: white;
+    margin-top: 8px;
+    font-size: 20px;
     a {
-      font-size: 23px;
+      font-size: 20px;
     }
   }
 }
