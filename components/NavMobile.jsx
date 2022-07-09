@@ -7,9 +7,11 @@ import { IoMdArrowDropdown } from "react-icons/io";
 
 import sty from "../styles/navbar.module.scss";
 import styy from "../styles/navMobile.module.scss";
-import NavProdItems from "./NavProdItems";
+
+import useTranslation from "next-translate/useTranslation";
 
 const NavMobile = () => {
+  let { t, lang } = useTranslation();
   const [isActive, setisActive] = useState(false);
   const [isOpen1, setisOpen1] = useState(false);
   const [isOpen2, setisOpen2] = useState(false);
@@ -171,7 +173,7 @@ const NavMobile = () => {
           >
             {isOpen3 ? (
               <>
-                PVC sheats, leveling plastic spacers
+                PVC sheets, leveling plastic spacers
                 <IoMdArrowDropdown
                   color="white"
                   size={size}
@@ -185,7 +187,7 @@ const NavMobile = () => {
                       setisActive(!isActive);
                     }}
                   >
-                    <Link href="/products/6/pvcsheats">PVC sheats</Link>
+                    <Link href="/products/6/pvcsheets">PVC sheets</Link>
                   </li>
                   <li
                     className={styy.small_li}
@@ -199,7 +201,7 @@ const NavMobile = () => {
               </>
             ) : (
               <>
-                PVC sheats, leveling plastic spacers
+                PVC sheets, leveling plastic spacers
                 <IoMdArrowDropdown
                   color="white"
                   size={size}

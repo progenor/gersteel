@@ -4,7 +4,10 @@ import sty from "../styles/home.module.scss";
 
 import { BsFillArrowRightCircleFill } from "react-icons";
 
+import useTranslation from "next-translate/useTranslation";
+
 function HomeComp() {
+  let { t, lang } = useTranslation();
   return (
     <div className={sty.home_cont} id="home">
       <BoxContainer
@@ -53,7 +56,7 @@ function HomeComp() {
         go="/3/concspacers"
       />
       <BoxContainer
-        title="PVC sheats, leveling plastic spacers"
+        title="PVC sheets, leveling plastic spacers"
         img="/assets/images/strand.png"
         multiple={true}
       >
@@ -64,7 +67,7 @@ function HomeComp() {
           <br />
         </li>
         <li style={{ marginLeft: "-60px" }}>
-          <Link href="/products/6/pvcsheats">PVC sheats</Link>
+          <Link href="/products/6/pvcsheets">PVC sheets</Link>
         </li>
         <li style={{ marginLeft: "-20px" }}>
           <Link href="/products/6/lps">Leveling plastic spacers</Link>
@@ -96,6 +99,7 @@ function HomeComp() {
 }
 
 function BoxContainer({ children, title, img, multiple, go }) {
+  let { t, lang } = useTranslation();
   const [isOpen, setisOpen] = useState(false);
   return (
     <>

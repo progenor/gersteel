@@ -3,7 +3,10 @@ import Link from "next/link";
 import { IoMdArrowDropdown } from "react-icons/io";
 import sty from "../styles/navitems.module.scss";
 
+import useTranslation from "next-translate/useTranslation";
+
 function NavProdItems() {
+  let { t, lang } = useTranslation();
   const size = 15;
 
   return (
@@ -58,7 +61,7 @@ function NavProdItems() {
         <Link href="/products/2/pfoil">Protective foil</Link>
       </li>
       <li className={sty.big_li}>
-        <span>PVC sheats, leveling plastic spacers</span>
+        <span>PVC sheets, leveling plastic spacers</span>
         <IoMdArrowDropdown
           color="white"
           size={size}
@@ -67,7 +70,7 @@ function NavProdItems() {
         />
         <ul className={sty.small_ul}>
           <li className={sty.small_li}>
-            <Link href="/products/6/pvcsheats">PVC sheats</Link>
+            <Link href="/products/6/pvcsheets">PVC sheets</Link>
           </li>
           <li className={sty.small_li}>
             <Link href="/products/6/lps">Leveling plastic spacers</Link>

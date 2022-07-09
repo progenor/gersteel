@@ -1,7 +1,10 @@
 import styy from "../../../styles/generalPage.module.scss";
 import sty from "./pcstrands.module.scss";
 
+import useTranslation from "next-translate/useTranslation";
+
 const PcStrands = () => {
+  let { t, lang } = useTranslation();
   return (
     <div className={styy.main_container}>
       <div className={styy.container}>
@@ -18,12 +21,12 @@ const PcStrands = () => {
               </li>
             </ul>
           </div>
-          <div className={sty.st1}>
+          <div className={styy.st1}>
             <h2 id="strand7">7 Strands</h2>
             <h3>Standard Strands (pr EN 10138)</h3>
             <table>
               <thead>
-                <tr className={sty.st1main}>
+                <tr>
                   <th colSpan={2}>Nominal ø</th>
                   <th>CrossSectional area</th>
                   <th>Mass per metre</th>
@@ -33,7 +36,7 @@ const PcStrands = () => {
                   <th>Elongation at maximim force Agt</th>
                   <th>Modulus of elasticity EP</th>
                 </tr>
-                <tr className={sty.st1main}>
+                <tr>
                   <th>in</th>
                   <th>mm</th>
                   <th>
@@ -111,7 +114,7 @@ const PcStrands = () => {
             <h4>Compacted</h4>
             <table>
               <thead>
-                <tr className={sty.st1main}>
+                <tr>
                   <th colSpan={2}>Nominal ø</th>
                   <th>CrossSectional area</th>
                   <th>Mass per metre</th>
@@ -121,7 +124,7 @@ const PcStrands = () => {
                   <th>Elongation at maximim force Agt</th>
                   <th>Modulus of elasticity EP</th>
                 </tr>
-                <tr className={sty.st1main}>
+                <tr>
                   <th>in</th>
                   <th>mm</th>
                   <th>
@@ -158,7 +161,7 @@ const PcStrands = () => {
             <h4>Sheated</h4>
             <table>
               <thead>
-                <tr className={sty.st1main}>
+                <tr>
                   <th colSpan={2} rowSpan={2}>
                     Nominal ø
                   </th>
@@ -168,12 +171,12 @@ const PcStrands = () => {
                   <th colSpan={3}>Weight</th>
                   <th rowSpan={2}>Mass per metre A+B+C</th>
                 </tr>
-                <tr className={sty.st1main}>
+                <tr>
                   <th>Steel</th>
                   <th>Sheath</th>
                   <th>Wax or grease</th>
                 </tr>
-                <tr className={sty.st1main}>
+                <tr>
                   <th rowSpan={2}>in</th>
                   <th rowSpan={2}>mm</th>
                   <th rowSpan={2}>
@@ -309,7 +312,7 @@ const PcStrands = () => {
               </tbody>
             </table>
           </div>
-          <div className={sty.st1}>
+          <div className={styy.st1}>
             <h2 id="strand3">3 Strands</h2>
             <h3>Standard Strand (pr EN 10138)</h3>
             <table>

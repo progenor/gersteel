@@ -80,8 +80,6 @@
   11. Concrete Tube
   12. Concrete plug
 
-# 4 Plastic spacers
-
 ## later
 
 - table

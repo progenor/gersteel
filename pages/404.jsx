@@ -1,6 +1,9 @@
 import Link from "next/link";
 
+import useTranslation from "next-translate/useTranslation";
+
 const NotExisting = () => {
+  let { t, lang } = useTranslation();
   return (
     <div className="no_existingo">
       <div>

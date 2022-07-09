@@ -6,7 +6,10 @@ import sty from "../styles/navbar.module.scss";
 import { IoMdArrowDropdown } from "react-icons/io";
 import NavProdItems from "./NavProdItems";
 
+import useTranslation from "next-translate/useTranslation";
+
 const NavNormal = () => {
+  let { t, lang } = useTranslation();
   const [isactive, setIsactive] = useState(false);
 
   return (

@@ -1,2 +1,66 @@
-.container {
+.cont {
+  .app_container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 3rem;
+
+    @media (max-width: 1550px) {
+      grid-template-columns: repeat(3, 1fr);
+      row-gap: 2rem;
+    }
+    @media (max-width: 1020px) {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 1.5rem;
+    }
+    @media (max-width: 740px) {
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 1rem;
+      justify-items: center;
+    }
+
+    // ################  FLIP CONTAINER ###############
+
+    .card {
+      width: 250px;
+      height: 250px;
+      position: relative;
+      perspective: 1000px;
+      &:hover .card_cont {
+        transform: rotateY(180deg);
+      }
+
+      @media (max-width: 740px) {
+        width: 200px;
+        height: 200px;
+      }
+    }
+
+    .card_cont {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+
+      .front_cont,
+      .back_cont {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+
+      .back_cont {
+        h3,
+        p {
+          word-wrap: break-word;
+        }
+        background-color: black;
+        color: white;
+        padding: 10px;
+        transform: rotateY(180deg);
+      }
+    }
+  }
 }

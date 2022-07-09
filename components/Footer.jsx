@@ -1,7 +1,10 @@
 import sty from "../styles/footer.module.scss";
 import Link from "next/link";
 
+import useTranslation from "next-translate/useTranslation";
+
 const Footer = () => {
+  let { t, lang } = useTranslation();
   return (
     <footer className={sty.ftr}>
       {/* TODO: COMPLETE THIS SHIT YOU DUMB FUCK */}
