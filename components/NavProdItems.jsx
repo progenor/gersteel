@@ -81,7 +81,7 @@ function NavProdItems() {
         <Link href="products/7/grindingballs">Steel grinding balls</Link>
       </li>
       <li className={sty.big_li}>
-        <Link href="products/8/pt">Post-tensioning(materials & services)</Link>
+        <Link href="products/8/pt">Post-tensioning</Link>
       </li>
       <li className={sty.big_li}>
         <Link href="/products/4/others">Others</Link>

@@ -1,16 +1,15 @@
-import styy from "../../../styles/generalPage.module.scss";
-import sty from "./pcstrands.module.scss";
+import styy from '../../../styles/generalPage.module.scss';
 
-import useTranslation from "next-translate/useTranslation";
+import useTranslation from 'next-translate/useTranslation';
 
 const PcStrands = () => {
   let { t, lang } = useTranslation();
   return (
     <div className={styy.main_container}>
       <div className={styy.container}>
-        <div className={sty.cont}>
+        <div>
           <h1>PC Strands</h1>
-          <div className={sty.types}>
+          <div className={styy.types}>
             <h2>Types:</h2>
             <ul>
               <li>
@@ -21,7 +20,7 @@ const PcStrands = () => {
               </li>
             </ul>
           </div>
-          <div className={styy.st1}>
+          <div className={styy.table1}>
             <h2 id="strand7">7 Strands</h2>
             <h3>Standard Strands (pr EN 10138)</h3>
             <table>
@@ -187,7 +186,7 @@ const PcStrands = () => {
                   <th colSpan={3}>g/m</th>
                   <th rowSpan={2}>g/m</th>
                 </tr>
-                <tr className={sty.st1main}>
+                <tr>
                   <th>A</th>
                   <th>B</th>
                   <th>C</th>
@@ -312,12 +311,12 @@ const PcStrands = () => {
               </tbody>
             </table>
           </div>
-          <div className={styy.st1}>
+          <div className={styy.table1}>
             <h2 id="strand3">3 Strands</h2>
             <h3>Standard Strand (pr EN 10138)</h3>
             <table>
               <thead>
-                <tr className={sty.st1main}>
+                <tr>
                   <th colSpan={2}>Construction nominal ø</th>
                   <th>CrossSectional area</th>
                   <th>Mass per metre</th>
@@ -327,7 +326,7 @@ const PcStrands = () => {
                   <th>Elongation at maximim force Agt</th>
                   <th>Modulus of elasticity EP</th>
                 </tr>
-                <tr className={sty.st1main}>
+                <tr>
                   <th>N &deg; x wire ø</th>
                   <th>mm</th>
                   <th>

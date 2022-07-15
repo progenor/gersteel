@@ -1,6 +1,6 @@
-import styy from "../../../styles/generalPage.module.scss";
+import styy from '../../../styles/generalPage.module.scss';
 
-import useTranslation from "next-translate/useTranslation";
+import useTranslation from 'next-translate/useTranslation';
 const PCwires = () => {
   let { t, lang } = useTranslation();
   return (
@@ -9,7 +9,7 @@ const PCwires = () => {
         <div>
           <h1>PC Wire</h1>
 
-          <div className={styy.st1}>
+          <div className={styy.table1}>
             <h3>Standard wires (pr EN 10138)</h3>
             <table>
               <thead>

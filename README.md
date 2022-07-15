@@ -12,6 +12,7 @@
 
 - after uploading dosnt work the nav and other stuff
 - firefox problems
+- overflowX on tables -> adda second div
 
 <!-- TODO: ask for stuff -->
 
@@ -80,7 +81,7 @@
   11. Concrete Tube
   12. Concrete plug
 
-## later
+## Plastic spacers
 
 - table
 - images
