@@ -24,10 +24,11 @@
     text-align: center;
   }
 
+  overflow-x: scroll;
+
   width: 100%;
   table {
     width: 100%;
-    overflow-x: scroll;
 
     border-collapse: collapse;
     border-spacing: 0;
