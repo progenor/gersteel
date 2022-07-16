@@ -1,15 +1,15 @@
 /* eslint-disable @next/next/no-img-element */
-import { useState } from "react";
-import { useRouter } from "next/router";
-import Link from "next/link";
-import Image from "next/image";
+import { useState } from 'react';
+import { useRouter } from 'next/router';
+import Link from 'next/link';
+import { IoArrowUpCircle } from 'react-icons/io5';
 
-import NavMobile from "./NavMobile";
-import NavNormal from "./NavNormal";
+import NavMobile from './NavMobile';
+import NavNormal from './NavNormal';
 
-import sty from "../styles/navbar.module.scss";
+import sty from '../styles/navbar.module.scss';
 
-import useTranslation from "next-translate/useTranslation";
+import useTranslation from 'next-translate/useTranslation';
 
 const Navbar = () => {
   let { t, lang } = useTranslation();
@@ -85,6 +85,15 @@ const Navbar = () => {
           )}
         </div>
       </nav>
+      <div className={sty.upArrowCont}>
+        <IoArrowUpCircle
+          className={sty.upArrow}
+          size={55}
+          onClick={() => {
+            scrollTo(0, 0);
+          }}
+        />
+      </div>
     </div>
   );
 };
