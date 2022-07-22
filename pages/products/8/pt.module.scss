@@ -1,0 +1,13 @@
+.img_cont {
+  margin: auto;
+  width: 70%;
+  height: 70%;
+
+  p {
+    margin: 3em 0;
+  }
+  // FIXME: border
+  .img {
+    border: 2px solid black;
+  }
+}

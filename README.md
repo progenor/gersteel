@@ -8,8 +8,14 @@
 
 <!-- TODO: main stuff -->
 
+- plastic spacers
+- images to all the stuff
+-
+
 <!-- FIXME: main stuff -->
 
+- fix to be next to eachother
+- add border to the images in post-tensioning
 - after uploading dosnt work the nav and other stuff
 - firefox problems
 - overflowX on tables -> adda second div

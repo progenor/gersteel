@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import styy from '../../../styles/generalPage.module.scss';
 import sty from './grindingballs.module.scss';
 
@@ -7,6 +8,22 @@ const PcStrands = () => {
       <div className={styy.container}>
         <div className={sty.cont}>
           <h1>Grinding balls</h1>
+          <div className={sty.img_cont}>
+            <Image
+              src="/assets/images/gb1.webp"
+              alt="grinding balls"
+              layout="responsive"
+              width={250}
+              height={250}
+            />
+            <Image
+              src="/assets/images/gb2.webp"
+              alt="grinding balls"
+              layout="responsive"
+              width={250}
+              height={250}
+            />
+          </div>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo
             tempore rem consequatur reiciendis velit modi, accusantium nobis
