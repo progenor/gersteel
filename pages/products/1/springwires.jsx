@@ -1,7 +1,7 @@
-import styy from "../../../styles/generalPage.module.scss";
-import sty from "./springwires.module.scss";
+import styy from '../../../styles/generalPage.module.scss';
+import sty from './springwires.module.scss';
 
-import useTranslation from "next-translate/useTranslation";
+import useTranslation from 'next-translate/useTranslation';
 const SpringWires = () => {
   let { t, lang } = useTranslation();
   return (

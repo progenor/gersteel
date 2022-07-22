@@ -3,3 +3,10 @@
     font-size: 48px;
   }
 }
+
+.images {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-bottom: 20px;
+}

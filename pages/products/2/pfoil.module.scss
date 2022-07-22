@@ -1,4 +1,7 @@
 .cont {
+  p {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+  }
   .app_container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -55,6 +58,7 @@
         h3,
         p {
           word-wrap: break-word;
+          font-size: 1.1rem;
         }
         background-color: black;
         color: white;

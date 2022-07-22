@@ -1,12 +1,37 @@
 import sty from '../styles/spacers.module.scss';
 import styy from '../styles/generalPage.module.scss';
 
+import Image from 'next/image';
+
 const ConcSpacers = () => {
+  const IMG = ({ img1, img2 }) => {
+    const size = 80;
+    return (
+      <>
+        <div className={sty.images}>
+          <Image
+            alt="image"
+            src={`/assets/images/${img1}`}
+            width={size}
+            height={size}
+          />
+          <Image
+            alt="image"
+            src={`/assets/images/${img2}`}
+            width={size}
+            height={size}
+          />
+        </div>
+      </>
+    );
+  };
+
   return (
     <div className={sty.main} id="concrete">
       <h1>Concrete Spacers</h1>
       <div className={styy.table1}>
         <h2 id="btds">Betodis BTD S – with double plastic clips</h2>
+        <IMG img1="gray.jpg" img2="gray.jpg" />
         <div className={styy.table}>
           <table>
             <thead>
@@ -72,6 +97,7 @@ const ConcSpacers = () => {
       </div>
       <div className={styy.table1}>
         <h2 id="btdhs">Betodis BTD HS – with double plastic clips</h2>
+        <IMG img1="gray.jpg" img2="gray.jpg" />
         <div className={styy.table}>
           <table>
             <thead>
@@ -143,6 +169,7 @@ const ConcSpacers = () => {
       </div>
       <div className={styy.table1}>
         <h2 id="mirawb">Concrete stick MIRRA - WB</h2>
+        <IMG img1="gray.jpg" img2="gray.jpg" />
         <div className={styy.table}>
           <table>
             <thead>
@@ -203,6 +230,7 @@ const ConcSpacers = () => {
       </div>
       <div className={styy.table1}>
         <h2 id="butterK">Concrete ,,butterfly,, spacer without wire - K</h2>
+        <IMG img1="gray.jpg" img2="gray.jpg" />
         <div className={styy.table}>
           <table>
             <thead>
@@ -242,6 +270,7 @@ const ConcSpacers = () => {
       </div>
       <div className={styy.table1}>
         <h2 id="butterkd">Concrete ,,butterfly,, spacer including wire - KD</h2>
+        <IMG img1="gray.jpg" img2="gray.jpg" />
         <div className={styy.table}>
           <table>
             <thead>
@@ -281,6 +310,7 @@ const ConcSpacers = () => {
       </div>
       <div className={styy.table1}>
         <h2 id="concu">Concrete ,,U,, spacer without wire</h2>
+        <IMG img1="gray.jpg" img2="gray.jpg" />
         <div className={styy.table}>
           <table>
             <thead>
@@ -362,6 +392,7 @@ const ConcSpacers = () => {
       </div>
       <div className={styy.table1}>
         <h2 id="concud">Concrete ,,UD,, spacer including wire</h2>
+        <IMG img1="gray.jpg" img2="gray.jpg" />
         <div className={styy.table}>
           <table>
             <thead>
@@ -443,6 +474,7 @@ const ConcSpacers = () => {
       </div>
       <div className={styy.table1}>
         <h2 id="snakets">Concrete T-Section - snakeTS</h2>
+        <IMG img1="gray.jpg" img2="gray.jpg" />
         <div className={styy.table}>
           <table>
             <thead>
@@ -510,6 +542,7 @@ const ConcSpacers = () => {
       </div>
       <div className={styy.table1}>
         <h2 id="snakes">Concrete snake S</h2>
+        <IMG img1="gray.jpg" img2="gray.jpg" />
         <div className={styy.table}>
           <table>
             <thead>
@@ -655,6 +688,7 @@ const ConcSpacers = () => {
       </div>
       <div className={styy.table1}>
         <h2 id="snakesn">Concrete snake with ripples SN</h2>
+        <IMG img1="gray.jpg" img2="gray.jpg" />
         <div className={styy.table}>
           <table>
             <thead>
@@ -800,6 +834,7 @@ const ConcSpacers = () => {
       </div>
       <div className={styy.table1}>
         <h2 id="conctube">Concrete tube 22/40</h2>
+        <IMG img1="gray.jpg" img2="gray.jpg" />
         <div className={styy.table}>
           <table>
             <thead>
@@ -827,6 +862,7 @@ const ConcSpacers = () => {
       </div>
       <div className={styy.table1}>
         <h2 id="concplug">Concrete plug</h2>
+        <IMG img1="gray.jpg" img2="gray.jpg" />
         <div className={styy.table}>
           <table>
             <thead>

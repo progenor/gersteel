@@ -1,4 +1,12 @@
+.cont {
+  p {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+  }
+}
+
 .img_cont {
-  width: 10%;
-  height: 10%;
+  display: flex;
+  flex-direction: row;
+
+  gap: 1rem;
 }

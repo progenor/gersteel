@@ -10,28 +10,32 @@ const PcStrands = () => {
         <div className={sty.cont}>
           <h1>Post tensioning</h1>
           <div className={sty.img_cont}>
-            <Image
-              src="/assets/images/pt1.png"
-              layout="responsive"
-              width={370}
-              height={200}
-              alt="post tensioning"
-              className={sty.img}
-            />
+            <div>
+              <Image
+                src="/assets/images/pt1.png"
+                layout="responsive"
+                width={370}
+                height={200}
+                alt="post tensioning"
+                className={sty.img}
+              />
+            </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
               reprehenderit consequatur ipsum officiis magni velit, facilis
               voluptate necessitatibus esse quisquam dolore, pariatur saepe
               molestias laudantium fuga, ut animi. Placeat, iste?
             </p>
-            <Image
-              src="/assets/images/pt2.png"
-              layout="responsive"
-              width={370}
-              height={200}
-              alt="post tensioning"
-              className={sty.img}
-            />
+            <div>
+              <Image
+                src="/assets/images/pt2.png"
+                layout="responsive"
+                width={370}
+                height={200}
+                alt="post tensioning"
+                className={sty.img}
+              />
+            </div>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis
               error accusamus maxime vitae quam eius temporibus consequuntur

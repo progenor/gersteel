@@ -3,6 +3,8 @@ import styy from '../../../styles/generalPage.module.scss';
 import sty from './grindingballs.module.scss';
 
 const PcStrands = () => {
+  const img_size = 200;
+
   return (
     <div className={styy.main_container}>
       <div className={styy.container}>
@@ -12,16 +14,14 @@ const PcStrands = () => {
             <Image
               src="/assets/images/gb1.webp"
               alt="grinding balls"
-              layout="responsive"
-              width={250}
-              height={250}
+              width={img_size}
+              height={img_size}
             />
             <Image
               src="/assets/images/gb2.webp"
               alt="grinding balls"
-              layout="responsive"
-              width={250}
-              height={250}
+              width={img_size}
+              height={img_size}
             />
           </div>
           <p>
@@ -37,6 +37,10 @@ const PcStrands = () => {
             id suscipit vitae ullam? Quibusdam dolores accusantium repellat
             possimus labore placeat aspernatur!
           </p>
+          <div className={styy.table1}>
+            <h2>Something</h2>
+            <div className={styy.table}>{/* make a table */}</div>
+          </div>
         </div>
       </div>
     </div>
