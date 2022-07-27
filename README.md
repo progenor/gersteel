@@ -10,7 +10,7 @@
 
 - plastic spacers
 - images to all the stuff
--
+- test
 
 <!-- FIXME: main stuff -->
 
