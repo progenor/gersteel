@@ -168,7 +168,7 @@ const ConcSpacers = () => {
         </div>
       </div>
       <div className={styy.table1}>
-        <h2 id="mirawb">Concrete stick MIRRA - WB</h2>
+        <h2 id="mirawb">Concrete stick WB</h2>
         <IMG img1="gray.jpg" img2="gray.jpg" />
         <div className={styy.table}>
           <table>

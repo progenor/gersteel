@@ -1,9 +1,9 @@
-import Link from "next/link";
-import styy from "../../../styles/generalPage.module.scss";
-import sty from "./concspacers.module.scss";
+import Link from 'next/link';
+import styy from '../../../styles/generalPage.module.scss';
+import sty from './concspacers.module.scss';
 
-import ConcSpacers from "../../../components/ConcSpacers";
-import PlasSpacers from "../../../components/PlasSpacers";
+import ConcSpacers from '../../../components/ConcSpacers';
+import PlasSpacers from '../../../components/PlasSpacers';
 
 const PcStrands = () => {
   return (
@@ -24,7 +24,7 @@ const PcStrands = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#mirawb">Concrete stick MIRRA - WB</a>
+                  <a href="#mirawb">Concrete stick WB</a>
                 </li>
                 <li>
                   <a href="#butterK">
