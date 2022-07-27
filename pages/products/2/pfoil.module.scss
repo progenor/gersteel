@@ -1,6 +1,14 @@
 .cont {
   p {
     font-size: clamp(1rem, 2vw, 1.2rem);
+    span {
+      font-size: clamp(0.8rem, 2vw, 1rem);
+      a {
+        &:hover {
+          color: gray;
+        }
+      }
+    }
   }
   .app_container {
     display: grid;

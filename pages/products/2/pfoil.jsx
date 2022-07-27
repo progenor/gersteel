@@ -1,9 +1,9 @@
-import styy from "../../../styles/generalPage.module.scss";
-import sty from "./pfoil.module.scss";
+import styy from '../../../styles/generalPage.module.scss';
+import sty from './pfoil.module.scss';
 
-import Image from "next/image";
+import Image from 'next/image';
 
-import useTranslation from "next-translate/useTranslation";
+import useTranslation from 'next-translate/useTranslation';
 
 const Pfoil = () => {
   let { t, lang } = useTranslation();
@@ -17,6 +17,13 @@ const Pfoil = () => {
             numquam esse aliquid illo. Porro odit illum officia, eaque fugiat
             nostrum sint asperiores autem aspernatur, dignissimos voluptatem
             officiis, magni repudiandae dolor.
+            <br />
+            <br />
+            <span>
+              All services need to be tested for specific product! <br /> Call
+              us:
+              <a href="tel:"> +40 0000120123</a>
+            </span>
           </p>
           <h2>Applications:</h2>
           <div className={sty.app_container}>

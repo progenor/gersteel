@@ -31,11 +31,14 @@ const Footer = () => {
 
         <div className={sty.information}>
           <h3>Information</h3>
-          <a href="#home">Home</a>
-          <Link href="/About">About us</Link>
-          <Link href="/Contact">Contact</Link>
-
-          <img src="/assets/images/logo_G.png" alt="" />
+          <div className={Sty.info_cont}>
+            <div>
+              <a href="#home">Home</a>
+              <Link href="/About">About us</Link>
+              <Link href="/Contact">Contact</Link>
+            </div>
+            <img src="/assets/images/logo_G.png" alt="" />
+          </div>
         </div>
       </div>
 

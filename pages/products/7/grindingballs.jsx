@@ -37,10 +37,6 @@ const PcStrands = () => {
             id suscipit vitae ullam? Quibusdam dolores accusantium repellat
             possimus labore placeat aspernatur!
           </p>
-          <div className={styy.table1}>
-            <h2>Something</h2>
-            <div className={styy.table}>{/* make a table */}</div>
-          </div>
         </div>
       </div>
     </div>
