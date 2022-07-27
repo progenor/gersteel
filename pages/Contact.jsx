@@ -99,27 +99,23 @@ function Contact() {
         <div className={sty.buttons_container}>
           <div className={sty.contact_links}>
             <a
-              href="mailto:gersteel@yahoo.com"
+              href="mailto:gersteelsrl@yahoo.com"
               className={sty.contact}
               target={'blank'}
             >
               <MdOutlineMailOutline size={icon_size} />
               <h2>Email</h2>
-              <span>gersteel@yahoo.com</span>
+              <span>gersteelsrl@yahoo.com</span>
             </a>
             <div className={sty.line}></div>
-            <a
-              href="tel:+40 742090664"
-              className={sty.contact}
-              target={'blank'}
-            >
+            <a href="tel:+40742090664" className={sty.contact} target={'blank'}>
               <MdCall size={icon_size} />
               <h2>Call us</h2>
               <span>+40 742 099 664</span>
               {/* FIXME: fix he calling */}
             </a>
             <div className={sty.line}></div>
-            <a href="fax:" className={sty.contact}>
+            <a href="fax:+40265266267" className={sty.contact}>
               <GiRotaryPhone size={icon_size} />
               <h2>Fix</h2>
               <span>+40 265 266 267</span>
