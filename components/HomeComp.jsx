@@ -30,7 +30,7 @@ function HomeComp() {
       </BoxContainer>
       <BoxContainer
         title="Corrugated pipes/ducts"
-        img="/assets/images/cavity_pipe.png"
+        img="/assets/images/corrugated_pipe.png"
         multiple={true}
       >
         <li style={{ marginLeft: '-120px' }}>
@@ -91,7 +91,7 @@ function HomeComp() {
       />
       <BoxContainer
         title="Others"
-        img="/assets/images/strand.png"
+        img="/assets/images/logo_G_grey.png"
         go="/4/others"
       />
     </div>
