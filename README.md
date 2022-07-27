@@ -8,6 +8,7 @@
 
 <!-- TODO: main stuff -->
 
+- certificates --> 6 --> image --> pdf
 - plastic spacers
 - images to all the stuff
 - test

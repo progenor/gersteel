@@ -27,7 +27,7 @@ const PlasSpacers = () => {
   };
 
   return (
-    <div className={sty.main}>
+    <div className={sty.main} id="plastic">
       <h1>Plastic Spacers</h1>
       <div className={styy.table1}>
         <h2 id="wsko">Wheel Spacer KO</h2>

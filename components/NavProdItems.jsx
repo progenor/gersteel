@@ -1,9 +1,9 @@
-import Link from "next/link";
+import Link from 'next/link';
 
-import { IoMdArrowDropdown } from "react-icons/io";
-import sty from "../styles/navitems.module.scss";
+import { IoMdArrowDropdown } from 'react-icons/io';
+import sty from '../styles/navitems.module.scss';
 
-import useTranslation from "next-translate/useTranslation";
+import useTranslation from 'next-translate/useTranslation';
 
 function NavProdItems() {
   let { t, lang } = useTranslation();
@@ -36,19 +36,19 @@ function NavProdItems() {
         />
         <ul className={sty.small_ul}>
           <li className={sty.small_li}>
-            <Link href="products/5/rccp">Round corrugated cavity pipes</Link>
+            <Link href="/products/5/rccp">Round corrugated cavity pipes</Link>
           </li>
           <li className={sty.small_li}>
-            <Link href="products/5/rcp">Rectengular cavity pipes</Link>
+            <Link href="/products/5/rcp">Rectengular cavity pipes</Link>
           </li>
           <li className={sty.small_li}>
-            <Link href="products/5/rlw">Round longitudinally welded</Link>
+            <Link href="/products/5/rlw">Round longitudinally welded</Link>
           </li>
           <li className={sty.small_li}>
-            <Link href="products/5/vft">Void forming tubes</Link>
+            <Link href="/products/5/vft">Void forming tubes</Link>
           </li>
           <li className={sty.small_li}>
-            <Link href="products/5/shs">Shuttering systemms</Link>
+            <Link href="/products/5/shs">Shuttering systemms</Link>
           </li>
         </ul>
       </li>
@@ -78,10 +78,10 @@ function NavProdItems() {
         </ul>
       </li>
       <li className={sty.big_li}>
-        <Link href="products/7/grindingballs">Steel grinding balls</Link>
+        <Link href="/products/7/grindingballs">Steel grinding balls</Link>
       </li>
       <li className={sty.big_li}>
-        <Link href="products/8/pt">Post-tensioning</Link>
+        <Link href="/products/8/pt">Post-tensioning</Link>
       </li>
       <li className={sty.big_li}>
         <Link href="/products/4/others">Others</Link>

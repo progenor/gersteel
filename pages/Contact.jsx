@@ -1,13 +1,13 @@
-import sty from "../styles/contact.module.scss";
+import sty from '../styles/contact.module.scss';
 //tools
-import { useRef } from "react";
-import useTranslation from "next-translate/useTranslation";
+import { useRef } from 'react';
+import useTranslation from 'next-translate/useTranslation';
 //icons
-import { MdOutlineMailOutline } from "react-icons/md";
-import { MdCall } from "react-icons/md";
-import { RiInstagramLine } from "react-icons/ri";
-import { AiFillGithub } from "react-icons/ai";
-import { FiSend } from "react-icons/fi";
+import { MdOutlineMailOutline } from 'react-icons/md';
+import { MdCall } from 'react-icons/md';
+import { RiInstagramLine } from 'react-icons/ri';
+import { AiFillGithub } from 'react-icons/ai';
+import { FiSend } from 'react-icons/fi';
 
 function Contact() {
   const icon_size = 70;
@@ -21,11 +21,11 @@ function Contact() {
 
     emailjs
       .sendForm(
-        "service_1g0dmi2", //service Id
-        "template_1oultbm",
+        'service_1g0dmi2', //service Id
+        'template_1oultbm',
         // form.current,
         form.current,
-        "VoA0qkSw7QZn4vVDR"
+        'VoA0qkSw7QZn4vVDR'
       )
       .then(
         (result) => {
@@ -34,7 +34,7 @@ function Contact() {
           console.log(result.text);
         },
         (error) => {
-          alert("ERROR");
+          alert('ERROR');
           console.log(error.text);
         }
       );
@@ -47,14 +47,14 @@ function Contact() {
         <div className={sty.form_container}>
           <form className={sty.form} ref={form} onSubmit={sendEmail}>
             <label htmlFor="from_name" className={sty.label}>
-              {t("name")}
+              {t('name')}
             </label>
 
             <input
               type="text"
               name="from_name"
               className={(sty.name, sty.cont)}
-              placeholder={t("name_1")}
+              placeholder={t('name_1')}
               tabIndex={1}
               required
             ></input>
@@ -74,13 +74,13 @@ function Contact() {
             />
 
             <label htmlFor="message" className={sty.label}>
-              {t("message")}
+              {t('message')}
             </label>
 
             <textarea
               name="message"
               id="message"
-              placeholder={t("message_1")}
+              placeholder={t('message_1')}
               className={(sty.msg, sty.cont)}
               tabIndex={3}
               required
@@ -98,42 +98,36 @@ function Contact() {
         <div className={sty.buttons_container}>
           <div className={sty.contact_links}>
             <a
-              href="mailto:our.biss0132@gmail.com"
-              className={(sty.contact, sty.youtube)}
-              target={"blank"}
+              href="mailto:gersteel@yahoo.com"
+              className={sty.contact}
+              target={'blank'}
             >
               <MdOutlineMailOutline size={icon_size} />
               <h2>Email</h2>
-              <span>our.biss0132@gmail.com</span>
+              <span>gersteel@yahoo.com</span>
             </a>
             <div className={sty.line}></div>
             <a
-              href="tel:+40757386289"
-              className={(sty.contact, sty.whatsapp)}
-              target={"blank"}
+              href="tel:+40 742090664"
+              className={sty.contact}
+              target={'blank'}
             >
               <MdCall size={icon_size} />
               <h2>Call us</h2>
-              <span>+40757 386 289</span>
+              <span>+40 742 099 664</span>
             </a>
             <div className={sty.line}></div>
-            <a
-              href="https://www.instagram.com/lorb0t/"
-              className={(sty.contact, sty.instagram)}
-            >
+            <a href="fax:" className={sty.contact}>
               <RiInstagramLine size={icon_size} />
-              <h2>Instagram</h2>
-              <span>@lorb0t</span>
+              <h2>Fax</h2>
+              <span>+40 265 266 267</span>
             </a>
-            <div className={sty.line}></div>
-            <a
-              href="https://github.com/progenor"
-              className={(sty.contact, sty.instagram)}
-            >
+            {/* <div className={sty.line}></div>
+            <a href="https://github.com/progenor" className={sty.contact}>
               <AiFillGithub size={icon_size} />
               <h2>GitHub</h2>
               <span>progenor</span>
-            </a>
+            </a> */}
           </div>
         </div>
 

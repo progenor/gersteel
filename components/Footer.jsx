@@ -1,7 +1,7 @@
-import sty from "../styles/footer.module.scss";
-import Link from "next/link";
+import sty from '../styles/footer.module.scss';
+import Link from 'next/link';
 
-import useTranslation from "next-translate/useTranslation";
+import useTranslation from 'next-translate/useTranslation';
 
 const Footer = () => {
   let { t, lang } = useTranslation();
@@ -13,17 +13,18 @@ const Footer = () => {
           <img src="/assets/images/logo_gersteel2.png" alt="" />
 
           <a href="">
-            Romania, Targu Mures <br /> Str. Frunzei nr.10
+            Romania, Targu Mures <br /> Str. Frunzei nr.10, 540164
           </a>
-          <a href="tel:">tel: +6518513541</a>
-          <a href="fax:">fax: 123452356</a>
-          <a href="mail:">E-mail: sdfjsdfjhsadfsadf </a>
+          <a href="tel:">tel: +40 742 090 664</a>
+          <a href="fax:">fax: +40 265 266 267</a>
+          <a href="mail:">E-mail: gersteel@yahoo.com </a>
         </div>
 
         <div className={sty.line}></div>
 
         <div className={sty.map}>
           <h3>Certificates</h3>
+          <div className={sty.certificates}></div>
         </div>
 
         <div className={sty.line}></div>
@@ -40,7 +41,7 @@ const Footer = () => {
 
       <div className={sty.createdby}>
         <p>
-          Created by:{" "}
+          Created by:{' '}
           <span>
             <a href="https://lorgenor.tech/"> lorgenor </a>
           </span>

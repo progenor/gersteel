@@ -1,12 +1,13 @@
-@import "./globalVariables.module.scss";
+@import './globalVariables.module.scss';
 .home_cont {
-  background-image: url("../public/assets/images/home_bg_white3_t.jpeg");
+  background-image: url('../public/assets/images/home_bg_white3_t.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
-  min-height: 95vh;
+  min-height: 70vh;
   margin: 2rem auto 0 auto;
+  padding: 1.5em 12%;
 
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -21,11 +22,12 @@
 .box_container {
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
   // height: 45vh;
   // height: fit-content;
   align-items: center;
   text-align: center;
-  // padding: 5px;
+  padding: 10px;
   overflow: hidden;
   position: relative;
   img {
@@ -85,7 +87,7 @@
     letter-spacing: 1.5px;
     color: rgba(0, 0, 0, 0.813);
     // font-family: "Abril Fatface", cursive;
-    font-family: "Bebas Neue", cursive;
+    font-family: 'Bebas Neue', cursive;
     transition: all ease-in 100ms;
   }
 
@@ -97,7 +99,7 @@
     margin-left: 8%;
     font-size: clamp(22px, 2vw, 26px);
     // opacity: 0;
-    font-family: "Bebas Neue", cursive;
+    font-family: 'Bebas Neue', cursive;
     border-radius: 20px;
     background-color: #eee;
     padding: 8px 20px 8px 20px;
@@ -150,7 +152,7 @@
       font-size: clamp(15px, 3vw, 20px);
       opacity: 0;
       transform: translateX(-150px);
-      font-family: "Bebas Neue", cursive;
+      font-family: 'Bebas Neue', cursive;
 
       @media (max-width: 450px) {
         font-size: 13px;
