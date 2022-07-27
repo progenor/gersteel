@@ -57,7 +57,7 @@ function HomeComp() {
       />
       <BoxContainer
         title="PVC sheets, leveling plastic spacers"
-        img="/assets/images/strand.png"
+        img="/assets/images/pfoil.png"
         multiple={true}
       >
         <li>
