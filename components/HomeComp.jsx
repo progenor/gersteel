@@ -12,7 +12,7 @@ function HomeComp() {
     <div className={sty.home_cont} id="home">
       <BoxContainer
         title="Prestressing steel spring wires"
-        img="/assets/images/strand.png"
+        img="/assets/images/wires.png"
         multiple={true}
       >
         <li>
@@ -86,7 +86,7 @@ function HomeComp() {
       />
       <BoxContainer
         title="Post-tensioning"
-        img="/assets/images/strand.png"
+        img="/assets/images/pt.png"
         go="/8/pt"
       />
       <BoxContainer
