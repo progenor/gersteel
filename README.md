@@ -12,6 +12,32 @@
 - images to all the stuff
 - test
 
+- footer information, certificate
+- images
+- contact icons and stuff
+
+# pc strand, pc wires
+
+- kepek
+
+# spring wires
+
+- szoveg
+
+- corrugated pipes ask again
+
+# protective foil
+
+- kepek
+- szoveg
+
+# PVC sheats
+
+- grinding ball szoveg
+- post tensioning !!!!
+
+# others ???
+
 <!-- FIXME: main stuff -->
 
 - after uploading dosnt work the nav and other stuff
