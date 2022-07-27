@@ -11,7 +11,7 @@ function HomeComp() {
   return (
     <div className={sty.home_cont} id="home">
       <BoxContainer
-        title="Prestressing steal spring wires"
+        title="Prestressing steel spring wires"
         img="/assets/images/strand.png"
         multiple={true}
       >
@@ -67,7 +67,7 @@ function HomeComp() {
           <br />
         </li>
         <li style={{ marginLeft: '-60px' }}>
-          <Link href="/products/6/pvcsheets">PVC sheets</Link>
+          <Link href="/products/6/pvcsheets">PVC sheats</Link>
         </li>
         <li style={{ marginLeft: '-20px' }}>
           <Link href="/products/6/lps">Leveling plastic spacers</Link>

@@ -161,7 +161,7 @@ const PcStrands = () => {
             </div>
             <h4>Zinc Coated</h4>
             <p>
-              All strands can be supplied with smoth or indented wire surface
+              All strands can be supplied with smooth or indented wire surface
             </p>
             <h4>PE coated</h4>
             <div className={styy.table}>

@@ -8,12 +8,13 @@
 
 <!-- TODO: main stuff -->
 
+- bejelolt uj dolgok
+- footer logo next to each other
 - certificates --> 6 --> image --> pdf
 - plastic spacers
 - images to all the stuff
 - test
-
-- footer information, certificate
+- take out mira stuff from the titles
 - images
 - contact icons and stuff
 
