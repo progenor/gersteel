@@ -13,15 +13,15 @@ const PcStrands = () => {
             <h2>Types:</h2>
             <ul>
               <li>
-                <a href="#strand7">7 Strand</a>
+                <a href="#strand7">7 wire strands</a>
               </li>
               <li>
-                <a href="#strand3">3 Strand</a>
+                <a href="#strand3">2-3 wire strands</a>
               </li>
             </ul>
           </div>
           <div className={styy.table1}>
-            <h2 id="strand7">7 Strands</h2>
+            <h2 id="strand7">7 wire strands</h2>
             <h3>Standard Strands (pr EN 10138)</h3>
 
             <div className={styy.table}>
@@ -38,8 +38,8 @@ const PcStrands = () => {
                     <th>Modulus of elasticity EP</th>
                   </tr>
                   <tr>
-                    <th>in</th>
                     <th>mm</th>
+                    <th>in</th>
                     <th>
                       mm<sup>2</sup>
                     </th>
@@ -53,10 +53,11 @@ const PcStrands = () => {
                     </th>
                   </tr>
                 </thead>
+                {/* FIXME: CHECK */}
                 <tbody>
                   <tr>
-                    <th>3/8</th>
-                    <td>9,3</td>
+                    <th>9,3</th>
+                    <td>3/8</td>
                     <td>52,0</td>
                     <td>406,1</td>
                     <td>1860</td>
@@ -66,8 +67,8 @@ const PcStrands = () => {
                     <td>195</td>
                   </tr>
                   <tr>
-                    <th>1/2</th>
-                    <td>12,5</td>
+                    <th>12,5</th>
+                    <td>1/2</td>
                     <td>93,0</td>
                     <td>726,3</td>
                     <td>1860</td>
@@ -77,8 +78,8 @@ const PcStrands = () => {
                     <td>195</td>
                   </tr>
                   <tr>
-                    <th>1/2S</th>
-                    <td>12,9</td>
+                    <th>12,9</th>
+                    <td>1/2 S</td>
                     <td>100,0</td>
                     <td>781,0</td>
                     <td>1860</td>
@@ -88,8 +89,8 @@ const PcStrands = () => {
                     <td>195</td>
                   </tr>
                   <tr>
-                    <th>6/10</th>
-                    <td>15,2</td>
+                    <th>15,2</th>
+                    <td>6/10</td>
                     <td>139,0</td>
                     <td>1086,0</td>
                     <td>1860</td>
@@ -99,8 +100,8 @@ const PcStrands = () => {
                     <td>195</td>
                   </tr>
                   <tr>
-                    <th>6/10S</th>
-                    <td>15,7</td>
+                    <th>15,7</th>
+                    <td>6/10 S</td>
                     <td>150,0</td>
                     <td>1172,0</td>
                     <td>1860</td>
@@ -128,8 +129,8 @@ const PcStrands = () => {
                     <th>Modulus of elasticity EP</th>
                   </tr>
                   <tr>
-                    <th>in</th>
                     <th>mm</th>
+                    <th>in</th>
                     <th>
                       mm<sup>2</sup>
                     </th>
@@ -145,8 +146,8 @@ const PcStrands = () => {
                 </thead>
                 <tbody>
                   <tr>
-                    <th>6/10</th>
-                    <td>15,2</td>
+                    <th>15,2</th>
+                    <td>6/10</td>
                     <td>165,0</td>
                     <td>1289,0</td>
                     <td>1820 G</td>
@@ -162,7 +163,7 @@ const PcStrands = () => {
             <p>
               All strands can be supplied with smoth or indented wire surface
             </p>
-            <h4>Sheated</h4>
+            <h4>PE coated</h4>
             <div className={styy.table}>
               <table>
                 <thead>
@@ -182,8 +183,8 @@ const PcStrands = () => {
                     <th>Wax or grease</th>
                   </tr>
                   <tr>
-                    <th rowSpan={2}>in</th>
                     <th rowSpan={2}>mm</th>
+                    <th rowSpan={2}>in</th>
                     <th rowSpan={2}>
                       mm<sup>2</sup>
                     </th>
@@ -200,8 +201,8 @@ const PcStrands = () => {
                 </thead>
                 <tbody>
                   <tr>
-                    <th>1/2</th>
-                    <td>12,5</td>
+                    <th>12,5</th>
+                    <td>1/2</td>
                     <td>93,0</td>
                     <td>1860</td>
                     <td>16,7</td>
@@ -211,8 +212,8 @@ const PcStrands = () => {
                     <td>813</td>
                   </tr>
                   <tr>
-                    <th>1/2S</th>
-                    <td>12,9</td>
+                    <th>12,9</th>
+                    <td>1/2 S </td>
                     <td>100,0</td>
                     <td>1860</td>
                     <td>17,1</td>
@@ -222,8 +223,8 @@ const PcStrands = () => {
                     <td>873</td>
                   </tr>
                   <tr>
-                    <th>6/10</th>
-                    <td>15,2</td>
+                    <th>15,2</th>
+                    <td>6/10</td>
                     <td>139,0</td>
                     <td>1770,0</td>
                     <td>19,5</td>
@@ -233,8 +234,8 @@ const PcStrands = () => {
                     <td>1188</td>
                   </tr>
                   <tr>
-                    <th>6/10</th>
-                    <td>15,2</td>
+                    <th>15,2</th>
+                    <td>6/10</td>
                     <td>139,0</td>
                     <td>1860,0</td>
                     <td>19,5</td>
@@ -244,8 +245,8 @@ const PcStrands = () => {
                     <td>1188</td>
                   </tr>
                   <tr>
-                    <th>6/10S</th>
-                    <td>15,7</td>
+                    <th>15,7</th>
+                    <td>6/10 S</td>
                     <td>150,0</td>
                     <td>1770,0</td>
                     <td>20,0</td>
@@ -255,8 +256,8 @@ const PcStrands = () => {
                     <td>1279</td>
                   </tr>
                   <tr>
-                    <th>6/10S</th>
-                    <td>15,7</td>
+                    <th>15,7</th>
+                    <td>6/10S</td>
                     <td>150,0</td>
                     <td>1860,0</td>
                     <td>20,0</td>
@@ -321,7 +322,7 @@ const PcStrands = () => {
             </div>
           </div>
           <div className={styy.table1}>
-            <h2 id="strand3">3 Strands</h2>
+            <h2 id="strand3">2-3 wire strands</h2>
             <h3>Standard Strand (pr EN 10138)</h3>
             <div className={styy.table}>
               <table>
@@ -368,7 +369,8 @@ const PcStrands = () => {
               </table>
             </div>
             <p>
-              All strands can be supplied with smoth or indented wire surface
+              All strands can be supplied with smooth or indented wire surface,
+              indentation type 1 or type 2
             </p>
             <h3>Packaging</h3>
             <div className={styy.table}>

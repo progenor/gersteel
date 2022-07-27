@@ -8,6 +8,7 @@ import { MdCall } from 'react-icons/md';
 import { RiInstagramLine } from 'react-icons/ri';
 import { AiFillGithub } from 'react-icons/ai';
 import { FiSend } from 'react-icons/fi';
+import { GiRotaryPhone } from 'react-icons/gi';
 
 function Contact() {
   const icon_size = 70;
@@ -115,11 +116,12 @@ function Contact() {
               <MdCall size={icon_size} />
               <h2>Call us</h2>
               <span>+40 742 099 664</span>
+              {/* FIXME: fix he calling */}
             </a>
             <div className={sty.line}></div>
             <a href="fax:" className={sty.contact}>
-              <RiInstagramLine size={icon_size} />
-              <h2>Fax</h2>
+              <GiRotaryPhone size={icon_size} />
+              <h2>Fix</h2>
               <span>+40 265 266 267</span>
             </a>
             {/* <div className={sty.line}></div>
