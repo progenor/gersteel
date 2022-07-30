@@ -92,13 +92,13 @@ function HomeComp() {
       <BoxContainer
         title="Others"
         img="/assets/images/logo_G_grey.png"
-        go="/4/others"
+        comingsoon={true}
       />
     </div>
   );
 }
 
-function BoxContainer({ children, title, img, multiple, go }) {
+function BoxContainer({ children, title, img, multiple, go, comingsoon }) {
   let { t, lang } = useTranslation();
   const [isOpen, setisOpen] = useState(false);
   return (
@@ -127,9 +127,19 @@ function BoxContainer({ children, title, img, multiple, go }) {
         >
           <h1>{title}</h1>
           <img src={img} alt="" />
-          <p style={{ top: '18vh' }} className={sty.readMore}>
-            <Link href={`/products${go}`}>Read more</Link>
-          </p>
+          {comingsoon ? (
+            <>
+              <p style={{ top: '18vh' }} className={sty.readMore}>
+                <Link href="#">Coming Soon...</Link>
+              </p>
+            </>
+          ) : (
+            <>
+              <p style={{ top: '18vh' }} className={sty.readMore}>
+                <Link href={`/products${go}`}>Read more</Link>
+              </p>
+            </>
+          )}
         </div>
       )}
     </>

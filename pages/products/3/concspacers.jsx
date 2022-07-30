@@ -10,7 +10,7 @@ const PcStrands = () => {
     <div className={styy.main_container}>
       <div className={styy.container}>
         <div className={styy.types}>
-          <h1>Types: </h1>
+          <h2>Types: </h2>
           <ul>
             <li>
               <a href="#concrete">Concrete Spacers</a>

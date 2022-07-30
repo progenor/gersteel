@@ -1,5 +1,7 @@
 import styy from '../../../styles/generalPage.module.scss';
 
+import Image from 'next/image';
+
 import useTranslation from 'next-translate/useTranslation';
 
 const PcStrands = () => {
@@ -19,6 +21,14 @@ const PcStrands = () => {
                 <a href="#strand3">2-3 wire strands</a>
               </li>
             </ul>
+          </div>
+          <div className={styy.image}>
+            <Image
+              src="/assets/images/gray.jpg"
+              alt="7 wires"
+              width={700}
+              height={150}
+            />
           </div>
           <div className={styy.table1}>
             <h2 id="strand7">7 wire strands</h2>

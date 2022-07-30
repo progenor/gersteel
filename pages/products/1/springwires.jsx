@@ -1,6 +1,8 @@
 import styy from '../../../styles/generalPage.module.scss';
 import sty from './springwires.module.scss';
 
+import Image from 'next/image';
+
 import useTranslation from 'next-translate/useTranslation';
 const SpringWires = () => {
   let { t, lang } = useTranslation();
@@ -9,6 +11,12 @@ const SpringWires = () => {
       <div className={styy.container}>
         <div className={sty.cont}>
           <h1>Spring wires</h1>
+          <Image
+            src="/assets/images/gray.jpg"
+            alt="spring wire"
+            width={250}
+            height={250}
+          />
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
             similique sed in non cumque veritatis quidem blanditiis, natus

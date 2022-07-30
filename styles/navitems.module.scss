@@ -35,6 +35,20 @@ $color2: #006b38ff;
   }
 }
 
+.disabled {
+  a {
+    font-size: 17px;
+    pointer-events: none;
+  }
+
+  border: 2px solid black;
+  padding: 5px;
+  font-size: 17px;
+  &:hover {
+    background-color: black;
+  }
+}
+
 .small_li {
   border: 2px solid black;
   padding: 5px;

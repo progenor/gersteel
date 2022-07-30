@@ -1,14 +1,24 @@
 import styy from '../../../styles/generalPage.module.scss';
 
+import Image from 'next/image';
+
 import useTranslation from 'next-translate/useTranslation';
+
 const PCwires = () => {
   let { t, lang } = useTranslation();
   return (
     <div className={styy.main_container}>
       <div className={styy.container}>
+        <h1>PC Wire</h1>
+        <div className={styy.image}>
+          <Image
+            src="/assets/images/gray.jpg"
+            alt="7 wires"
+            width={700}
+            height={150}
+          />
+        </div>
         <div>
-          <h1>PC Wire</h1>
-
           <div className={styy.table1}>
             <h3>Standard wires (pr EN 10138)</h3>
             <div className={styy.table}>
