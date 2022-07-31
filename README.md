@@ -4,6 +4,20 @@
 
 ### 540164 post code
 
+# TODO LIST
+
+- [x] PC strands
+- [x] PC wires
+- [x] Spring wires
+- [ ] Corrugated pipes
+- [ ] Concrete/plastis spacers
+- [ ] Protective foil
+- [ ] PVC sheats
+- [ ] Leveling plastic spacers
+- [x] Steel grinding balls
+- [x] Post tensioning
+- [x] Others
+
 # what I have to do
 
 <!-- TODO: main stuff -->

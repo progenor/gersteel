@@ -96,13 +96,13 @@ function NavProdItems() {
       >
         {please_go_fuck_yourself ? (
           <>
-            <Link href="/products/4/others">
+            <Link href="">
               <span style={{ color: 'grey' }}>Coming soon...</span>
             </Link>
           </>
         ) : (
           <>
-            <Link href="/products/4/others">Others</Link>
+            <Link href="">Others</Link>
           </>
         )}
       </li>

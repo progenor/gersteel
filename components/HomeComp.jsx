@@ -130,7 +130,7 @@ function BoxContainer({ children, title, img, multiple, go, comingsoon }) {
           {comingsoon ? (
             <>
               <p style={{ top: '18vh' }} className={sty.readMore}>
-                <Link href="#">Coming Soon...</Link>
+                <Link href="">Coming Soon...</Link>
               </p>
             </>
           ) : (
