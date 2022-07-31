@@ -321,94 +321,94 @@ const PlasSpacers = () => {
             <tbody>
               <tr>
                 <th>DL 15</th>
-                <td>20</td>
+                <td>15</td>
                 <td>100</td>
-                <td>4800</td>
-                <td>9,8</td>
-                <td>470</td>
+                <td>5400</td>
+                <td>10,0</td>
+                <td>540</td>
               </tr>
 
               <tr>
                 <th>DL 20</th>
+                <td>20</td>
+                <td>100</td>
+                <td>5400</td>
+                <td>12,5</td>
+                <td>675</td>
+              </tr>
+
+              <tr>
+                <th>DL 25</th>
                 <td>25</td>
                 <td>100</td>
                 <td>4200</td>
-                <td>10,6</td>
-                <td>446</td>
+                <td>16,0</td>
+                <td>672</td>
               </tr>
-
               <tr>
-                <th>DUAL 30</th>
+                <th>DL 30</th>
                 <td>30</td>
                 <td>100</td>
                 <td>3600</td>
-                <td>11,5</td>
-                <td>414</td>
+                <td>18,0</td>
+                <td>648</td>
               </tr>
               <tr>
-                <th>DUAL 35</th>
+                <th>DL 35</th>
                 <td>35</td>
                 <td>60</td>
-                <td>2520 (2940)</td>
-                <td>8,9</td>
-                <td>374</td>
-              </tr>
-              <tr>
-                <th>DUAL 40</th>
-                <td>40</td>
-                <td>60</td>
-                <td>2520</td>
-                <td>10,2</td>
-                <td>429</td>
+                <td>2400</td>
+                <td>13,2</td>
+                <td>596</td>
               </tr>
 
               <tr>
-                <th>DUAL 50</th>
-                <td>50</td>
+                <th>DL 40</th>
+                <td>40</td>
                 <td>60</td>
-                <td>1440</td>
-                <td>12,5</td>
-                <td>300</td>
+                <td>2400</td>
+                <td>15,0</td>
+                <td>600</td>
               </tr>
               <tr>
-                <th>DUAL 50</th>
-                <td>50</td>
+                <th>DL 45</th>
+                <td>45</td>
                 <td>60</td>
-                <td>1440</td>
-                <td>12,5</td>
-                <td>300</td>
+                <td>1680</td>
+                <td>18,0</td>
+                <td>504</td>
               </tr>
               <tr>
-                <th>DUAL 50</th>
+                <th>DL 50</th>
                 <td>50</td>
                 <td>60</td>
-                <td>1440</td>
-                <td>12,5</td>
-                <td>300</td>
+                <td>1680</td>
+                <td>19,5</td>
+                <td>546</td>
               </tr>
               <tr>
-                <th>DUAL 50</th>
-                <td>50</td>
-                <td>60</td>
-                <td>1440</td>
-                <td>12,5</td>
-                <td>300</td>
+                <th>DL 55</th>
+                <td>55</td>
+                <td>40</td>
+                <td>1280</td>
+                <td>15,2</td>
+                <td>486</td>
               </tr>
               <tr>
-                <th>DUAL 50</th>
-                <td>50</td>
+                <th>DL 60</th>
                 <td>60</td>
-                <td>1440</td>
-                <td>12,5</td>
-                <td>300</td>
+                <td>40</td>
+                <td>1280</td>
+                <td>16,4</td>
+                <td>525</td>
               </tr>
               <tr>
-                <th>DUAL 50</th>
-                <td>50</td>
-                <td>60</td>
-                <td>1440</td>
-                <td>12,5</td>
-                <td>300</td>
+                <th>DL 70</th>
+                <td>70</td>
+                <td>40</td>
+                <td>960</td>
+                <td>18,4</td>
+                <td>442</td>
               </tr>
             </tbody>
           </table>
@@ -416,8 +416,87 @@ const PlasSpacers = () => {
       </div>
       <div className={styy.table1}>
         <h2 id="tsdlv">Track spacer with closed sides DLV – length 2,0m</h2>
-
         <IMG img1="tsdlv1.jpg" img2="tsdl2.jpg" />
+        <div className={styy.table}>
+          <table>
+            <thead>
+              <tr>
+                <th>Type</th>
+                <th>Height (mm)</th>
+                <th>Pack size - bundle (m)</th>
+                <th>Pack size - pallet (m)</th>
+                <th>Bundle (kg) </th>
+                <th>Pallet (kg)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>DLV 10 full</th>
+                <td>10</td>
+                <td>100</td>
+                <td>7000</td>
+                <td>12,0</td>
+                <td>840</td>
+              </tr>
+              <tr>
+                <th>DLV 15 full</th>
+                <td>15</td>
+                <td>100</td>
+                <td>5400</td>
+                <td>13,0</td>
+                <td>702</td>
+              </tr>
+              <tr>
+                <th>DLV 20 full</th>
+                <td>20</td>
+                <td>100</td>
+                <td>5400</td>
+                <td>16,0</td>
+                <td>864</td>
+              </tr>
+              <tr>
+                <th>DLV 25 full</th>
+                <td>25</td>
+                <td>100</td>
+                <td>4200</td>
+                <td>18,0</td>
+                <td>756</td>
+              </tr>
+              <tr>
+                <th>DLV 30 full</th>
+                <td>30</td>
+                <td>100</td>
+                <td>3600</td>
+                <td>23,0</td>
+                <td>828</td>
+              </tr>
+              <tr>
+                <th>DLV 35 full</th>
+                <td>35</td>
+                <td>60</td>
+                <td>2880</td>
+                <td>15,7</td>
+                <td>754</td>
+              </tr>
+              <tr>
+                <th>DLV 40 full</th>
+                <td>40</td>
+                <td>60</td>
+                <td>2400</td>
+                <td>18,6</td>
+                <td>651</td>
+              </tr>
+              <tr>
+                <th>DLV 50 full</th>
+                <td>50</td>
+                <td>60</td>
+                <td>1680</td>
+                <td>30,0</td>
+                <td>840</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
       <div className={styy.table1}>
         <h2 id="cepd">Chamfer edge profiles D – length 2,5 m</h2>
