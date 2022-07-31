@@ -74,16 +74,16 @@ function HomeComp() {
         </li>
       </BoxContainer>
       <BoxContainer
+        title="Steal grinding balls"
+        img="/assets/images/balls.png"
+        go="/7/grindingballs"
+      />
+      <BoxContainer
         title="Protective foil"
         img="/assets/images/pfoil.png"
         go="/2/pfoil"
       />
 
-      <BoxContainer
-        title="Steal grinding balls"
-        img="/assets/images/balls.png"
-        go="/7/grindingballs"
-      />
       <BoxContainer
         title="Post-tensioning"
         img="/assets/images/pt.png"

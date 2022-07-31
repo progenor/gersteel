@@ -58,10 +58,10 @@ function NavProdItems() {
       <li className={sty.big_li}>
         <Link href="/products/3/concspacers">Concrete/plastic spacers</Link>
       </li>
-
       <li className={sty.big_li}>
-        <Link href="/products/2/pfoil">Protective foil</Link>
+        <Link href="/products/7/grindingballs">Steel grinding balls</Link>
       </li>
+
       <li className={sty.big_li}>
         <span>PVC sheets, leveling plastic spacers</span>
         <IoMdArrowDropdown
@@ -80,7 +80,7 @@ function NavProdItems() {
         </ul>
       </li>
       <li className={sty.big_li}>
-        <Link href="/products/7/grindingballs">Steel grinding balls</Link>
+        <Link href="/products/2/pfoil">Protective foil</Link>
       </li>
       <li className={sty.big_li}>
         <Link href="/products/8/pt">Post-tensioning</Link>
