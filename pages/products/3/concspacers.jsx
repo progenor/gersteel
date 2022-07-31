@@ -13,7 +13,9 @@ const PcStrands = () => {
           <h2>Types: </h2>
           <ul>
             <li>
-              <a href="#concrete">Concrete Spacers</a>
+              <strong>
+                <a href="#concrete">Concrete Spacers</a>
+              </strong>
               <ul>
                 <li>
                   <a href="#btds">Betodis BTD S – with double plastic clips</a>
@@ -60,7 +62,9 @@ const PcStrands = () => {
               </ul>
             </li>
             <li>
-              <a href="#plastic">Plastic Spacers</a>
+              <strong>
+                <a href="#plastic">Plastic Spacers</a>
+              </strong>
               <ul>
                 <li>
                   <a href="#wsko">Wheel Spacer KO</a>

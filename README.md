@@ -10,7 +10,7 @@
 - [x] PC wires
 - [x] Spring wires
 - [ ] Corrugated pipes
-- [ ] Concrete/plastis spacers
+- [x] Concrete/plastis spacers
 - [ ] Protective foil
 - [ ] PVC sheats
 - [ ] Leveling plastic spacers
