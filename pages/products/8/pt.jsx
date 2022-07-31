@@ -12,7 +12,7 @@ const PcStrands = () => {
           <div className={sty.img_cont}>
             <div>
               <Image
-                src="/assets/images/pt1.png"
+                src="/assets/images/products/pt1.png"
                 layout="responsive"
                 width={370}
                 height={200}
@@ -28,7 +28,7 @@ const PcStrands = () => {
             </p>
             <div>
               <Image
-                src="/assets/images/pt2.png"
+                src="/assets/images/products/pt2.png"
                 layout="responsive"
                 width={370}
                 height={200}

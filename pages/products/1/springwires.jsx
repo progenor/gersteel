@@ -12,7 +12,7 @@ const SpringWires = () => {
         <div className={sty.cont}>
           <h1>Spring wires</h1>
           <Image
-            src="/assets/images/gray.jpg"
+            src="/assets/images/products/gray.jpg"
             alt="spring wire"
             width={250}
             height={250}

@@ -4,23 +4,33 @@ import styy from '../styles/generalPage.module.scss';
 import Image from 'next/image';
 
 const ConcSpacers = () => {
-  const IMG = ({ img1, img2 }) => {
+  const IMG = ({ img1 = null, img2 = null, img3 = null }) => {
     const size = 80;
     return (
       <>
         <div className={sty.images}>
           <Image
             alt="image"
-            src={`/assets/images/${img1}`}
+            src={`/assets/images/products/${img1}`}
             width={size}
             height={size}
           />
-          <Image
-            alt="image"
-            src={`/assets/images/${img2}`}
-            width={size}
-            height={size}
-          />
+          {img2 && (
+            <Image
+              alt="image"
+              src={`/assets/images/products/${img2}`}
+              width={size}
+              height={size}
+            />
+          )}
+          {img3 && (
+            <Image
+              alt="image"
+              src={`/assets/images/products/${img3}`}
+              width={size}
+              height={size}
+            />
+          )}
         </div>
       </>
     );
@@ -31,7 +41,7 @@ const ConcSpacers = () => {
       <h1>Concrete Spacers</h1>
       <div className={styy.table1}>
         <h2 id="btds">Betodis BTD S – with double plastic clips</h2>
-        <IMG img1="gray.jpg" img2="gray.jpg" />
+        <IMG img1="btds1.jpg" img2="btds2.jpg" />
         <div className={styy.table}>
           <table>
             <thead>
@@ -97,7 +107,7 @@ const ConcSpacers = () => {
       </div>
       <div className={styy.table1}>
         <h2 id="btdhs">Betodis BTD HS – with double plastic clips</h2>
-        <IMG img1="gray.jpg" img2="gray.jpg" />
+        <IMG img1="btdhs1.jpg" img2="btdhs2.jpg" />
         <div className={styy.table}>
           <table>
             <thead>
@@ -169,7 +179,7 @@ const ConcSpacers = () => {
       </div>
       <div className={styy.table1}>
         <h2 id="mirawb">Concrete stick WB</h2>
-        <IMG img1="gray.jpg" img2="gray.jpg" />
+        <IMG img1="mirawb1.jpg" />
         <div className={styy.table}>
           <table>
             <thead>
@@ -230,7 +240,7 @@ const ConcSpacers = () => {
       </div>
       <div className={styy.table1}>
         <h2 id="butterK">Concrete ,,butterfly,, spacer without wire - K</h2>
-        <IMG img1="gray.jpg" img2="gray.jpg" />
+        <IMG img1="butterk1.jpg" />
         <div className={styy.table}>
           <table>
             <thead>
@@ -270,7 +280,7 @@ const ConcSpacers = () => {
       </div>
       <div className={styy.table1}>
         <h2 id="butterkd">Concrete ,,butterfly,, spacer including wire - KD</h2>
-        <IMG img1="gray.jpg" img2="gray.jpg" />
+        <IMG img1="butterkd1.jpg" />
         <div className={styy.table}>
           <table>
             <thead>
@@ -310,7 +320,7 @@ const ConcSpacers = () => {
       </div>
       <div className={styy.table1}>
         <h2 id="concu">Concrete ,,U,, spacer without wire</h2>
-        <IMG img1="gray.jpg" img2="gray.jpg" />
+        <IMG img1="concu1.jpg" />
         <div className={styy.table}>
           <table>
             <thead>
@@ -392,7 +402,7 @@ const ConcSpacers = () => {
       </div>
       <div className={styy.table1}>
         <h2 id="concud">Concrete ,,UD,, spacer including wire</h2>
-        <IMG img1="gray.jpg" img2="gray.jpg" />
+        <IMG img1="concud1.jpg" />
         <div className={styy.table}>
           <table>
             <thead>
@@ -474,7 +484,7 @@ const ConcSpacers = () => {
       </div>
       <div className={styy.table1}>
         <h2 id="snakets">Concrete T-Section - snakeTS</h2>
-        <IMG img1="gray.jpg" img2="gray.jpg" />
+        <IMG img1="snakets1.jpg" />
         <div className={styy.table}>
           <table>
             <thead>
@@ -542,7 +552,7 @@ const ConcSpacers = () => {
       </div>
       <div className={styy.table1}>
         <h2 id="snakes">Concrete snake S</h2>
-        <IMG img1="gray.jpg" img2="gray.jpg" />
+        <IMG img1="snakes1.jpg" />
         <div className={styy.table}>
           <table>
             <thead>
@@ -688,7 +698,7 @@ const ConcSpacers = () => {
       </div>
       <div className={styy.table1}>
         <h2 id="snakesn">Concrete snake with ripples SN</h2>
-        <IMG img1="gray.jpg" img2="gray.jpg" />
+        <IMG img1="snakesn1.jpg" />
         <div className={styy.table}>
           <table>
             <thead>
@@ -834,7 +844,7 @@ const ConcSpacers = () => {
       </div>
       <div className={styy.table1}>
         <h2 id="conctube">Concrete tube 22/40</h2>
-        <IMG img1="gray.jpg" img2="gray.jpg" />
+        <IMG img1="conctube1.jpg" />
         <div className={styy.table}>
           <table>
             <thead>
@@ -862,7 +872,7 @@ const ConcSpacers = () => {
       </div>
       <div className={styy.table1}>
         <h2 id="concplug">Concrete plug</h2>
-        <IMG img1="gray.jpg" img2="gray.jpg" />
+        <IMG img1="concplug1.jpg" img2="concplug2.jpg" img3="concplug3.jpg" />
         <div className={styy.table}>
           <table>
             <thead>

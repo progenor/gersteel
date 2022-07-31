@@ -12,13 +12,13 @@ const PcStrands = () => {
           <h1>Grinding balls</h1>
           <div className={sty.img_cont}>
             <Image
-              src="/assets/images/gb1.webp"
+              src="/assets/images/products/gb1.webp"
               alt="grinding balls"
               width={img_size}
               height={img_size}
             />
             <Image
-              src="/assets/images/gb2.webp"
+              src="/assets/images/products/gb2.webp"
               alt="grinding balls"
               width={img_size}
               height={img_size}

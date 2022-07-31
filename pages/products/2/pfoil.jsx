@@ -90,7 +90,7 @@ const ImgBox = ({ img, title, text }) => {
       <div className={sty.card_cont}>
         <div className={sty.front_cont}>
           <Image
-            src={`/assets/images${img}`}
+            src={`/assets/images/products${img}`}
             layout="fill"
             className={sty.IMG}
             alt={title}

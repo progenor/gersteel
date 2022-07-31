@@ -12,7 +12,7 @@ const PCwires = () => {
         <h1>PC Wire</h1>
         <div className={styy.image}>
           <Image
-            src="/assets/images/gray.jpg"
+            src="/assets/images/products/gray.jpg"
             alt="7 wires"
             width={700}
             height={150}

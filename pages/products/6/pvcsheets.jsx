@@ -10,7 +10,7 @@ const PvcSheets = () => {
           <h1>PVC Sheets</h1>
           <Image
             alt="pvc sheet"
-            src="/assets/images/gray.jpg"
+            src="/assets/images/products/gray.jpg"
             width={250}
             height={250}
           />
