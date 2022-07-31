@@ -320,7 +320,7 @@ const PlasSpacers = () => {
             </thead>
             <tbody>
               <tr>
-                <th>DUAL 20</th>
+                <th>DL 15</th>
                 <td>20</td>
                 <td>100</td>
                 <td>4800</td>
@@ -329,7 +329,7 @@ const PlasSpacers = () => {
               </tr>
 
               <tr>
-                <th>DUAL 25</th>
+                <th>DL 20</th>
                 <td>25</td>
                 <td>100</td>
                 <td>4200</td>
