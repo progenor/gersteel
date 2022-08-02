@@ -9,7 +9,7 @@ const About = () => {
   return (
     <div className={sty.main_container}>
       <div className={sty.about_main} id="about">
-        <h1>{t('common:title')}</h1>
+        <h1>{t('common:about')}</h1>
         <div className={sty.about_container}>
           <p>{t('description')}</p>
         </div>

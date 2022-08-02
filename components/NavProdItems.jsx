@@ -6,7 +6,7 @@ import { useState } from 'react';
 import useTranslation from 'next-translate/useTranslation';
 
 function NavProdItems() {
-  let { t, lang } = useTranslation();
+  let { t, lang } = useTranslation('nav');
   const size = 15;
 
   const [please_go_fuck_yourself, setplease_go_fuck_yourself] = useState(false);
@@ -97,12 +97,12 @@ function NavProdItems() {
         {please_go_fuck_yourself ? (
           <>
             <Link href="">
-              <span style={{ color: 'grey' }}>Coming soon...</span>
+              <span style={{ color: 'grey' }}>{t('common:coming_soon')}</span>
             </Link>
           </>
         ) : (
           <>
-            <Link href="">Others</Link>
+            <Link href="">{t('common:others')}</Link>
           </>
         )}
       </li>

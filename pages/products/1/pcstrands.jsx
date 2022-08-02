@@ -5,20 +5,20 @@ import Image from 'next/image';
 import useTranslation from 'next-translate/useTranslation';
 
 const PcStrands = () => {
-  let { t, lang } = useTranslation();
+  let { t, lang } = useTranslation('product1');
   return (
     <div className={styy.main_container}>
       <div className={styy.container}>
         <div>
-          <h1>PC Strands</h1>
+          <h1>{t('common:pc_strands')}</h1>
           <div className={styy.types}>
-            <h2>Types:</h2>
+            <h2>{t('common:types')}</h2>
             <ul>
               <li>
-                <a href="#strand7">7 wire strands</a>
+                <a href="#strand7">{t('7st')}</a>
               </li>
               <li>
-                <a href="#strand3">2-3 wire strands</a>
+                <a href="#strand3">{t('2-3')}</a>
               </li>
             </ul>
           </div>
@@ -31,8 +31,8 @@ const PcStrands = () => {
             />
           </div>
           <div className={styy.table1}>
-            <h2 id="strand7">7 wire strands</h2>
-            <h3>Standard Strands (pr EN 10138)</h3>
+            <h2 id="strand7">{t('7st')}</h2>
+            <h3>{t('pc_strands_text1')}</h3>
 
             <div className={styy.table}>
               <table>

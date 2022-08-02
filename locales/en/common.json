@@ -1,3 +1,10 @@
 {
-  "title": "About us"
+  "home": "Home",
+  "contact": "Contact",
+  "about": "About us",
+  "createdby": "Created by",
+  "types": "Types",
+  "coming_soon": "Coming soon ...",
+  "others": "Others",
+  "products": "Products"
 }

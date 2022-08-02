@@ -5,7 +5,7 @@ import Image from 'next/image';
 import useTranslation from 'next-translate/useTranslation';
 
 const Footer = () => {
-  let { t, lang } = useTranslation();
+  let { t, lang } = useTranslation('footer');
   const img_size = 50;
   return (
     <footer className={sty.ftr}>
@@ -25,7 +25,7 @@ const Footer = () => {
         <div className={sty.line}></div>
 
         <div className={sty.map}>
-          <h3>Certificates</h3>
+          <h3>{t('certificates')}</h3>
           <div className={sty.certificates}>
             <Image
               src="/assets/images/gray.jpg"
@@ -69,13 +69,13 @@ const Footer = () => {
         <div className={sty.line}></div>
 
         <div className={sty.information}>
-          <h3>Information</h3>
+          <h3>{t('info')}</h3>
           <div className={sty.info_cont}>
             <img src="/assets/images/logo_G.png" alt="" />
             <div>
-              <a href="#home">Home</a>
-              <Link href="/About">About us</Link>
-              <Link href="/Contact">Contact</Link>
+              <a href="#home">{t('common:home')}</a>
+              <Link href="/About">{t('common:about')}</Link>
+              <Link href="/Contact">{t('common:contact')}</Link>
             </div>
           </div>
         </div>
@@ -83,7 +83,7 @@ const Footer = () => {
 
       <div className={sty.createdby}>
         <p>
-          Created by:{' '}
+          {t('common:createdby')}
           <span>
             <a href="https://lorgenor.tech/"> lorgenor </a>
           </span>

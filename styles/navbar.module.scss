@@ -90,7 +90,12 @@
     // position: relative;
     a {
       // display: inline;
+      // text-transform: uppercase;
       display: flex;
+    }
+
+    & > a {
+      text-transform: uppercase;
     }
   }
   .mob_link_container {

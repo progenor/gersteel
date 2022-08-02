@@ -61,7 +61,13 @@
       img {
         margin-left: -5rem;
         max-width: 7rem;
-        margin-right: 3rem;
+        margin-right: 2.5rem;
+      }
+
+      @media (max-width: 500px) {
+        img {
+          margin-left: -2rem;
+        }
       }
     }
   }

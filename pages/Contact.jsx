@@ -13,7 +13,7 @@ import { GiRotaryPhone } from 'react-icons/gi';
 function Contact() {
   const icon_size = 70;
 
-  let { t, lang } = useTranslation();
+  let { t, lang } = useTranslation('contact');
 
   const form = useRef();
 
@@ -44,7 +44,7 @@ function Contact() {
   return (
     <div className={sty.big_container}>
       <div id="contact" className={sty.container}>
-        <h1>Contact </h1>
+        <h1>{t('common:contact')}</h1>
         <div className={sty.form_container}>
           <form className={sty.form} ref={form} onSubmit={sendEmail}>
             <label htmlFor="from_name" className={sty.label}>
@@ -131,7 +131,7 @@ function Contact() {
 
         {/* ########### MAP ############# */}
         <div className={sty.map}>
-          <h1>Where can you find us:</h1>
+          <h1>{t('find_us')}</h1>
           <a href="https://www.google.com/maps/place/Strada+Frunzei+10,+T%C3%A2rgu+Mure%C8%99+547525/@46.538634,24.5410713,15z/data=!4m13!1m7!3m6!1s0x474bb7ce9f7b278b:0xbf084ffd3fe15941!2sStrada+Frunzei+10,+T%C3%A2rgu+Mure%C8%99+547525!3b1!8m2!3d46.538634!4d24.549826!3m4!1s0x474bb7ce9f7b278b:0xbf084ffd3fe15941!8m2!3d46.538634!4d24.549826">
             <img src="/assets/images/romania_map_location.png" alt="" />
           </a>

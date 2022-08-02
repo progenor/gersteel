@@ -1,12 +1,12 @@
-import { useState } from "react";
-import Link from "next/link";
+import { useState } from 'react';
+import Link from 'next/link';
 
-import sty from "../styles/navbar.module.scss";
+import sty from '../styles/navbar.module.scss';
 // import { MdOutlineKeyboardArrowDown } from "react-icons/md";
-import { IoMdArrowDropdown } from "react-icons/io";
-import NavProdItems from "./NavProdItems";
+import { IoMdArrowDropdown } from 'react-icons/io';
+import NavProdItems from './NavProdItems';
 
-import useTranslation from "next-translate/useTranslation";
+import useTranslation from 'next-translate/useTranslation';
 
 const NavNormal = () => {
   let { t, lang } = useTranslation();
@@ -21,14 +21,14 @@ const NavNormal = () => {
               setIsactive(!isactive);
             }}
           >
-            PRODUCTS
+            {t('common:products')}
             {/* <MdOutlineKeyboardArrowDown color="white" size={20} style={{}} /> */}
             <IoMdArrowDropdown color="white" size={20} />
           </a>
         </div>
-        {isactive ? <NavProdItems /> : ""}
-        <Link href="/About">ABOUT US</Link>
-        <Link href="/Contact">CONTACT</Link>
+        {isactive ? <NavProdItems /> : ''}
+        <Link href="/About">{t('common:about')}</Link>
+        <Link href="/Contact">{t('common:contact')}</Link>
       </div>
     </>
   );

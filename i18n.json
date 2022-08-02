@@ -2,9 +2,16 @@
   "locales": ["ro", "hu", "en"],
   "defaultLocale": "en",
   "pages": {
-    "*": ["common"],
+    "*": ["common", "nav", "footer"],
     "/": ["home"],
     "/About": ["about"],
-    "/Contact": ["contact"]
+    "/Contact": ["contact"],
+    "/products/1": ["product1"],
+    "/products/2": ["product2"],
+    "/products/3": ["product3"],
+    "/products/4": ["product4"],
+    "/products/5": ["product5"],
+    "/products/6": ["product6"],
+    "/products/7": ["product7"]
   }
 }
