@@ -4,6 +4,10 @@
   background-color: $clr-bg-pri;
   padding: 5rem clamp(1rem, 1px + 10vw, 5.5rem) 2rem
     clamp(1rem, 1px + 10vw, 5.5rem);
+
+  @media (max-width: 600px) {
+    padding: 5rem 1rem 2rem 1rem;
+  }
 }
 
 .container {
@@ -11,6 +15,9 @@
   width: 100%;
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.4);
   padding: clamp(0.5rem, 1px + 10vw, 2rem);
+  @media (max-width: 600px) {
+    padding: 5rem 0.5rem 1rem 0.5rem;
+  }
 
   .image {
     margin-top: 1.5rem;
@@ -30,11 +37,17 @@
     font-size: clamp(25px, 3vw, 35px);
   }
   li {
-    font-size: 25px;
+    font-size: clamp(20px, 3vw, 25px);
+  }
+
+  @media (max-width: 380px) {
+    ul > li > ul {
+      margin-left: -1.5rem;
+    }
   }
 
   a {
-    font-size: 25px;
+    font-size: clamp(20px, 3vw, 25px);
 
     &:hover {
       color: #f3f3f3;

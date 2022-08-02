@@ -6,7 +6,7 @@ import { useState } from 'react';
 import useTranslation from 'next-translate/useTranslation';
 
 function NavProdItems() {
-  let { t, lang } = useTranslation('nav');
+  const { t, lang } = useTranslation('nav');
   const size = 15;
 
   const [please_go_fuck_yourself, setplease_go_fuck_yourself] = useState(false);

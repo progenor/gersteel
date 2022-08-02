@@ -7,7 +7,7 @@ import { BsFillArrowRightCircleFill } from 'react-icons';
 import useTranslation from 'next-translate/useTranslation';
 
 function HomeComp() {
-  let { t, lang } = useTranslation();
+  const { t, lang } = useTranslation();
   return (
     <div className={sty.home_cont} id="home">
       <BoxContainer
@@ -99,7 +99,7 @@ function HomeComp() {
 }
 
 function BoxContainer({ children, title, img, multiple, go, comingsoon }) {
-  let { t, lang } = useTranslation();
+  const { t, lang } = useTranslation();
   const [isOpen, setisOpen] = useState(false);
   return (
     <>

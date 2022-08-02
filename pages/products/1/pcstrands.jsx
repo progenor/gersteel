@@ -5,7 +5,7 @@ import Image from 'next/image';
 import useTranslation from 'next-translate/useTranslation';
 
 const PcStrands = () => {
-  let { t, lang } = useTranslation('product1');
+  const { t, lang } = useTranslation('product1');
   return (
     <div className={styy.main_container}>
       <div className={styy.container}>
@@ -332,7 +332,7 @@ const PcStrands = () => {
             </div>
           </div>
           <div className={styy.table1}>
-            <h2 id="strand3">2-3 wire strands</h2>
+            <h2 id="strand3">{t('2-3')}</h2>
             <h3>Standard Strand (pr EN 10138)</h3>
             <div className={styy.table}>
               <table>

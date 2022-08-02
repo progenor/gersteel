@@ -13,7 +13,7 @@ import { GiRotaryPhone } from 'react-icons/gi';
 function Contact() {
   const icon_size = 70;
 
-  let { t, lang } = useTranslation('contact');
+  const { t, lang } = useTranslation('contact');
 
   const form = useRef();
 

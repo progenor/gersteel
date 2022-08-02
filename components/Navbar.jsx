@@ -9,10 +9,7 @@ import NavNormal from './NavNormal';
 
 import sty from '../styles/navbar.module.scss';
 
-import useTranslation from 'next-translate/useTranslation';
-
 const Navbar = () => {
-  let { t, lang } = useTranslation();
   let router = useRouter();
 
   const [isactiveLan, setIsactiveLan] = useState(false);

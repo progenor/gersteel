@@ -9,7 +9,7 @@ import NavProdItems from './NavProdItems';
 import useTranslation from 'next-translate/useTranslation';
 
 const NavNormal = () => {
-  let { t, lang } = useTranslation();
+  const { t, lang } = useTranslation();
   const [isactive, setIsactive] = useState(false);
 
   return (

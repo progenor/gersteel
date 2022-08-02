@@ -5,7 +5,7 @@ import Image from 'next/image';
 import useTranslation from 'next-translate/useTranslation';
 
 const Footer = () => {
-  let { t, lang } = useTranslation('footer');
+  const { t, lang } = useTranslation('footer');
   const img_size = 50;
   return (
     <footer className={sty.ftr}>

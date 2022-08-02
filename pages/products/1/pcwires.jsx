@@ -5,7 +5,7 @@ import Image from 'next/image';
 import useTranslation from 'next-translate/useTranslation';
 
 const PCwires = () => {
-  let { t, lang } = useTranslation();
+  const { t, lang } = useTranslation();
   return (
     <div className={styy.main_container}>
       <div className={styy.container}>
