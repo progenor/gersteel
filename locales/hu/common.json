@@ -1,3 +1,10 @@
 {
-  "title": "Rolunk"
+  "home": "Otthon",
+  "contact": "Elerhetoseg",
+  "about": "Rolunk",
+  "createdby": "Created by",
+  "types": "Tipusok",
+  "coming_soon": "Hamarosan ...",
+  "others": "Tobbi",
+  "products": "Termekek"
 }

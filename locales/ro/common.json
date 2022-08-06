@@ -1,3 +1,10 @@
 {
-  "title": "Despre Noi"
+  "home": "Acasa",
+  "contact": "Contact",
+  "about": "Despre noi",
+  "createdby": "Created by",
+  "types": "Tipuri",
+  "coming_soon": "coming_soon ...",
+  "others": "Altele",
+  "products": "Produse"
 }
