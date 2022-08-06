@@ -6,6 +6,10 @@
     "/": ["home"],
     "/About": ["about"],
     "/Contact": ["contact"],
-    "/products/1/pcstrands": ["product1"]
+    "/products/1/pcstrands": ["product1"],
+    "/products/1/springwires": ["product1"],
+    "/products/1/pcwire": ["product1"],
+    "/products/2/pfoil": ["products_small"],
+    "/products/7/grindingballs": ["products_small"]
   }
 }

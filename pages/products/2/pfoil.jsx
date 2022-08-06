@@ -1,36 +1,24 @@
-import styy from '../../../styles/generalPage.module.scss';
-import sty from './pfoil.module.scss';
+import styy from "../../../styles/generalPage.module.scss";
+import sty from "./pfoil.module.scss";
 
-import Image from 'next/image';
+import Image from "next/image";
 
-import useTranslation from 'next-translate/useTranslation';
+import useTranslation from "next-translate/useTranslation";
 
 const Pfoil = () => {
-  const { t, lang } = useTranslation();
+  const { t } = useTranslation();
   return (
     <div className={styy.main_container}>
       <div className={styy.container}>
         <div className={sty.cont}>
-          <h1>Protective foil</h1>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque
-            numquam esse aliquid illo. Porro odit illum officia, eaque fugiat
-            nostrum sint asperiores autem aspernatur, dignissimos voluptatem
-            officiis, magni repudiandae dolor.
-            <br />
-            <br />
-            <span>
-              All services need to be tested for specific product! <br /> Call
-              us:
-              <a href="tel:"> +40 0000120123</a>
-            </span>
-          </p>
-          <h2>Applications:</h2>
+          <h1>{t("common:pfoil")}</h1>
+          <p>{t("products_small:pfoil_desc")}</p>
+          <h2>{t("products_small:pfoil_applications")}</h2>
           <div className={sty.app_container}>
             <ImgBox
               img="/gray.jpg"
               title="Sandwich panel"
-              text="type some text here this is so that we can see how it looks like"
+              text={t("products_small:pfoil_sandwich_panel")}
             />
             <ImgBox
               img="/gray.jpg"
