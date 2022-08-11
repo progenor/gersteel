@@ -17,7 +17,8 @@ const SpringWires = () => {
             width={250}
             height={250}
           />
-          <p>{t("product1:spring_description")}</p>
+          <p>{t("product1:spring_description1")}</p>
+          <p>{t("product1:spring_description2")}</p>
         </div>
       </div>
     </div>

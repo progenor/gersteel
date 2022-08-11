@@ -1,14 +1,14 @@
-import { useState } from 'react';
-import Link from 'next/link';
+import { useState } from "react";
+import Link from "next/link";
 
-import { GiHamburgerMenu } from 'react-icons/gi';
-import { MdOutlineClose, MdLanguage } from 'react-icons/md';
-import { IoMdArrowDropdown } from 'react-icons/io';
+import { GiHamburgerMenu } from "react-icons/gi";
+import { MdOutlineClose, MdLanguage } from "react-icons/md";
+import { IoMdArrowDropdown } from "react-icons/io";
 
-import sty from '../styles/navbar.module.scss';
-import styy from '../styles/navMobile.module.scss';
+import sty from "../styles/navbar.module.scss";
+import styy from "../styles/navMobile.module.scss";
 
-import useTranslation from 'next-translate/useTranslation';
+import useTranslation from "next-translate/useTranslation";
 
 const NavMobile = () => {
   const { t, lang } = useTranslation();
@@ -23,6 +23,7 @@ const NavMobile = () => {
       <div className={styy.main}>
         <h2>Products:</h2>
         <ul className={styy.big_ul}>
+          <div className={styy.line}></div>
           <li
             className={styy.big_li}
             onClick={() => {
@@ -75,6 +76,7 @@ const NavMobile = () => {
               </>
             )}
           </li>
+          <div className={styy.line}></div>
           <li
             className={styy.big_li}
             onClick={() => {
@@ -149,6 +151,7 @@ const NavMobile = () => {
               </>
             )}
           </li>
+          <div className={styy.line}></div>
           <li
             className={styy.big_li}
             onClick={() => {
@@ -157,6 +160,7 @@ const NavMobile = () => {
           >
             <Link href="/products/3/concspacers">Concrete/plastic spacers</Link>
           </li>
+          <div className={styy.line}></div>
           <li
             className={styy.big_li}
             onClick={() => {
@@ -165,6 +169,7 @@ const NavMobile = () => {
           >
             <Link href="/products/2/pfoil">Protective foil</Link>
           </li>
+          <div className={styy.line}></div>
           <li
             className={styy.big_li}
             onClick={() => {
@@ -211,6 +216,7 @@ const NavMobile = () => {
               </>
             )}
           </li>
+          <div className={styy.line}></div>
           <li
             className={styy.big_li}
             onClick={() => {
@@ -219,6 +225,7 @@ const NavMobile = () => {
           >
             <Link href="products/7/grindingballs">Steel grinding balls</Link>
           </li>
+          <div className={styy.line}></div>
           <li
             className={styy.big_li}
             onClick={() => {
@@ -227,6 +234,7 @@ const NavMobile = () => {
           >
             <Link href="products/8/pt">Post-tensioning</Link>
           </li>
+          <div className={styy.line}></div>
         </ul>
       </div>
     );

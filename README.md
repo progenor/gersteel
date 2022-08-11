@@ -6,12 +6,12 @@
 
 # TODO LIST
 
-- [x] PC strands
-- [x] PC wires
-- [x] Spring wires
+- [ ] PC strands kep
+- [ ] PC wires kep
+- [ ] Spring wires kep
 - [ ] Corrugated pipes
 - [x] Concrete/plastis spacers
-- [ ] Protective foil
+- [x] Protective foil
 - [ ] PVC sheats
 - [ ] Leveling plastic spacers
 - [x] Steel grinding balls

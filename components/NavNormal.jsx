@@ -27,7 +27,19 @@ const NavNormal = () => {
             <IoMdArrowDropdown color="white" size={20} />
           </a>
         </div>
-        {isactive ? <NavProdItems /> : ""}
+        {isactive ? (
+          <div>
+            <div
+              className={sty.black_out}
+              onClick={() => {
+                setIsactive(!isactive);
+              }}
+            ></div>
+            <NavProdItems />
+          </div>
+        ) : (
+          ""
+        )}
         <Link href="/About">{t("common:about")}</Link>
         <Link href="/Contact">{t("common:contact")}</Link>
       </div>

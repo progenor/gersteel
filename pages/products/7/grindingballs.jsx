@@ -28,7 +28,8 @@ const PcStrands = () => {
               height={img_size}
             />
           </div>
-          <p>{t("products_small:grinding_balls_desc")}</p>
+          <p>{t("products_small:grinding_balls_desc1")}</p>
+          <p>{t("products_small:grinding_balls_desc2")}</p>
         </div>
       </div>
     </div>

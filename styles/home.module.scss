@@ -1,6 +1,6 @@
-@import './globalVariables.module.scss';
+@import "./globalVariables.module.scss";
 .home_cont {
-  background-image: url('../public/assets/images/home_bg_white3_t.jpeg');
+  background-image: url("../public/assets/images/home_bg_white3_t.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -47,7 +47,7 @@
     top: 4rem;
     transition: transform 1s ease-out;
     z-index: 10;
-    border: 1px solid rgba(0, 0, 0, 0.649);
+    border: 4px rgba(0, 0, 0, 0.54) double;
 
     @media (max-width: 1150px) {
       height: 80%;
@@ -105,7 +105,7 @@
     font-size: clamp(1rem, 4vw, 1.5rem);
     letter-spacing: 1.5px;
     color: rgba(0, 0, 0, 0.813);
-    font-family: 'Bebas Neue', cursive;
+    font-family: "Bebas Neue", cursive;
     transition: all ease-in 100ms;
   }
 
@@ -117,7 +117,7 @@
     margin-left: -2%;
     font-size: clamp(20px, 2vw, 24px);
     // opacity: 0;
-    font-family: 'Bebas Neue', cursive;
+    font-family: "Bebas Neue", cursive;
     border-radius: 20px;
     background-color: #eee;
     padding: 6px 18px 6px 18px;
@@ -180,7 +180,7 @@
       font-size: clamp(14px, 3vw, 19px);
       opacity: 0;
       transform: translateX(-150px);
-      font-family: 'Bebas Neue', cursive;
+      font-family: "Bebas Neue", cursive;
 
       @media (max-width: 550px) {
         font-size: 13px;

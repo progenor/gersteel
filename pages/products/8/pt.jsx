@@ -1,9 +1,12 @@
-import styy from '../../../styles/generalPage.module.scss';
-import sty from './pt.module.scss';
+import styy from "../../../styles/generalPage.module.scss";
+import sty from "./pt.module.scss";
 
-import Image from 'next/image';
+import Image from "next/image";
+
+import useTranslation from "next-translate/useTranslation";
 
 const PcStrands = () => {
+  const { t } = useTranslation();
   return (
     <div className={styy.main_container}>
       <div className={styy.container}>
@@ -20,12 +23,7 @@ const PcStrands = () => {
                 className={sty.img}
               />
             </div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-              reprehenderit consequatur ipsum officiis magni velit, facilis
-              voluptate necessitatibus esse quisquam dolore, pariatur saepe
-              molestias laudantium fuga, ut animi. Placeat, iste?
-            </p>
+            <p>{t("products_small:post_tensioning_desc")}</p>
             <div>
               <Image
                 src="/assets/images/products/pt2.png"
@@ -36,12 +34,6 @@ const PcStrands = () => {
                 className={sty.img}
               />
             </div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis
-              error accusamus maxime vitae quam eius temporibus consequuntur
-              maiores sequi, quos saepe explicabo sit recusandae? Fuga quam
-              facilis voluptas aperiam quibusdam?
-            </p>
           </div>
         </div>
       </div>

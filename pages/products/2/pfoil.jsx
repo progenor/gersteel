@@ -12,7 +12,8 @@ const Pfoil = () => {
       <div className={styy.container}>
         <div className={sty.cont}>
           <h1>{t("common:pfoil")}</h1>
-          <p>{t("products_small:pfoil_desc")}</p>
+          <p>{t("products_small:pfoil_desc1")}</p>
+          <p>{t("products_small:pfoil_desc2")}</p>
           <h2>{t("products_small:pfoil_applications")}</h2>
           <div className={sty.app_container}>
             <ImgBox
@@ -23,47 +24,47 @@ const Pfoil = () => {
             <ImgBox
               img="/gray.jpg"
               title="Pre-painted metal sheet"
-              text="type some text here this is so that we can see how it looks like"
+              text={t("products_small:pfoil_sandwich_panel")}
             />
             <ImgBox
               img="/gray.jpg"
               title="Stainless steel"
-              text="type some text here this is so that we can see how it looks like"
+              text={t("products_small:pfoil_sandwich_panel")}
             />
             <ImgBox
               img="/gray.jpg"
               title="Aluminum"
-              text="type some text here this is so that we can see how it looks like"
+              text={t("products_small:pfoil_sandwich_panel")}
             />
             <ImgBox
               img="/gray.jpg"
               title="Laminates, furniture (wood products)"
-              text="szia sdanauadjasdnjada"
+              text={t("products_small:pfoil_sandwich_panel")}
             />
             <ImgBox
               img="/gray.jpg"
               title="Carpet"
-              text="type some text here this is so that we can see how it looks like"
+              text={t("products_small:pfoil_sandwich_panel")}
             />
             <ImgBox
               img="/gray.jpg"
               title="Plastics"
-              text="type some text here this is so that we can see how it looks like"
+              text={t("products_small:pfoil_sandwich_panel")}
             />
             <ImgBox
               img="/gray.jpg"
               title="Glass"
-              text="type some text here this is so that we can see how it looks like sadada"
+              text={t("products_small:pfoil_sandwich_panel")}
             />
             <ImgBox
               img="/gray.jpg"
               title="Automotive"
-              text="type some text here this is so that we can see how it looks like"
+              text={t("products_small:pfoil_sandwich_panel")}
             />
             <ImgBox
               img="/gray.jpg"
               title="phoque Other"
-              text="type some text here this is so that we can see how it looks like"
+              text={t("products_small:pfoil_sandwich_panel")}
             />
           </div>
         </div>
