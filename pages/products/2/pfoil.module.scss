@@ -60,6 +60,9 @@
         height: 100%;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
+        border: 10px ridge rgb(213, 213, 213);
+      }
+      .front_cont {
       }
 
       .back_cont {
@@ -68,10 +71,11 @@
           word-wrap: break-word;
           font-size: 1.1rem;
         }
-        background-color: black;
-        color: white;
+        background-color: rgb(91, 168, 191);
+        color: black;
         padding: 10px;
         transform: rotateY(180deg);
+        // border: 1px solid black;
       }
     }
   }

@@ -2,9 +2,10 @@
   "home": "Acasa",
   "contact": "Contact",
   "about": "Despre noi",
-  "createdby": "Created by",
+  "createdby": "Creat de:",
   "types": "Tipuri",
-  "coming_soon": "coming_soon ...",
+  "coming_soon": "Coming soon ...",
   "others": "Altele",
-  "products": "Produse"
+  "products": "Produse",
+  "read_more": "Află mai mult"
 }

@@ -1,6 +1,9 @@
 {
   "name": "Name",
-  "name_1": "Write your name here",
+  "name_1": "Full name",
   "message": "Message",
-  "find_us": "Where can you fin us?"
+  "message_1": "Your message",
+  "find_us": "Where can you fin us?",
+  "send": "Send",
+  "call_us": "Call us"
 }

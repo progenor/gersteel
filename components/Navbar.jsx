@@ -1,13 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
-import { useState } from 'react';
-import { useRouter } from 'next/router';
-import Link from 'next/link';
-import { IoArrowUpCircle } from 'react-icons/io5';
+import { useState } from "react";
+import { useRouter } from "next/router";
+import Link from "next/link";
+import { IoArrowUpCircle } from "react-icons/io5";
 
-import NavMobile from './NavMobile';
-import NavNormal from './NavNormal';
+import NavMobile from "./NavMobile";
+import NavNormal from "./NavNormal";
 
-import sty from '../styles/navbar.module.scss';
+import sty from "../styles/navbar.module.scss";
 
 const Navbar = () => {
   let router = useRouter();
@@ -53,7 +53,7 @@ const Navbar = () => {
                   <div className=" flex">
                     <img src="/assets/svgs/ro.svg" alt="romaninan flag" />
                     <Link href={router.asPath} locale="ro">
-                      <a>Romana</a>
+                      <a>Română</a>
                     </Link>
                   </div>
                   <div>

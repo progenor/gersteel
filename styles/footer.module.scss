@@ -34,6 +34,10 @@
 
   p,
   a {
+    color: rgba(255, 255, 255, 0.718);
+  }
+
+  a:hover {
     color: white;
   }
 
@@ -47,6 +51,10 @@
       row-gap: 18px;
       img {
         border-radius: 50%;
+
+        &:hover {
+          transform: scale(1.1);
+        }
       }
     }
   }

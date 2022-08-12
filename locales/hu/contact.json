@@ -1,6 +1,9 @@
 {
-  "name": "Name",
-  "name_1": "Write your name here",
-  "message": "Message",
-  "find_us": "Where can you fin us?"
+  "name": "Név",
+  "name_1": "Teljes név",
+  "message": "Üzenet ",
+  "message_1": "Üzenet nekünk",
+  "find_us": "Hol találhat meg minket?",
+  "send": "Küldés",
+  "call_us": "Hívjon minket"
 }

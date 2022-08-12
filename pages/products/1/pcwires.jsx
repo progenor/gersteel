@@ -1,8 +1,8 @@
-import styy from '../../../styles/generalPage.module.scss';
+import styy from "../../../styles/generalPage.module.scss";
 
-import Image from 'next/image';
+import Image from "next/image";
 
-import useTranslation from 'next-translate/useTranslation';
+import useTranslation from "next-translate/useTranslation";
 
 const PCwires = () => {
   const { t, lang } = useTranslation();
@@ -12,7 +12,7 @@ const PCwires = () => {
         <h1>PC Wire</h1>
         <div className={styy.image}>
           <Image
-            src="/assets/images/products/gray.jpg"
+            src="/assets/images/products/pc-wire_in.png"
             alt="7 wires"
             width={700}
             height={150}

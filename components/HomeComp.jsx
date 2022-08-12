@@ -1,10 +1,10 @@
-import { useState } from 'react';
-import Link from 'next/link';
-import sty from '../styles/home.module.scss';
+import { useState } from "react";
+import Link from "next/link";
+import sty from "../styles/home.module.scss";
 
-import { BsFillArrowRightCircleFill } from 'react-icons';
+import { BsFillArrowRightCircleFill } from "react-icons";
 
-import useTranslation from 'next-translate/useTranslation';
+import useTranslation from "next-translate/useTranslation";
 
 function HomeComp() {
   const { t, lang } = useTranslation();
@@ -18,13 +18,13 @@ function HomeComp() {
         <li>
           <br />
         </li>
-        <li style={{ marginLeft: '-80%' }}>
+        <li style={{ marginLeft: "-80%" }}>
           <Link href="/products/1/pcstrands">PC strands</Link>
         </li>
-        <li style={{ marginLeft: '-28px' }}>
+        <li style={{ marginLeft: "-28px" }}>
           <Link href="/products/1/pcwires">PC wires</Link>
         </li>
-        <li style={{ marginLeft: '-10px' }}>
+        <li style={{ marginLeft: "-10px" }}>
           <Link href="/products/1/springwires">Spring wires</Link>
         </li>
       </BoxContainer>
@@ -33,19 +33,19 @@ function HomeComp() {
         img="/assets/images/corrugated_pipe.png"
         multiple={true}
       >
-        <li style={{ marginLeft: '-120px' }}>
+        <li style={{ marginLeft: "-120px" }}>
           <Link href="/products/5/rccp">Round corrugated cavity pipes</Link>
         </li>
-        <li style={{ marginLeft: '-84px' }}>
+        <li style={{ marginLeft: "-84px" }}>
           <Link href="/products/5/rlw">Round longitudinally welded</Link>
         </li>
-        <li style={{ marginLeft: '-48px' }}>
+        <li style={{ marginLeft: "-48px" }}>
           <Link href="/products/5/rcp">Rectengular cavity pipes</Link>
         </li>
-        <li style={{ marginLeft: '-17px' }}>
+        <li style={{ marginLeft: "-17px" }}>
           <Link href="/products/5/shs">Shuttering systemms</Link>
         </li>
-        <li style={{ marginLeft: '12px' }}>
+        <li style={{ marginLeft: "12px" }}>
           <Link href="/products/5/vft">Void forming tubes</Link>
         </li>
       </BoxContainer>
@@ -66,10 +66,10 @@ function HomeComp() {
         <li>
           <br />
         </li>
-        <li style={{ marginLeft: '-60px' }}>
+        <li style={{ marginLeft: "-60px" }}>
           <Link href="/products/6/pvcsheets">PVC sheats</Link>
         </li>
-        <li style={{ marginLeft: '-20px' }}>
+        <li style={{ marginLeft: "-20px" }}>
           <Link href="/products/6/lps">Leveling plastic spacers</Link>
         </li>
       </BoxContainer>
@@ -129,14 +129,14 @@ function BoxContainer({ children, title, img, multiple, go, comingsoon }) {
           <img src={img} alt="" />
           {comingsoon ? (
             <>
-              <p style={{ top: '18vh' }} className={sty.readMore}>
+              <p style={{ top: "18vh" }} className={sty.readMore}>
                 <Link href="">Coming Soon...</Link>
               </p>
             </>
           ) : (
             <>
-              <p style={{ top: '18vh' }} className={sty.readMore}>
-                <Link href={`/products${go}`}>Read more</Link>
+              <p style={{ top: "18vh" }} className={sty.readMore}>
+                <Link href={`/products${go}`}>{t("common:read_more")}</Link>
               </p>
             </>
           )}

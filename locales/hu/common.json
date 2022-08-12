@@ -1,10 +1,11 @@
 {
   "home": "Otthon",
-  "contact": "Elerhetoseg",
-  "about": "Rolunk",
-  "createdby": "Created by",
+  "contact": "Elérhetőség",
+  "about": "Rólunk",
+  "createdby": "Készítette:",
   "types": "Tipusok",
-  "coming_soon": "Hamarosan ...",
+  "coming_soon": "Coming soon ... ",
   "others": "Tobbi",
-  "products": "Termekek"
+  "products": "Termekek",
+  "read_more": "Tovább"
 }

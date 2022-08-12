@@ -17,53 +17,53 @@ const Pfoil = () => {
           <h2>{t("products_small:pfoil_applications")}</h2>
           <div className={sty.app_container}>
             <ImgBox
-              img="/gray.jpg"
+              img="/pfoil1.png"
               title="Sandwich panel"
               text={t("products_small:pfoil_sandwich_panel")}
             />
             <ImgBox
-              img="/gray.jpg"
+              img="/pfoil3.jpg"
               title="Pre-painted metal sheet"
               text={t("products_small:pfoil_sandwich_panel")}
             />
             <ImgBox
-              img="/gray.jpg"
+              img="/pfoil2.jpg"
               title="Stainless steel"
               text={t("products_small:pfoil_sandwich_panel")}
             />
             <ImgBox
-              img="/gray.jpg"
+              img="/pfoil4.jpg"
               title="Aluminum"
               text={t("products_small:pfoil_sandwich_panel")}
             />
             <ImgBox
-              img="/gray.jpg"
+              img="/pfoil5.webp"
               title="Laminates, furniture (wood products)"
               text={t("products_small:pfoil_sandwich_panel")}
             />
             <ImgBox
-              img="/gray.jpg"
+              img="/pfoil6.jpg"
               title="Carpet"
               text={t("products_small:pfoil_sandwich_panel")}
             />
             <ImgBox
-              img="/gray.jpg"
+              img="/pfoil7.jpg"
               title="Plastics"
               text={t("products_small:pfoil_sandwich_panel")}
             />
             <ImgBox
-              img="/gray.jpg"
+              img="/pfoil8.jpg"
               title="Glass"
               text={t("products_small:pfoil_sandwich_panel")}
             />
             <ImgBox
-              img="/gray.jpg"
+              img="/pfoil9.jpg"
               title="Automotive"
               text={t("products_small:pfoil_sandwich_panel")}
             />
             <ImgBox
-              img="/gray.jpg"
-              title="phoque Other"
+              img="/pfoil10.png"
+              title="Other"
               text={t("products_small:pfoil_sandwich_panel")}
             />
           </div>
