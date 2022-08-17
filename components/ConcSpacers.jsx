@@ -1,7 +1,7 @@
-import sty from '../styles/spacers.module.scss';
-import styy from '../styles/generalPage.module.scss';
+import sty from "../styles/spacers.module.scss";
+import styy from "../styles/generalPage.module.scss";
 
-import Image from 'next/image';
+import Image from "next/image";
 
 const ConcSpacers = () => {
   const IMG = ({ img1 = null, img2 = null, img3 = null }) => {

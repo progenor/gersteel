@@ -11,6 +11,7 @@
     "/products/1/pcwire": ["product1"],
     "/products/2/pfoil": ["products_small"],
     "/products/7/grindingballs": ["products_small"],
-    "/products/8/pt": ["products_small"]
+    "/products/8/pt": ["products_small"],
+    "/products/5/rccp": ["product5"]
   }
 }

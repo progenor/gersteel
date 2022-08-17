@@ -11,7 +11,7 @@ const PvcSheets = () => {
 
           <div>
             <iframe
-              src="/assets/images/products/pvc_sheath.pdf"
+              src="/assets/pdf/pvc_sheath.pdf"
               height="700"
               width="50%"
             ></iframe>
