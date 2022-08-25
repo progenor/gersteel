@@ -11,7 +11,7 @@ const PcStrands = () => {
     <div className={styy.main_container}>
       <div className={styy.container}>
         <div className={sty.cont}>
-          <h1>Post tensioning</h1>
+          <h1>{t("common:postTensioning")}</h1>
           <div className={sty.img_cont}>
             <div>
               <Image

@@ -10,7 +10,7 @@ const PcStrands = () => {
     <div className={styy.main_container}>
       <div className={styy.container}>
         <div>
-          <h1>{t("common:pc_strands")}</h1>
+          <h1>{t("common:pcStrands")}</h1>
           <div className={styy.types}>
             <h2>{t("common:types")}</h2>
             <ul>
@@ -123,8 +123,8 @@ const PcStrands = () => {
                 </tbody>
               </table>
             </div>
-            <h3>Special Strands</h3>
-            <h4>Compacted</h4>
+            <h3>{t("specialStrands")}</h3>
+            <h4>{t("compacted")}</h4>
             <div className={styy.table}>
               <table>
                 <thead>
@@ -169,11 +169,9 @@ const PcStrands = () => {
                 </tbody>
               </table>
             </div>
-            <h4>Zinc Coated</h4>
-            <p>
-              All strands can be supplied with smooth or indented wire surface
-            </p>
-            <h4>PE coated</h4>
+            <h4>{t("zinc_coated")}</h4>
+            <p>{t("allStrands")}</p>
+            <h4>{t("PECoated")}</h4>
             <div className={styy.table}>
               <table>
                 <thead>
@@ -279,7 +277,7 @@ const PcStrands = () => {
                 </tbody>
               </table>
             </div>
-            <h3>Packaging</h3>
+            <h3>{t("common:packaging")}</h3>
             <div className={styy.table}>
               <table>
                 <thead>
@@ -333,7 +331,7 @@ const PcStrands = () => {
           </div>
           <div className={styy.table1}>
             <h2 id="strand3">{t("2-3")}</h2>
-            <h3>Standard Strand (pr EN 10138)</h3>
+            <h3>{t("pc_strands_text1")}</h3>
             <div className={styy.table}>
               <table>
                 <thead>
@@ -365,6 +363,39 @@ const PcStrands = () => {
                 </thead>
                 <tbody>
                   <tr>
+                    <th>2x2,25</th>
+                    <td>4,5</td>
+                    <td>7,95</td>
+                    <td>62,1</td>
+                    <td>1860</td>
+                    <td>14,8</td>
+                    <td>13,0</td>
+                    <td>3,5</td>
+                    <td>195</td>
+                  </tr>
+                  <tr>
+                    <th>3x2,25</th>
+                    <td>4,85</td>
+                    <td>11,9</td>
+                    <td>92,9</td>
+                    <td>1860</td>
+                    <td>22,1</td>
+                    <td>19,4</td>
+                    <td>3,5</td>
+                    <td>195</td>
+                  </tr>
+                  <tr>
+                    <th>3x3,00</th>
+                    <td>6,5</td>
+                    <td>21,2</td>
+                    <td>165,6</td>
+                    <td>1860</td>
+                    <td>43,5</td>
+                    <td>38,3</td>
+                    <td>3,5</td>
+                    <td>195</td>
+                  </tr>
+                  <tr>
                     <th>3x3,15</th>
                     <td>6,9</td>
                     <td>23,4</td>
@@ -375,14 +406,22 @@ const PcStrands = () => {
                     <td>3,5</td>
                     <td>195</td>
                   </tr>
+                  <tr>
+                    <th>3x3,50</th>
+                    <td>7,5</td>
+                    <td>29,0</td>
+                    <td>226,5</td>
+                    <td>1860</td>
+                    <td>53,9</td>
+                    <td>47,4</td>
+                    <td>3,5</td>
+                    <td>195</td>
+                  </tr>
                 </tbody>
               </table>
             </div>
-            <p>
-              All strands can be supplied with smooth or indented wire surface,
-              indentation type 1 or type 2
-            </p>
-            <h3>Packaging</h3>
+            <p>{t("allStrands2")}</p>
+            <h3>{t("common:packaging")}</h3>
             <div className={styy.table}>
               <table>
                 <thead>

@@ -11,7 +11,7 @@ import styy from "../styles/navMobile.module.scss";
 import useTranslation from "next-translate/useTranslation";
 
 const NavMobile = () => {
-  const { t, lang } = useTranslation();
+  const { t, lang } = useTranslation("common");
   const [isActive, setisActive] = useState(false);
   const [isOpen1, setisOpen1] = useState(false);
   const [isOpen2, setisOpen2] = useState(false);
@@ -21,7 +21,7 @@ const NavMobile = () => {
     const size = 15;
     return (
       <div className={styy.main}>
-        <h2>Products:</h2>
+        <h2>{t("products")}:</h2>
         <ul className={styy.big_ul}>
           <div className={styy.line}></div>
           <li
@@ -32,7 +32,7 @@ const NavMobile = () => {
           >
             {isOpen1 ? (
               <>
-                Prestressing steal, spring <br /> wires
+                {t("prestestingSteelSpringWires")}
                 <IoMdArrowDropdown
                   color="white"
                   size={size}
@@ -45,7 +45,7 @@ const NavMobile = () => {
                       setisActive(!isActive);
                     }}
                   >
-                    <Link href="/products/1/pcstrands">PC strands</Link>
+                    <Link href="/products/1/pcstrands">{t("pcStrands")}</Link>
                   </li>
                   <li
                     className={styy.small_li}
@@ -53,7 +53,7 @@ const NavMobile = () => {
                       setisActive(!isActive);
                     }}
                   >
-                    <Link href="/products/1/pcwires">PC wires</Link>
+                    <Link href="/products/1/pcwires">{t("pcWires")}</Link>
                   </li>
                   <li
                     className={styy.small_li}
@@ -61,13 +61,15 @@ const NavMobile = () => {
                       setisActive(!isActive);
                     }}
                   >
-                    <Link href="/products/1/springwires">Spring wires</Link>
+                    <Link href="/products/1/springwires">
+                      {t("springWires")}
+                    </Link>
                   </li>
                 </ul>
               </>
             ) : (
               <>
-                Prestressing steal, spring <br /> wires
+                {t("prestestingSteelSpringWires")}
                 <IoMdArrowDropdown
                   color="white"
                   size={size}
@@ -85,7 +87,7 @@ const NavMobile = () => {
           >
             {isOpen2 ? (
               <>
-                Corrugated pipes/ducts
+                {t("corrugatedPipesAndDucts")}
                 <IoMdArrowDropdown
                   color="white"
                   size={size}
@@ -100,7 +102,7 @@ const NavMobile = () => {
                     }}
                   >
                     <Link href="products/5/rccp">
-                      Round corrugated cavity pipes
+                      {t("roundCorrugatedCavityPipes")}
                     </Link>
                   </li>
                   <li
@@ -109,7 +111,9 @@ const NavMobile = () => {
                       setisActive(!isActive);
                     }}
                   >
-                    <Link href="products/5/rcp">Rectengular cavity pipes</Link>
+                    <Link href="products/5/rcp">
+                      {t("rectengualrCavityPipes")}
+                    </Link>
                   </li>
                   <li
                     className={styy.small_li}
@@ -118,7 +122,7 @@ const NavMobile = () => {
                     }}
                   >
                     <Link href="products/5/rlw">
-                      Round longitudinally welded
+                      {t("roundLongitudinallyWelded")}
                     </Link>
                   </li>
                   <li
@@ -127,7 +131,7 @@ const NavMobile = () => {
                       setisActive(!isActive);
                     }}
                   >
-                    <Link href="products/5/vft">Void forming tubes</Link>
+                    <Link href="products/5/vft">{t("voidFormingTubess")}</Link>
                   </li>
                   <li
                     className={styy.small_li}
@@ -135,13 +139,13 @@ const NavMobile = () => {
                       setisActive(!isActive);
                     }}
                   >
-                    <Link href="products/5/shs">Shuttering systemms</Link>
+                    <Link href="products/5/shs">{t("shutteringSystems")}</Link>
                   </li>
                 </ul>
               </>
             ) : (
               <>
-                Corrugated pipes/ducts
+                {t("corrugatedPipesAndDucts")}
                 <IoMdArrowDropdown
                   color="white"
                   size={size}
@@ -158,7 +162,9 @@ const NavMobile = () => {
               setisActive(!isActive);
             }}
           >
-            <Link href="/products/3/concspacers">Concrete/plastic spacers</Link>
+            <Link href="/products/3/concspacers">
+              {t("concretePlasticSpacers")}
+            </Link>
           </li>
           <div className={styy.line}></div>
           <li
@@ -167,7 +173,7 @@ const NavMobile = () => {
               setisActive(!isActive);
             }}
           >
-            <Link href="/products/2/pfoil">Protective foil</Link>
+            <Link href="/products/2/pfoil">{t("pfoils")}</Link>
           </li>
           <div className={styy.line}></div>
           <li
@@ -178,7 +184,7 @@ const NavMobile = () => {
           >
             {isOpen3 ? (
               <>
-                PVC sheets, leveling plastic <br /> spacers
+                {t("pvcSheatsAndLeveling")}
                 <IoMdArrowDropdown
                   color="white"
                   size={size}
@@ -192,7 +198,7 @@ const NavMobile = () => {
                       setisActive(!isActive);
                     }}
                   >
-                    <Link href="/products/6/pvcsheets">PVC sheets</Link>
+                    <Link href="/products/6/pvcsheets">{t("pvcSheats")}</Link>
                   </li>
                   <li
                     className={styy.small_li}
@@ -200,13 +206,15 @@ const NavMobile = () => {
                       setisActive(!isActive);
                     }}
                   >
-                    <Link href="/products/6/lps">Leveling plastic spacers</Link>
+                    <Link href="/products/6/lps">
+                      {t("levelingPlasticSpacers")}
+                    </Link>
                   </li>
                 </ul>
               </>
             ) : (
               <>
-                PVC sheets, leveling plastic <br /> spacers
+                {t("pvcSheatsAndLeveling")}
                 <IoMdArrowDropdown
                   color="white"
                   size={size}

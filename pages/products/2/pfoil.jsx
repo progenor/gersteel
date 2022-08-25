@@ -11,7 +11,7 @@ const Pfoil = () => {
     <div className={styy.main_container}>
       <div className={styy.container}>
         <div className={sty.cont}>
-          <h1>{t("common:pfoil")}</h1>
+          <h1>{t("common:pfoils")}</h1>
           <p>{t("products_small:pfoil_desc1")}</p>
           <p>{t("products_small:pfoil_desc2")}</p>
           <h2>{t("products_small:pfoil_applications")}</h2>

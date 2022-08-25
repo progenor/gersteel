@@ -1,16 +1,18 @@
-import Link from 'next/link';
-import styy from '../../../styles/generalPage.module.scss';
-import sty from './concspacers.module.scss';
+import Link from "next/link";
+import styy from "../../../styles/generalPage.module.scss";
+import sty from "./concspacers.module.scss";
 
-import ConcSpacers from '../../../components/ConcSpacers';
-import PlasSpacers from '../../../components/PlasSpacers';
+import ConcSpacers from "../../../components/ConcSpacers";
+import PlasSpacers from "../../../components/PlasSpacers";
+import useTranslation from "next-translate/useTranslation";
 
 const PcStrands = () => {
+  const { t } = useTranslation();
   return (
     <div className={styy.main_container}>
       <div className={styy.container}>
         <div className={styy.types}>
-          <h2>Types: </h2>
+          <h2>{t("common:types")}</h2>
           <ul>
             <li>
               <strong>

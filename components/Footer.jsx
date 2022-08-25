@@ -27,7 +27,7 @@ const Footer = () => {
         <div className={sty.map}>
           <h3>{t("certificates")}</h3>
           <div className={sty.certificates}>
-            <Image
+            {/* <Image
               src="/assets/images/gray.jpg"
               alt="certificates"
               width={img_size}
@@ -62,6 +62,13 @@ const Footer = () => {
               alt="certificates"
               width={img_size}
               height={img_size}
+            /> */}
+            <Image
+              alt="image"
+              src="/assets/images/confidas_logo.png"
+              width={180}
+              height={45}
+              className={sty.certificate}
             />
           </div>
         </div>

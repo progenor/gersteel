@@ -5,11 +5,11 @@ import Image from "next/image";
 import useTranslation from "next-translate/useTranslation";
 
 const PCwires = () => {
-  const { t, lang } = useTranslation();
+  const { t } = useTranslation("product1");
   return (
     <div className={styy.main_container}>
       <div className={styy.container}>
-        <h1>PC Wire</h1>
+        <h1>{t("common:pcWires")}</h1>
         <div className={styy.image}>
           <Image
             src="/assets/images/products/pc-wire_in.png"
@@ -20,7 +20,7 @@ const PCwires = () => {
         </div>
         <div>
           <div className={styy.table1}>
-            <h3>Standard wires (pr EN 10138)</h3>
+            <h3>{t("pc_strands_text1")}</h3>
             <div className={styy.table}>
               <table>
                 <thead>
@@ -203,8 +203,8 @@ const PCwires = () => {
                 </tbody>
               </table>
             </div>
-            <p>All wires can be supplied with smoth or indented surface</p>
-            <h3>Packaging</h3>
+            <p>{t("allStrands")}</p>
+            <h3>{t("common:packaging")}</h3>
             <div className={styy.table}>
               <table>
                 <thead>
@@ -236,7 +236,7 @@ const PCwires = () => {
                 </tbody>
               </table>
             </div>
-            <h3>Wire for high pressure pipes</h3>
+            <h3>{t("wirePressure")}</h3>
             <div className={styy.table}>
               <table>
                 <thead>
@@ -324,7 +324,7 @@ const PCwires = () => {
                 </tbody>
               </table>
             </div>
-            <h3>Packaging</h3>
+            <h3>{t("common:packaging")}</h3>
             <div className={styy.table}>
               <table>
                 <thead>

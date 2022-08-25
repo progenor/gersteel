@@ -7,8 +7,9 @@ const NotExisting = () => {
   return (
     <div className="no_existingo">
       <div>
-        <h1>Ooooops......</h1>
-        <h1>Something went wrong</h1>
+        <h1>
+          Ooooops...... <br /> Something went wrong
+        </h1>
         <h2>This page does not exist!!</h2>
         <h3>
           Lets get you back to the

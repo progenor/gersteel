@@ -13,7 +13,7 @@ const PcStrands = () => {
     <div className={styy.main_container}>
       <div className={styy.container}>
         <div className={sty.cont}>
-          <h1>{t("common:grinding_balls")}</h1>
+          <h1>{t("common:steelGrindingBalls")}</h1>
           <div className={sty.img_cont}>
             <Image
               src="/assets/images/products/gb1.webp"

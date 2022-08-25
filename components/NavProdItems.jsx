@@ -1,12 +1,12 @@
-import Link from 'next/link';
+import Link from "next/link";
 
-import { IoMdArrowDropdown } from 'react-icons/io';
-import sty from '../styles/navitems.module.scss';
-import { useState } from 'react';
-import useTranslation from 'next-translate/useTranslation';
+import { IoMdArrowDropdown } from "react-icons/io";
+import sty from "../styles/navitems.module.scss";
+import { useState } from "react";
+import useTranslation from "next-translate/useTranslation";
 
 function NavProdItems() {
-  const { t, lang } = useTranslation('nav');
+  const { t, lang } = useTranslation("common");
   const size = 15;
 
   const [please_go_fuck_yourself, setplease_go_fuck_yourself] = useState(false);
@@ -14,22 +14,22 @@ function NavProdItems() {
   return (
     <ul className={sty.big_ul}>
       <li className={sty.big_li}>
-        <span>Prestressing steal, spring wires</span>
+        <span>{t("prestestingSteelSpringWires")}</span>
         <IoMdArrowDropdown color="white" size={size} className={sty.icon} />
         <ul className={sty.small_ul}>
           <li className={sty.small_li}>
-            <Link href="/products/1/pcstrands">PC strands</Link>
+            <Link href="/products/1/pcstrands">{t("pcStrands")}</Link>
           </li>
           <li className={sty.small_li}>
-            <Link href="/products/1/pcwires">PC wires</Link>
+            <Link href="/products/1/pcwires">{t("pcWires")}</Link>
           </li>
           <li className={sty.small_li}>
-            <Link href="/products/1/springwires">Spring wires</Link>
+            <Link href="/products/1/springwires">{t("springWires")}</Link>
           </li>
         </ul>
       </li>
       <li className={sty.big_li}>
-        <span>Corrugated pipes/ducts</span>
+        <span>{t("corrugatedPipesAndDucts")}</span>
         <IoMdArrowDropdown
           color="white"
           size={size}
@@ -38,32 +38,36 @@ function NavProdItems() {
         />
         <ul className={sty.small_ul}>
           <li className={sty.small_li}>
-            <Link href="/products/5/rccp">Round corrugated cavity pipes</Link>
+            <Link href="/products/5/rccp">
+              {t("roundCorrugatedCavityPipes")}
+            </Link>
           </li>
           <li className={sty.small_li}>
-            <Link href="/products/5/rcp">Rectengular cavity pipes</Link>
+            <Link href="/products/5/rcp">{t("rectengualrCavityPipes")}</Link>
           </li>
           <li className={sty.small_li}>
-            <Link href="/products/5/rlw">Round longitudinally welded</Link>
+            <Link href="/products/5/rlw">{t("roundLongitudinallyWelded")}</Link>
           </li>
           <li className={sty.small_li}>
-            <Link href="/products/5/vft">Void forming tubes</Link>
+            <Link href="/products/5/vft">{t("voidFormingTubess")}</Link>
           </li>
           <li className={sty.small_li}>
-            <Link href="/products/5/shs">Shuttering systemms</Link>
+            <Link href="/products/5/shs">{t("shutteringSystems")}</Link>
           </li>
         </ul>
       </li>
 
       <li className={sty.big_li}>
-        <Link href="/products/3/concspacers">Concrete/plastic spacers</Link>
+        <Link href="/products/3/concspacers">
+          {t("concretePlasticSpacers")}
+        </Link>
       </li>
       <li className={sty.big_li}>
-        <Link href="/products/7/grindingballs">Steel grinding balls</Link>
+        <Link href="/products/7/grindingballs">{t("steelGrindingBalls")}</Link>
       </li>
 
       <li className={sty.big_li}>
-        <span>PVC sheets, leveling plastic spacers</span>
+        <span>{t("pvcSheatsAndLeveling")}</span>
         <IoMdArrowDropdown
           color="white"
           size={size}
@@ -72,18 +76,18 @@ function NavProdItems() {
         />
         <ul className={sty.small_ul}>
           <li className={sty.small_li}>
-            <Link href="/products/6/pvcsheets">PVC sheets</Link>
+            <Link href="/products/6/pvcsheets">{t("pvcSheats")}</Link>
           </li>
           <li className={sty.small_li}>
-            <Link href="/products/6/lps">Leveling plastic spacers</Link>
+            <Link href="/products/6/lps">{t("levelingPlasticSpacers")}</Link>
           </li>
         </ul>
       </li>
       <li className={sty.big_li}>
-        <Link href="/products/2/pfoil">Protective foil</Link>
+        <Link href="/products/2/pfoil">{t("pfoils")}</Link>
       </li>
       <li className={sty.big_li}>
-        <Link href="/products/8/pt">Post-tensioning</Link>
+        <Link href="/products/8/pt">{t("postTensioning")}</Link>
       </li>
       <li
         className={(sty.big_li, sty.disabled)}
@@ -97,12 +101,12 @@ function NavProdItems() {
         {please_go_fuck_yourself ? (
           <>
             <Link href="">
-              <span style={{ color: 'grey' }}>{t('common:coming_soon')}</span>
+              <span style={{ color: "grey" }}>{t("common:coming_soon")}</span>
             </Link>
           </>
         ) : (
           <>
-            <Link href="">{t('common:others')}</Link>
+            <Link href="">{t("common:others")}</Link>
           </>
         )}
       </li>

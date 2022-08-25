@@ -10,7 +10,7 @@ const SpringWires = () => {
     <div className={styy.main_container}>
       <div className={styy.container}>
         <div className={sty.cont}>
-          <h1>{t("common:spring_wire")}</h1>
+          <h1>{t("common:springWires")}</h1>
           <Image
             src="/assets/images/products/spring_wire_in.jpg"
             alt="spring wire"

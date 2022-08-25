@@ -7,11 +7,11 @@ import { BsFillArrowRightCircleFill } from "react-icons";
 import useTranslation from "next-translate/useTranslation";
 
 function HomeComp() {
-  const { t, lang } = useTranslation();
+  const { t, lang } = useTranslation("common");
   return (
     <div className={sty.home_cont} id="home">
       <BoxContainer
-        title="Prestressing steel spring wires"
+        title={t("prestestingSteelSpringWires")}
         img="/assets/images/wires.png"
         multiple={true}
       >
@@ -19,45 +19,46 @@ function HomeComp() {
           <br />
         </li>
         <li style={{ marginLeft: "-80%" }}>
-          <Link href="/products/1/pcstrands">PC strands</Link>
+          <Link href="/products/1/pcstrands">{t("pcStrands")}</Link>
         </li>
         <li style={{ marginLeft: "-28px" }}>
-          <Link href="/products/1/pcwires">PC wires</Link>
+          <Link href="/products/1/pcwires">{t("pcWires")}</Link>
         </li>
         <li style={{ marginLeft: "-10px" }}>
-          <Link href="/products/1/springwires">Spring wires</Link>
+          <Link href="/products/1/springwires">{t("springWires")}</Link>
         </li>
       </BoxContainer>
       <BoxContainer
-        title="Corrugated pipes/ducts"
+        title={t("corrugatedPipesAndDucts")}
         img="/assets/images/corrugated_pipe.png"
         multiple={true}
       >
         <li style={{ marginLeft: "-120px" }}>
-          <Link href="/products/5/rccp">Round corrugated cavity pipes</Link>
+          <Link href="/products/5/rccp">{t("roundCorrugatedCavityPipes")}</Link>
         </li>
         <li style={{ marginLeft: "-84px" }}>
-          <Link href="/products/5/rlw">Round longitudinally welded</Link>
+          <Link href="/products/5/rlw">{t("roundLongitudinallyWelded")}</Link>
         </li>
         <li style={{ marginLeft: "-48px" }}>
-          <Link href="/products/5/rcp">Rectengular cavity pipes</Link>
+          <Link href="/products/5/rcp">{t("rectengualrCavityPipes")}</Link>
         </li>
         <li style={{ marginLeft: "-17px" }}>
-          <Link href="/products/5/shs">Shuttering systemms</Link>
+          {" "}
+          <Link href="/products/5/shs">{t("shutteringSystems")}</Link>
         </li>
         <li style={{ marginLeft: "12px" }}>
-          <Link href="/products/5/vft">Void forming tubes</Link>
+          <Link href="/products/5/vft">{t("voidFormingTubess")}</Link>
         </li>
       </BoxContainer>
 
       <BoxContainer
-        title="Concrete/Plastic spacers"
+        title={t("concretePlasticSpacers")}
         img="/assets/images/conc_plas_spacer.png"
         go="/3/concspacers"
       />
       <BoxContainer
-        title="PVC sheets, leveling plastic spacers"
-        img="/assets/images/pfoil.png"
+        title={t("pvcSheatsAndLeveling")}
+        img="/assets/images/pvcSheat.png"
         multiple={true}
       >
         <li>
@@ -67,30 +68,30 @@ function HomeComp() {
           <br />
         </li>
         <li style={{ marginLeft: "-60px" }}>
-          <Link href="/products/6/pvcsheets">PVC sheats</Link>
+          <Link href="/products/6/pvcsheets">{t("pvcSheats")}</Link>
         </li>
         <li style={{ marginLeft: "-20px" }}>
-          <Link href="/products/6/lps">Leveling plastic spacers</Link>
+          <Link href="/products/6/lps">{t("levelingPlasticSpacers")}</Link>
         </li>
       </BoxContainer>
       <BoxContainer
-        title="Steal grinding balls"
+        title={t("steelGrindingBalls")}
         img="/assets/images/balls.png"
         go="/7/grindingballs"
       />
       <BoxContainer
-        title="Protective foil"
+        title={t("pfoils")}
         img="/assets/images/pfoil.png"
         go="/2/pfoil"
       />
 
       <BoxContainer
-        title="Post-tensioning"
+        title={t("postTensioning")}
         img="/assets/images/pt.png"
         go="/8/pt"
       />
       <BoxContainer
-        title="Others"
+        title={t("others")}
         img="/assets/images/logo_G_grey.png"
         comingsoon={true}
       />
@@ -130,7 +131,7 @@ function BoxContainer({ children, title, img, multiple, go, comingsoon }) {
           {comingsoon ? (
             <>
               <p style={{ top: "18vh" }} className={sty.readMore}>
-                <Link href="">Coming Soon...</Link>
+                <Link href="">{t("coming_soon")}</Link>
               </p>
             </>
           ) : (

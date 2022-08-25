@@ -3,5 +3,12 @@
   "2-3": "2-3 wire strands",
   "pc_strands_text1": "Standard Strands (pr EN 10138)",
   "spring_description1": "We are delivering directly from producers a wide range of spring wires, from high to low carbon and different surfaces.",
-  "spring_description2": " Please contact us for any requests."
+  "spring_description2": " Please contact us for any requests.",
+  "specialStrands": "Special Strands",
+  "compacted": "Compacted",
+  "zinc_coated": "Zinc Coated",
+  "allStrands": "All strands can be supplied with smooth or indented wire surface",
+  "allStrands2": "All strands can be supplied with smooth or indented wire surface, indentation type 1 or type 2",
+  "PECoated": "PE Coated",
+  "wirePressure": "Wire for high pressure pipes"
 }

@@ -45,15 +45,20 @@
 
   .map {
     .certificates {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
-      row-gap: 18px;
-      img {
-        border-radius: 50%;
+      // display: grid;
+      // grid-template-columns: repeat(3, 1fr);
+      // gap: 25px;
+      // row-gap: 18px;
+      // img {
+      //   border-radius: 50%;
 
+      //   &:hover {
+      //     transform: scale(1.1);
+      //   }
+      // }
+      .certificate {
         &:hover {
-          transform: scale(1.1);
+          transform: scale(1.03);
         }
       }
     }
