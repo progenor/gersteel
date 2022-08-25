@@ -1,7 +1,7 @@
-import sty from '../styles/spacers.module.scss';
-import styy from '../styles/generalPage.module.scss';
+import sty from "../styles/spacers.module.scss";
+import styy from "../styles/generalPage.module.scss";
 
-import Image from 'next/image';
+import Image from "next/image";
 
 const PlasSpacers = () => {
   const IMG = ({ img1 = null, img2 = null, img3 = null }) => {
@@ -901,6 +901,60 @@ const PlasSpacers = () => {
                 <td>5280</td>
                 <td>3,1</td>
                 <td>273</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div className={styy.table1}>
+        <h2 id="prc">Plastic Rebar Chair</h2>
+        <IMG img1="prc1.jpg" />
+        <div className={styy.table}>
+          <table>
+            <thead>
+              <tr>
+                <th>Type</th>
+                <th>Cover </th>
+                <th>Quantity / Bag</th>
+                <th>Weight / Bag</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>PK25</th>
+                <td>25/40</td>
+                <td>100</td>
+                <td>2,8</td>
+              </tr>
+              <tr>
+                <th>PK50</th>
+                <td>50/65</td>
+                <td>100</td>
+                <td>4,3</td>
+              </tr>
+              <tr>
+                <th>PK75</th>
+                <td>75/90</td>
+                <td>100</td>
+                <td>6,8</td>
+              </tr>
+              <tr>
+                <th>PK85</th>
+                <td>85/100</td>
+                <td>100</td>
+                <td>6,9</td>
+              </tr>
+              <tr>
+                <th>PK115</th>
+                <td>115/120</td>
+                <td>50</td>
+                <td>4,5</td>
+              </tr>
+              <tr>
+                <th>PK145</th>
+                <td>145/150</td>
+                <td>50</td>
+                <td>6</td>
               </tr>
             </tbody>
           </table>

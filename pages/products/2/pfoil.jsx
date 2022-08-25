@@ -6,7 +6,7 @@ import Image from "next/image";
 import useTranslation from "next-translate/useTranslation";
 
 const Pfoil = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation("products_small");
   return (
     <div className={styy.main_container}>
       <div className={styy.container}>
@@ -18,52 +18,52 @@ const Pfoil = () => {
           <div className={sty.app_container}>
             <ImgBox
               img="/pfoil1.png"
-              title="Sandwich panel"
+              title={t("pfoilSandwichPanel")}
               text={t("products_small:pfoil_sandwich_panel")}
             />
             <ImgBox
               img="/pfoil3.jpg"
-              title="Pre-painted metal sheet"
+              title={t("prepainted")}
               text={t("products_small:pfoil_sandwich_panel")}
             />
             <ImgBox
               img="/pfoil2.jpg"
-              title="Stainless steel"
+              title={t("steel")}
               text={t("products_small:pfoil_sandwich_panel")}
             />
             <ImgBox
               img="/pfoil4.jpg"
-              title="Aluminum"
+              title={t("aluminium")}
               text={t("products_small:pfoil_sandwich_panel")}
             />
             <ImgBox
               img="/pfoil5.webp"
-              title="Laminates, furniture (wood products)"
+              title={t("wood")}
               text={t("products_small:pfoil_sandwich_panel")}
             />
             <ImgBox
               img="/pfoil6.jpg"
-              title="Carpet"
+              title={t("carpet")}
               text={t("products_small:pfoil_sandwich_panel")}
             />
             <ImgBox
               img="/pfoil7.jpg"
-              title="Plastics"
+              title={t("plastics")}
               text={t("products_small:pfoil_sandwich_panel")}
             />
             <ImgBox
               img="/pfoil8.jpg"
-              title="Glass"
+              title={t("glass")}
               text={t("products_small:pfoil_sandwich_panel")}
             />
             <ImgBox
               img="/pfoil9.jpg"
-              title="Automotive"
+              title={t("automotive")}
               text={t("products_small:pfoil_sandwich_panel")}
             />
             <ImgBox
               img="/pfoil10.png"
-              title="Other"
+              title={t("common:others")}
               text={t("products_small:pfoil_sandwich_panel")}
             />
           </div>

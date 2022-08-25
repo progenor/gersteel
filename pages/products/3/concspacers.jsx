@@ -109,6 +109,9 @@ const PcStrands = () => {
                 <li>
                   <a href="#rde">Rhombus DE</a>
                 </li>
+                <li>
+                  <a href="#prc">PLastic Rebar Chair</a>
+                </li>
               </ul>
             </li>
           </ul>
