@@ -4,3 +4,10 @@
     justify-content: center;
   }
 }
+
+.images {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-bottom: 20px;
+}

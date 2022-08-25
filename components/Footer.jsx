@@ -17,8 +17,8 @@ const Footer = () => {
           <a href="">
             România, Târgu-Mureș <br /> Str. Frunzei nr.10, 540164
           </a>
-          <a href="tel:+40742090664">tel: +40 742 090 664</a>
-          <a href="fax:+40265266267">fax: +40 265 266 267</a>
+          <a href="tel:+40742090664">Tel: +40 742 090 664</a>
+          <a href="fax:+40265266267">Fax: +40 265 266 267</a>
           <a href="mail:gersteelsrl@yahoo.com">E-mail: gersteelsrl@yahoo.com</a>
         </div>
 
