@@ -117,3 +117,20 @@
     }
   }
 }
+
+.image_blow_up {
+  z-index: 999999;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.617);
+  img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+  }
+}

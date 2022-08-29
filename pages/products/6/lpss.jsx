@@ -7,7 +7,9 @@ import useTranslation from "next-translate/useTranslation";
 const Lpss = () => {
   const { t } = useTranslation("product6");
 
-  const size = 80;
+  const size = 150;
+  const size2_w = 880,
+    size2_h = 600;
   return (
     <div className={styy.main_container}>
       <div className={styy.container}>
@@ -40,34 +42,13 @@ const Lpss = () => {
             width={size}
             height={size}
           />
-          <div className={styy.table}>
-            <table>
-              <thead>
-                <tr>
-                  <th>Type</th>
-                  <th>Height (mm)</th>
-                  <th>To suit bar dia (mm)</th>
-                  <th>Pack sie bag (pcs)</th>
-                  <th>Pack sie pack (pcs)</th>
-                  <th>Pallets (pcs)</th>
-                  <th>Bag (kg)</th>
-                  <th>Pack (kg)</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th>KO 12/15 </th>
-                  <td>15</td>
-                  <td>6-12</td>
-                  <td>1000</td>
-                  <td>5000</td>
-                  <td>100 000</td>
-                  <td>3,4</td>
-                  <td>17</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+          <br />
+          <Image
+            alt="image"
+            src="/assets/images/products/lpss_m_d.png"
+            width={size2_w}
+            height={size2_h}
+          />
         </div>
         <div className={styy.table1}>
           <h2 id="mc">MC</h2>
@@ -77,34 +58,13 @@ const Lpss = () => {
             width={size}
             height={size}
           />
-          <div className={styy.table}>
-            <table>
-              <thead>
-                <tr>
-                  <th>Type</th>
-                  <th>Height (mm)</th>
-                  <th>To suit bar dia (mm)</th>
-                  <th>Pack sie bag (pcs)</th>
-                  <th>Pack sie pack (pcs)</th>
-                  <th>Pallets (pcs)</th>
-                  <th>Bag (kg)</th>
-                  <th>Pack (kg)</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th>KO 12/15 </th>
-                  <td>15</td>
-                  <td>6-12</td>
-                  <td>1000</td>
-                  <td>5000</td>
-                  <td>100 000</td>
-                  <td>3,4</td>
-                  <td>17</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+          <br />
+          <Image
+            alt="image"
+            src="/assets/images/products/lpss_mc_d.png"
+            width={size2_w}
+            height={size2_h}
+          />
         </div>
         <div className={styy.table1}>
           <h2 id="mr">MR</h2>
@@ -114,34 +74,13 @@ const Lpss = () => {
             width={size}
             height={size}
           />
-          <div className={styy.table}>
-            <table>
-              <thead>
-                <tr>
-                  <th>Type</th>
-                  <th>Height (mm)</th>
-                  <th>To suit bar dia (mm)</th>
-                  <th>Pack sie bag (pcs)</th>
-                  <th>Pack sie pack (pcs)</th>
-                  <th>Pallets (pcs)</th>
-                  <th>Bag (kg)</th>
-                  <th>Pack (kg)</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th>KO 12/15 </th>
-                  <td>15</td>
-                  <td>6-12</td>
-                  <td>1000</td>
-                  <td>5000</td>
-                  <td>100 000</td>
-                  <td>3,4</td>
-                  <td>17</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+          <br />
+          <Image
+            alt="image"
+            src="/assets/images/products/lpss_mr_d.png"
+            width={size2_w}
+            height={size2_h}
+          />
         </div>
         <div className={styy.table1}>
           <h2 id="mq">MQ</h2>
@@ -151,34 +90,13 @@ const Lpss = () => {
             width={size}
             height={size}
           />
-          <div className={styy.table}>
-            <table>
-              <thead>
-                <tr>
-                  <th>Type</th>
-                  <th>Height (mm)</th>
-                  <th>To suit bar dia (mm)</th>
-                  <th>Pack sie bag (pcs)</th>
-                  <th>Pack sie pack (pcs)</th>
-                  <th>Pallets (pcs)</th>
-                  <th>Bag (kg)</th>
-                  <th>Pack (kg)</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th>KO 12/15 </th>
-                  <td>15</td>
-                  <td>6-12</td>
-                  <td>1000</td>
-                  <td>5000</td>
-                  <td>100 000</td>
-                  <td>3,4</td>
-                  <td>17</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+          <br />
+          <Image
+            alt="image"
+            src="/assets/images/products/lpss_mq_d.png"
+            width={size2_w}
+            height={size2_h}
+          />
         </div>
         <div className={styy.table1}>
           <h2 id="me">ME</h2>
@@ -188,34 +106,13 @@ const Lpss = () => {
             width={size}
             height={size}
           />
-          <div className={styy.table}>
-            <table>
-              <thead>
-                <tr>
-                  <th>Type</th>
-                  <th>Height (mm)</th>
-                  <th>To suit bar dia (mm)</th>
-                  <th>Pack sie bag (pcs)</th>
-                  <th>Pack sie pack (pcs)</th>
-                  <th>Pallets (pcs)</th>
-                  <th>Bag (kg)</th>
-                  <th>Pack (kg)</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th>KO 12/15 </th>
-                  <td>15</td>
-                  <td>6-12</td>
-                  <td>1000</td>
-                  <td>5000</td>
-                  <td>100 000</td>
-                  <td>3,4</td>
-                  <td>17</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+          <br />
+          <Image
+            alt="image"
+            src="/assets/images/products/lpss_me_d.png"
+            width={size2_w}
+            height={size2_h}
+          />
         </div>
       </div>
     </div>
