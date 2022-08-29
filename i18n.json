@@ -10,9 +10,11 @@
     "/products/1/springwires": ["product1"],
     "/products/1/pcwires": ["product1"],
     "/products/2/pfoil": ["products_small"],
+    "/products/3/concspacers": ["product3"],
     "/products/7/grindingballs": ["products_small"],
     "/products/8/pt": ["products_small"],
     "/products/5/rccp": ["product5"],
-    "/products/6/lps": ["product6"]
+    "/products/6/lps": ["product6"],
+    "/products/6/lpss": ["product6"]
   }
 }

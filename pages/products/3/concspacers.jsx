@@ -7,72 +7,67 @@ import PlasSpacers from "../../../components/PlasSpacers";
 import useTranslation from "next-translate/useTranslation";
 
 const PcStrands = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation("product3");
   return (
     <div className={styy.main_container}>
       <div className={styy.container}>
+        <h1>{t("common:concretePlasticSpacers")}</h1>
         <div className={styy.types}>
           <h2>{t("common:types")}</h2>
           <ul>
             <li>
               <strong>
-                <a href="#concrete">Concrete Spacers</a>
+                <a href="#concrete">{t("concspacer")}</a>
               </strong>
               <ul>
                 <li>
-                  <a href="#btds">Betodis BTD S – with double plastic clips</a>
+                  <a href="#btds">{t("btds")} </a>
                 </li>
                 <li>
-                  <a href="#btdhs">
-                    Betodis BTD HS – with double plastic clips
-                  </a>
+                  <a href="#btdhs"> {t("btdhs")}</a>
                 </li>
                 <li>
-                  <a href="#mirawb">Concrete stick WB</a>
+                  <a href="#mirawb">{t("wb")}</a>
                 </li>
                 <li>
-                  <a href="#butterK">
-                    Concrete ,,butterfly,, spacer without wire - K
-                  </a>
+                  <a href="#butterK">{t("butterK")}</a>
                 </li>
                 <li>
-                  <a href="#butterkd">
-                    Concrete ,,butterfly,, spacer including wire - KD
-                  </a>
+                  <a href="#butterkd">{t("butterkd")}</a>
                 </li>
                 <li>
-                  <a href="#concu">Concrete ,,U,, spacer without wire</a>
+                  <a href="#concu">{t("concu")}</a>
                 </li>
                 <li>
-                  <a href="#concud">Concrete ,,UD,, spacer including wire</a>
+                  <a href="#concud">{t("concud")}</a>
                 </li>
                 <li>
-                  <a href="#snakets">Concrete T-Section - snakeTS</a>
+                  <a href="#snakets">{t("snakets")}</a>
                 </li>
                 <li>
-                  <a href="#snakes">Concrete snake S</a>
+                  <a href="#snakes">{t("snakeS")}</a>
                 </li>
                 <li>
-                  <a href="#snakesn">Concrete snake with ripples SN</a>
+                  <a href="#snakesn">{t("snakesn")}</a>
                 </li>
                 <li>
-                  <a href="#conctube">Concrete tube 22/40</a>
+                  <a href="#conctube">{t("concTube")}</a>
                 </li>
                 <li>
-                  <a href="#concplug">Concrete plug</a>
+                  <a href="#concplug">{t("concPlug")}</a>
                 </li>
               </ul>
             </li>
             <li>
               <strong>
-                <a href="#plastic">Plastic Spacers</a>
+                <a href="#plastic">{t("plasspacer")}</a>
               </strong>
               <ul>
                 <li>
-                  <a href="#wsko">Wheel Spacer KO</a>
+                  <a href="#wsko">{t("wh")} KO</a>
                 </li>
                 <li>
-                  <a href="#wskom">Wheel Spacer KO MAXI</a>
+                  <a href="#wskom">{t("wh")} KO MAXI</a>
                 </li>
                 <li>
                   <a href="#dts">DUAL Track Spacer - length 2,0 m</a>
@@ -110,7 +105,7 @@ const PcStrands = () => {
                   <a href="#rde">Rhombus DE</a>
                 </li>
                 <li>
-                  <a href="#prc">PLastic Rebar Chair</a>
+                  <a href="#prc">{t("prc")}</a>
                 </li>
               </ul>
             </li>

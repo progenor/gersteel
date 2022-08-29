@@ -19,7 +19,7 @@
 
 # 5 Corrugated pipes
 
-- wbr-rohr.de
+- wbr-rohre.de
 
 2. longitudinally welded
 

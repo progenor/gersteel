@@ -2,8 +2,10 @@ import sty from "../styles/spacers.module.scss";
 import styy from "../styles/generalPage.module.scss";
 
 import Image from "next/image";
+import useTranslation from "next-translate/useTranslation";
 
 const ConcSpacers = () => {
+  const { t } = useTranslation("product3");
   const IMG = ({ img1 = null, img2 = null, img3 = null }) => {
     const size = 80;
     return (
@@ -38,9 +40,9 @@ const ConcSpacers = () => {
 
   return (
     <div className={sty.main} id="concrete">
-      <h1>Concrete Spacers</h1>
+      <h1>{t("concspacer")}</h1>
       <div className={styy.table1}>
-        <h2 id="btds">Betodis BTD S – with double plastic clips</h2>
+        <h2 id="btds">{t("btds")}</h2>
         <IMG img1="btds1.jpg" img2="btds2.jpg" />
         <div className={styy.table}>
           <table>
@@ -106,7 +108,7 @@ const ConcSpacers = () => {
         </div>
       </div>
       <div className={styy.table1}>
-        <h2 id="btdhs">Betodis BTD HS – with double plastic clips</h2>
+        <h2 id="btdhs">{t("btdhs")}</h2>
         <IMG img1="btdhs1.jpg" img2="btdhs2.jpg" />
         <div className={styy.table}>
           <table>
@@ -178,7 +180,7 @@ const ConcSpacers = () => {
         </div>
       </div>
       <div className={styy.table1}>
-        <h2 id="mirawb">Concrete stick WB</h2>
+        <h2 id="mirawb">{t("wb")}</h2>
         <IMG img1="mirawb1.jpg" />
         <div className={styy.table}>
           <table>
@@ -239,7 +241,7 @@ const ConcSpacers = () => {
         </div>
       </div>
       <div className={styy.table1}>
-        <h2 id="butterK">Concrete ,,butterfly,, spacer without wire - K</h2>
+        <h2 id="butterK">{t("butterK")}</h2>
         <IMG img1="butterk1.jpg" />
         <div className={styy.table}>
           <table>
@@ -279,7 +281,7 @@ const ConcSpacers = () => {
         </div>
       </div>
       <div className={styy.table1}>
-        <h2 id="butterkd">Concrete ,,butterfly,, spacer including wire - KD</h2>
+        <h2 id="butterkd">{t("butterkd")}</h2>
         <IMG img1="butterkd1.jpg" />
         <div className={styy.table}>
           <table>
@@ -319,7 +321,7 @@ const ConcSpacers = () => {
         </div>
       </div>
       <div className={styy.table1}>
-        <h2 id="concu">Concrete ,,U,, spacer without wire</h2>
+        <h2 id="concu">{t("concu")}</h2>
         <IMG img1="concu1.jpg" />
         <div className={styy.table}>
           <table>
@@ -401,7 +403,7 @@ const ConcSpacers = () => {
         </div>
       </div>
       <div className={styy.table1}>
-        <h2 id="concud">Concrete ,,UD,, spacer including wire</h2>
+        <h2 id="concud">{t("concud")}</h2>
         <IMG img1="concud1.jpg" />
         <div className={styy.table}>
           <table>
@@ -483,7 +485,7 @@ const ConcSpacers = () => {
         </div>
       </div>
       <div className={styy.table1}>
-        <h2 id="snakets">Concrete T-Section - snakeTS</h2>
+        <h2 id="snakets">{t("snakets")}</h2>
         <IMG img1="snakets1.jpg" />
         <div className={styy.table}>
           <table>
@@ -551,7 +553,7 @@ const ConcSpacers = () => {
         </div>
       </div>
       <div className={styy.table1}>
-        <h2 id="snakes">Concrete snake S</h2>
+        <h2 id="snakes">{t("snakes")}</h2>
         <IMG img1="snakes1.jpg" />
         <div className={styy.table}>
           <table>
@@ -697,7 +699,7 @@ const ConcSpacers = () => {
         </div>
       </div>
       <div className={styy.table1}>
-        <h2 id="snakesn">Concrete snake with ripples SN</h2>
+        <h2 id="snakesn">{t("snakesn")}</h2>
         <IMG img1="snakesn1.jpg" />
         <div className={styy.table}>
           <table>
@@ -843,7 +845,7 @@ const ConcSpacers = () => {
         </div>
       </div>
       <div className={styy.table1}>
-        <h2 id="conctube">Concrete tube 22/40</h2>
+        <h2 id="conctube">{t("concTube")}</h2>
         <IMG img1="conctube1.jpg" />
         <div className={styy.table}>
           <table>
@@ -871,7 +873,7 @@ const ConcSpacers = () => {
         </div>
       </div>
       <div className={styy.table1}>
-        <h2 id="concplug">Concrete plug</h2>
+        <h2 id="concplug">{t("concPlug")}</h2>
         <IMG img1="concplug1.jpg" img2="concplug2.jpg" img3="concplug3.jpg" />
         <div className={styy.table}>
           <table>

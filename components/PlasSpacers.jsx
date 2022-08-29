@@ -2,8 +2,10 @@ import sty from "../styles/spacers.module.scss";
 import styy from "../styles/generalPage.module.scss";
 
 import Image from "next/image";
+import useTranslation from "next-translate/useTranslation";
 
 const PlasSpacers = () => {
+  const { t } = useTranslation("product3");
   const IMG = ({ img1 = null, img2 = null, img3 = null }) => {
     const size = 80;
     return (
@@ -38,9 +40,9 @@ const PlasSpacers = () => {
 
   return (
     <div className={sty.main} id="plastic">
-      <h1>Plastic Spacers</h1>
+      <h1>{t("plasspacer")}</h1>
       <div className={styy.table1}>
-        <h2 id="wsko">Wheel Spacer KO</h2>
+        <h2 id="wsko">{t("wh")} KO</h2>
         <IMG img1="wspacerko1.jpg" img2="wspacerko2.jpg" />
         <div className={styy.table}>
           <table>
@@ -137,7 +139,7 @@ const PlasSpacers = () => {
         </div>
       </div>
       <div className={styy.table1}>
-        <h2 id="wskom">Wheel Spacer KO MAXI</h2>
+        <h2 id="wskom">{t("wh")} KO MAXI</h2>
         <IMG img1="wspacerko1.jpg" img2="wspacerko2.jpg" />
         <div className={styy.table}>
           <table>
@@ -907,7 +909,7 @@ const PlasSpacers = () => {
         </div>
       </div>
       <div className={styy.table1}>
-        <h2 id="prc">Plastic Rebar Chair</h2>
+        <h2 id="prc">{t("prc")}</h2>
         <IMG img1="prc1.jpg" />
         <div className={styy.table}>
           <table>
