@@ -81,6 +81,11 @@ function NavProdItems() {
           <li className={sty.small_li}>
             <Link href="/products/6/lps">{t("levelingPlasticSpacers")}</Link>
           </li>
+          <li className={sty.small_li}>
+            <Link href="/products/6/lpss">
+              {t("levelingPlasticSpacers") + " 2"}
+            </Link>
+          </li>
         </ul>
       </li>
       <li className={sty.big_li}>

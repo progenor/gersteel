@@ -210,6 +210,16 @@ const NavMobile = () => {
                       {t("levelingPlasticSpacers")}
                     </Link>
                   </li>
+                  <li
+                    className={styy.small_li}
+                    onClick={() => {
+                      setisActive(!isActive);
+                    }}
+                  >
+                    <Link href="/products/6/lpss">
+                      {t("levelingPlasticSpacers") + " 2"}
+                    </Link>
+                  </li>
                 </ul>
               </>
             ) : (

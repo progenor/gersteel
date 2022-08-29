@@ -64,14 +64,17 @@ function HomeComp() {
         <li>
           <br />
         </li>
-        <li>
-          <br />
-        </li>
+
         <li style={{ marginLeft: "-60px" }}>
           <Link href="/products/6/pvcsheets">{t("pvcSheats")}</Link>
         </li>
         <li style={{ marginLeft: "-20px" }}>
           <Link href="/products/6/lps">{t("levelingPlasticSpacers")}</Link>
+        </li>
+        <li style={{ marginLeft: "10px" }}>
+          <Link href="/products/6/lpss">
+            {t("levelingPlasticSpacers") + " 2"}
+          </Link>
         </li>
       </BoxContainer>
       <BoxContainer
