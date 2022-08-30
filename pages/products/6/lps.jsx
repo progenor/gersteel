@@ -3,19 +3,38 @@ import sty from "./pvcsheets.module.scss";
 
 import Image from "next/image";
 import useTranslation from "next-translate/useTranslation";
+import ImageBlowUp from "../../../components/ImageBlowUp";
+import { useState } from "react";
 
 const PcStrands = () => {
   const { t } = useTranslation();
   const IMG = ({ img1 = null, img2 = null, img3 = null }) => {
     const size = 80;
+
+    const [isClicked, setisClicked] = useState(false);
+    const [clickedImg, setclickedImg] = useState(null);
+
+    const clickHandler = (img) => {
+      setisClicked(!isClicked);
+      setclickedImg(img);
+    };
+
     return (
       <>
-        <div className={sty.images}>
+        <div
+          className={sty.images}
+          onClick={() => {
+            if (isClicked) setisClicked(false);
+          }}
+        >
           <Image
             alt="image"
             src={`/assets/images/products/${img1}`}
             width={size}
             height={size}
+            onClick={() => {
+              clickHandler(img1);
+            }}
           />
           {img2 && (
             <Image
@@ -23,6 +42,9 @@ const PcStrands = () => {
               src={`/assets/images/products/${img2}`}
               width={size}
               height={size}
+              onClick={() => {
+                clickHandler(img2);
+              }}
             />
           )}
           {img3 && (
@@ -31,8 +53,12 @@ const PcStrands = () => {
               src={`/assets/images/products/${img3}`}
               width={size}
               height={size}
+              onClick={() => {
+                clickHandler(img3);
+              }}
             />
           )}
+          {isClicked && <ImageBlowUp img={clickedImg} />}
         </div>
       </>
     );

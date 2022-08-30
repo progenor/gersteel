@@ -94,26 +94,8 @@ function NavProdItems() {
       <li className={sty.big_li}>
         <Link href="/products/8/pt">{t("postTensioning")}</Link>
       </li>
-      <li
-        className={(sty.big_li, sty.disabled)}
-        onMouseEnter={() => {
-          setplease_go_fuck_yourself(!please_go_fuck_yourself);
-        }}
-        onMouseLeave={() => {
-          setplease_go_fuck_yourself(!please_go_fuck_yourself);
-        }}
-      >
-        {please_go_fuck_yourself ? (
-          <>
-            <Link href="">
-              <span style={{ color: "grey" }}>{t("common:coming_soon")}</span>
-            </Link>
-          </>
-        ) : (
-          <>
-            <Link href="">{t("common:others")}</Link>
-          </>
-        )}
+      <li className={sty.big_li}>
+        <Link href="/products/4/bollards">{t("bollards")}</Link>
       </li>
     </ul>
   );

@@ -19,7 +19,9 @@ const Footer = () => {
           </a>
           <a href="tel:+40742090664">Tel: +40 742 090 664</a>
           <a href="fax:+40265266267">Fax: +40 265 266 267</a>
-          <a href="mail:gersteelsrl@yahoo.com">E-mail: gersteelsrl@yahoo.com</a>
+          <a href="mailto:gersteelsrl@yahoo.com">
+            E-mail: gersteelsrl@yahoo.com
+          </a>
         </div>
 
         <div className={sty.line}></div>

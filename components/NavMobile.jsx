@@ -241,7 +241,7 @@ const NavMobile = () => {
               setisActive(!isActive);
             }}
           >
-            <Link href="products/7/grindingballs">Steel grinding balls</Link>
+            <Link href="/products/7/grindingballs">Steel grinding balls</Link>
           </li>
           <div className={styy.line}></div>
           <li
@@ -250,9 +250,12 @@ const NavMobile = () => {
               setisActive(!isActive);
             }}
           >
-            <Link href="products/8/pt">Post-tensioning</Link>
+            <Link href="/products/8/pt">Post-tensioning</Link>
           </li>
           <div className={styy.line}></div>
+          <li>
+            <Link href="/products/4/bollards">{t("bollards")}</Link>
+          </li>
         </ul>
       </div>
     );

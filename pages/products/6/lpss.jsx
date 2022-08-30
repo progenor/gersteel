@@ -8,8 +8,6 @@ const Lpss = () => {
   const { t } = useTranslation("product6");
 
   const size = 150;
-  const size2_w = 880,
-    size2_h = 600;
   return (
     <div className={styy.main_container}>
       <div className={styy.container}>
@@ -46,8 +44,8 @@ const Lpss = () => {
           <Image
             alt="image"
             src="/assets/images/products/lpss_m_d.png"
-            width={size2_w}
-            height={size2_h}
+            width={840}
+            height={600}
           />
         </div>
         <div className={styy.table1}>
@@ -62,8 +60,8 @@ const Lpss = () => {
           <Image
             alt="image"
             src="/assets/images/products/lpss_mc_d.png"
-            width={size2_w}
-            height={size2_h}
+            width={830}
+            height={560}
           />
         </div>
         <div className={styy.table1}>
@@ -78,8 +76,8 @@ const Lpss = () => {
           <Image
             alt="image"
             src="/assets/images/products/lpss_mr_d.png"
-            width={size2_w}
-            height={size2_h}
+            width={860}
+            height={650}
           />
         </div>
         <div className={styy.table1}>
@@ -94,8 +92,8 @@ const Lpss = () => {
           <Image
             alt="image"
             src="/assets/images/products/lpss_mq_d.png"
-            width={size2_w}
-            height={size2_h}
+            width={860}
+            height={620}
           />
         </div>
         <div className={styy.table1}>
@@ -110,8 +108,8 @@ const Lpss = () => {
           <Image
             alt="image"
             src="/assets/images/products/lpss_me_d.png"
-            width={size2_w}
-            height={size2_h}
+            width={860}
+            height={540}
           />
         </div>
       </div>
