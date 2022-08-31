@@ -21,7 +21,9 @@ const NavMobile = () => {
     const size = 15;
     return (
       <div className={styy.main}>
-        <h2>{t("products")}:</h2>
+        <h2>
+          <Link href="/">{t("products") + ":"}</Link>
+        </h2>
         <ul className={styy.big_ul}>
           <div className={styy.line}></div>
           <li
@@ -101,7 +103,7 @@ const NavMobile = () => {
                       setisActive(!isActive);
                     }}
                   >
-                    <Link href="products/5/rccp">
+                    <Link href="/products/5/rccp">
                       {t("roundCorrugatedCavityPipes")}
                     </Link>
                   </li>
@@ -111,7 +113,7 @@ const NavMobile = () => {
                       setisActive(!isActive);
                     }}
                   >
-                    <Link href="products/5/rcp">
+                    <Link href="/products/5/rcp">
                       {t("rectengualrCavityPipes")}
                     </Link>
                   </li>
@@ -121,7 +123,7 @@ const NavMobile = () => {
                       setisActive(!isActive);
                     }}
                   >
-                    <Link href="products/5/rlw">
+                    <Link href="/products/5/rlw">
                       {t("roundLongitudinallyWelded")}
                     </Link>
                   </li>
@@ -131,7 +133,7 @@ const NavMobile = () => {
                       setisActive(!isActive);
                     }}
                   >
-                    <Link href="products/5/vft">{t("voidFormingTubess")}</Link>
+                    <Link href="/products/5/vft">{t("voidFormingTubess")}</Link>
                   </li>
                   <li
                     className={styy.small_li}
@@ -139,7 +141,7 @@ const NavMobile = () => {
                       setisActive(!isActive);
                     }}
                   >
-                    <Link href="products/5/shs">{t("shutteringSystems")}</Link>
+                    <Link href="/products/5/shs">{t("shutteringSystems")}</Link>
                   </li>
                 </ul>
               </>
@@ -253,9 +255,15 @@ const NavMobile = () => {
             <Link href="/products/8/pt">Post-tensioning</Link>
           </li>
           <div className={styy.line}></div>
-          <li>
+          <li
+            className={styy.big_li}
+            onClick={() => {
+              setisActive(!isActive);
+            }}
+          >
             <Link href="/products/4/bollards">{t("bollards")}</Link>
           </li>
+          <div className={styy.line}></div>
         </ul>
       </div>
     );
