@@ -75,7 +75,7 @@ const Rcp = () => {
                   <td>± 0,7</td>
                   <td>7</td>
                   <td>3,5</td>
-                  <td>0,26</td>
+                  <td>0,50</td>
                 </tr>
                 <tr>
                   <th>50 x 50</th>
@@ -84,7 +84,7 @@ const Rcp = () => {
                   <td>± 0,7</td>
                   <td>7</td>
                   <td>3,5</td>
-                  <td>0,26</td>
+                  <td>0,55</td>
                 </tr>
                 <tr>
                   <th>60 x 60</th>
@@ -93,7 +93,7 @@ const Rcp = () => {
                   <td>± 0,7</td>
                   <td>7</td>
                   <td>3,5</td>
-                  <td>0,26</td>
+                  <td>0,76</td>
                 </tr>
                 <tr>
                   <th>57 x 28</th>
@@ -102,7 +102,7 @@ const Rcp = () => {
                   <td>± 0,7</td>
                   <td>7</td>
                   <td>3,5</td>
-                  <td>0,26</td>
+                  <td>0,54</td>
                 </tr>
                 <tr>
                   <th>70 x 70</th>
@@ -111,7 +111,7 @@ const Rcp = () => {
                   <td>± 0,7</td>
                   <td>7</td>
                   <td>3,5</td>
-                  <td>0,26</td>
+                  <td>0,88</td>
                 </tr>
                 <tr>
                   <th>70 x 50</th>
@@ -120,7 +120,7 @@ const Rcp = () => {
                   <td>± 0,7</td>
                   <td>7</td>
                   <td>3,5</td>
-                  <td>0,26</td>
+                  <td>0,74</td>
                 </tr>
                 <tr>
                   <th>70 x 35</th>
@@ -129,7 +129,7 @@ const Rcp = () => {
                   <td>± 0,7</td>
                   <td>7</td>
                   <td>3,5</td>
-                  <td>0,26</td>
+                  <td>0,66</td>
                 </tr>
                 <tr>
                   <th>80 x 80</th>
@@ -138,7 +138,7 @@ const Rcp = () => {
                   <td>± 0,7</td>
                   <td>7</td>
                   <td>3,5</td>
-                  <td>0,26</td>
+                  <td>1,01</td>
                 </tr>
                 <tr>
                   <th>77 x 42</th>
@@ -147,7 +147,7 @@ const Rcp = () => {
                   <td>± 0,7</td>
                   <td>7</td>
                   <td>3,5</td>
-                  <td>0,26</td>
+                  <td>0,86</td>
                 </tr>
                 <tr>
                   <th>90 x 60</th>
@@ -156,7 +156,7 @@ const Rcp = () => {
                   <td>± 0,7</td>
                   <td>7</td>
                   <td>3,5</td>
-                  <td>0,26</td>
+                  <td>1,02</td>
                 </tr>
                 <tr>
                   <th>100 x 100</th>
@@ -165,7 +165,7 @@ const Rcp = () => {
                   <td>± 1,0</td>
                   <td>8</td>
                   <td>3,5</td>
-                  <td>0,26</td>
+                  <td>1,15</td>
                 </tr>
                 <tr>
                   <th>100 x 63</th>
@@ -174,7 +174,7 @@ const Rcp = () => {
                   <td>± 1,0</td>
                   <td>8</td>
                   <td>3,5</td>
-                  <td>0,26</td>
+                  <td>1,11</td>
                 </tr>
                 <tr>
                   <th>102 x 52</th>
@@ -183,7 +183,7 @@ const Rcp = () => {
                   <td>± 1,0</td>
                   <td>8</td>
                   <td>3,5</td>
-                  <td>0,26</td>
+                  <td>0,98</td>
                 </tr>
                 <tr>
                   <th>130 x 130</th>
@@ -192,7 +192,7 @@ const Rcp = () => {
                   <td>± 1,0</td>
                   <td>8</td>
                   <td>3,5</td>
-                  <td>0,26</td>
+                  <td>1,65</td>
                 </tr>
                 <tr>
                   <th>130 x 60</th>
@@ -201,7 +201,7 @@ const Rcp = () => {
                   <td>± 1,0</td>
                   <td>8</td>
                   <td>3,5</td>
-                  <td>0,26</td>
+                  <td>1,53</td>
                 </tr>
                 <tr>
                   <th>138 x 138</th>
@@ -210,7 +210,7 @@ const Rcp = () => {
                   <td>± 1,0</td>
                   <td>8</td>
                   <td>3,5</td>
-                  <td>0,26</td>
+                  <td>1,70</td>
                 </tr>
                 <tr>
                   <th>140 x 80</th>
@@ -219,61 +219,61 @@ const Rcp = () => {
                   <td>± 1,0</td>
                   <td>8</td>
                   <td>3,5</td>
-                  <td>0,26</td>
+                  <td>1,38</td>
                 </tr>
                 <tr>
                   <th>160 x 100</th>
-                  <td>32 x 100</td>
-                  <td>40 x 40</td>
+                  <td>160 x 100</td>
+                  <td>168 x 108</td>
                   <td>± 1,0</td>
                   <td>8</td>
                   <td>3,5</td>
-                  <td>0,26</td>
+                  <td>1,65</td>
                 </tr>
                 <tr>
-                  <th>32 x 32</th>
-                  <td>32 x 32</td>
-                  <td>40 x 40</td>
+                  <th>160 x 80</th>
+                  <td>160 x 80</td>
+                  <td>168 x 88</td>
                   <td>± 1,0</td>
                   <td>8</td>
                   <td>3,5</td>
-                  <td>0,26</td>
+                  <td>1,51</td>
                 </tr>
                 <tr>
-                  <th>32 x 32</th>
-                  <td>32 x 32</td>
-                  <td>40 x 40</td>
+                  <th>200 x 200</th>
+                  <td>200 x 200</td>
+                  <td>208 x 208</td>
                   <td>± 1,0</td>
                   <td>8</td>
                   <td>3,5</td>
-                  <td>0,26</td>
+                  <td>2,35</td>
                 </tr>
                 <tr>
-                  <th>32 x 32</th>
-                  <td>32 x 32</td>
-                  <td>40 x 40</td>
+                  <th>200 x 150</th>
+                  <td>200 x 150</td>
+                  <td>208 x 158</td>
                   <td>± 1,0</td>
                   <td>8</td>
                   <td>3,5</td>
-                  <td>0,26</td>
+                  <td>1,85</td>
                 </tr>
                 <tr>
-                  <th>32 x 32</th>
-                  <td>32 x 32</td>
-                  <td>40 x 40</td>
+                  <th>200 x 100</th>
+                  <td>200 x 100</td>
+                  <td>208 x 108</td>
                   <td>± 1,0</td>
                   <td>8</td>
                   <td>3,5</td>
-                  <td>0,26</td>
+                  <td>1,60</td>
                 </tr>
                 <tr>
-                  <th>32 x 32</th>
-                  <td>32 x 32</td>
-                  <td>40 x 40</td>
+                  <th>230 x 76</th>
+                  <td>230 x 76</td>
+                  <td>238 x 84</td>
                   <td>± 1,0</td>
                   <td>8</td>
                   <td>3,5</td>
-                  <td>0,26</td>
+                  <td>1,94</td>
                 </tr>
               </tbody>
             </table>

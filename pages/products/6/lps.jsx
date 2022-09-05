@@ -7,7 +7,7 @@ import ImageBlowUp from "../../../components/ImageBlowUp";
 import { useState } from "react";
 
 const PcStrands = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation("product6");
   const IMG = ({ img1 = null, img2 = null, img3 = null }) => {
     const size = 80;
 
@@ -72,30 +72,30 @@ const PcStrands = () => {
           <h2>{t("common:types")}</h2>
           <ul>
             <li>
-              <a href="#psp">Plain Shim pads UP 70 x 70 mm</a>
+              <a href="#psp">{t("psp")}</a>
             </li>
             <li>
-              <a href="#hsp">Horseshoe shim pads UPV</a>
+              <a href="#hsp">{t("hsp")}</a>
             </li>
             <li>
-              <a href="#hp">Hole Pads UPD</a>
+              <a href="#hp">{t("hp")}</a>
             </li>
             <li>
-              <a href="#pp">Panel pads UPP</a>
+              <a href="#pp">{t("pp")}</a>
             </li>
             <li>
-              <a href="#pw">Plastic wedges PK</a>
+              <a href="#pw">{t("pw")}</a>
             </li>
             <li>
-              <a href="#rs">Rubber stoppers GZ</a>
+              <a href="#rs">{t("rs")}</a>
             </li>
             <li>
-              <a href="#pc">Protection caps OKR</a>
+              <a href="#pc">{t("pc")}</a>
             </li>
           </ul>
         </div>
         <div className={styy.table1}>
-          <h2 id="psp">Plain Shim pads UP 70 x 70 mm</h2>
+          <h2 id="psp">{t("psp")}</h2>
           <IMG img1="psp1.jpg" img2="psp2.jpg" />
           <div className={styy.table}>
             <table>
@@ -248,7 +248,7 @@ const PcStrands = () => {
           </div>
         </div>
         <div className={styy.table1}>
-          <h2 id="hsp">Horseshoe shim pads UPV</h2>
+          <h2 id="hsp">{t("hsp")}</h2>
           <IMG img1="hsp1.jpg" img2="wspacerko2.jpg" />
           <div className={styy.table}>
             <table>
@@ -405,7 +405,7 @@ const PcStrands = () => {
           </div>
         </div>
         <div className={styy.table1}>
-          <h2 id="hp">Hole Pads UPD</h2>
+          <h2 id="hp">{t("hp")}</h2>
           <IMG img1="hp1.jpg" />
           <div className={styy.table}>
             <table>
@@ -472,7 +472,7 @@ const PcStrands = () => {
           </div>
         </div>
         <div className={styy.table1}>
-          <h2 id="pp">Panel pads UPP</h2>
+          <h2 id="pp">{t("pp")}</h2>
           <IMG img1="pp1.jpg" img2="pp2.jpg" img3="pp3.jpg" />
           <div className={styy.table}>
             <table>
@@ -500,7 +500,7 @@ const PcStrands = () => {
           </div>
         </div>
         <div className={styy.table1}>
-          <h2 id="pw">Plastic wedges PK</h2>
+          <h2 id="pw">{t("pw")}</h2>
           <IMG img1="pw1.jpg" />
           <div className={styy.table}>
             <table>
@@ -547,7 +547,7 @@ const PcStrands = () => {
         </div>
 
         <div className={styy.table1}>
-          <h2 id="rs">Rubber stoppers GZ</h2>
+          <h2 id="rs">{t("rs")}</h2>
           <IMG img1="rs1.jpg" />
           <div className={styy.table}>
             <table>
@@ -601,7 +601,7 @@ const PcStrands = () => {
           </div>
         </div>
         <div className={styy.table1}>
-          <h2 id="pc">Protection caps OKR</h2>
+          <h2 id="pc">{t("pc")}</h2>
           <IMG img1="pc1.jpg" img2="pc2.jpg" />
           <div className={styy.table}>
             <table>
