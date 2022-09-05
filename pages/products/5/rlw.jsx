@@ -28,6 +28,11 @@ const Rlw = () => {
           </div>
         </div>
         <div>
+          <h3>{t("round")}</h3>
+          <p>{t("rlw_round_desc")}</p>
+          <h3>{t("design")}</h3>
+          <p>{t("rlw_design_desc1")}</p>
+
           <h3>{t("material")}</h3>
           <p>{t("rlw_material_desc")}</p>
           <h3>{t("delivery")}</h3>

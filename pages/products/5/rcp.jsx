@@ -214,16 +214,16 @@ const Rcp = () => {
                 </tr>
                 <tr>
                   <th>140 x 80</th>
-                  <td>32 x 8</td>
-                  <td>40 x 40</td>
+                  <td>140 x 80</td>
+                  <td>148 x 88</td>
                   <td>± 1,0</td>
                   <td>8</td>
                   <td>3,5</td>
                   <td>0,26</td>
                 </tr>
                 <tr>
-                  <th>32 x 32</th>
-                  <td>32 x 32</td>
+                  <th>160 x 100</th>
+                  <td>32 x 100</td>
                   <td>40 x 40</td>
                   <td>± 1,0</td>
                   <td>8</td>

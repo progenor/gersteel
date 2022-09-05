@@ -15,6 +15,10 @@
     "/products/7/grindingballs": ["products_small"],
     "/products/8/pt": ["products_small"],
     "/products/5/rccp": ["product5"],
+    "/products/5/rcp": ["product5"],
+    "/products/5/rlw": ["product5"],
+    "/products/5/vft": ["product5"],
+    "/products/5/ss": ["product5"],
     "/products/6/lps": ["product6"],
     "/products/6/lpss": ["product6"]
   }

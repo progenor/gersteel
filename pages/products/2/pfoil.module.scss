@@ -70,6 +70,9 @@
         p {
           word-wrap: break-word;
           font-size: 1.1rem;
+          @media (max-width: 740px) {
+            font-size: 0.899rem;
+          }
         }
         background-color: rgb(91, 168, 191);
         color: black;
