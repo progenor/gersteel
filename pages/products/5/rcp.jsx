@@ -42,42 +42,238 @@ const Rcp = () => {
             <table>
               <thead>
                 <tr>
-                  <th colSpan={2}>Nominal ø</th>
-                  <th>CrossSectional area</th>
-                  <th>Mass per metre</th>
-                  <th>Tensile strenght</th>
-                  <th>Characteristic value of maximum force</th>
-                  <th>Characteristic value of 0,1% proof force</th>
-                  <th>Elongation at maximim force Agt</th>
-                  <th>Modulus of elasticity EP</th>
+                  <th>DN</th>
+                  <th colSpan={3}>Inside-/ Outside dimensions</th>
+                  <th>R</th>
+                  <th>Profil height</th>
+                  <th>Weight</th>
                 </tr>
                 <tr>
-                  <th>mm</th>
-                  <th>in</th>
-                  <th>
-                    mm<sup>2</sup>
-                  </th>
-                  <th>g/m</th>
-                  <th>MPa</th>
-                  <th>kN</th>
-                  <th>kN</th>
-                  <th>%</th>
-                  <th>
-                    kN/mm<sup>2</sup>
-                  </th>
+                  <th></th>
+                  <th>A/B</th>
+                  <th>a/b</th>
+                  <th>Tolerances</th>
+                  <th>-</th>
+                  <th>hp</th>
+                  <th>kg/m ± 10%</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <th>15,2</th>
-                  <td>6/10</td>
-                  <td>165,0</td>
-                  <td>1289,0</td>
-                  <td>1820 G</td>
-                  <td>300,0</td>
-                  <td>264,0</td>
+                  <th>32 x 32</th>
+                  <td>32 x 32</td>
+                  <td>40 x 40</td>
+                  <td>± 0,7</td>
+                  <td>7</td>
                   <td>3,5</td>
-                  <td>195</td>
+                  <td>0,26</td>
+                </tr>
+                <tr>
+                  <th>41 x 41</th>
+                  <td>41 x 41</td>
+                  <td>49 x 49</td>
+                  <td>± 0,7</td>
+                  <td>7</td>
+                  <td>3,5</td>
+                  <td>0,26</td>
+                </tr>
+                <tr>
+                  <th>50 x 50</th>
+                  <td>49 x 49</td>
+                  <td>57 x 57</td>
+                  <td>± 0,7</td>
+                  <td>7</td>
+                  <td>3,5</td>
+                  <td>0,26</td>
+                </tr>
+                <tr>
+                  <th>60 x 60</th>
+                  <td>60 x 60</td>
+                  <td>68 x 68</td>
+                  <td>± 0,7</td>
+                  <td>7</td>
+                  <td>3,5</td>
+                  <td>0,26</td>
+                </tr>
+                <tr>
+                  <th>57 x 28</th>
+                  <td>57 x 28</td>
+                  <td>65 x 36</td>
+                  <td>± 0,7</td>
+                  <td>7</td>
+                  <td>3,5</td>
+                  <td>0,26</td>
+                </tr>
+                <tr>
+                  <th>70 x 70</th>
+                  <td>70 x 70</td>
+                  <td>78 x 78</td>
+                  <td>± 0,7</td>
+                  <td>7</td>
+                  <td>3,5</td>
+                  <td>0,26</td>
+                </tr>
+                <tr>
+                  <th>70 x 50</th>
+                  <td>70 x 50</td>
+                  <td>78 x 58</td>
+                  <td>± 0,7</td>
+                  <td>7</td>
+                  <td>3,5</td>
+                  <td>0,26</td>
+                </tr>
+                <tr>
+                  <th>70 x 35</th>
+                  <td>70 x 35</td>
+                  <td>78 x 43</td>
+                  <td>± 0,7</td>
+                  <td>7</td>
+                  <td>3,5</td>
+                  <td>0,26</td>
+                </tr>
+                <tr>
+                  <th>80 x 80</th>
+                  <td>80 x 80</td>
+                  <td>88 x 88</td>
+                  <td>± 0,7</td>
+                  <td>7</td>
+                  <td>3,5</td>
+                  <td>0,26</td>
+                </tr>
+                <tr>
+                  <th>77 x 42</th>
+                  <td>77 x 42</td>
+                  <td>85 x 50</td>
+                  <td>± 0,7</td>
+                  <td>7</td>
+                  <td>3,5</td>
+                  <td>0,26</td>
+                </tr>
+                <tr>
+                  <th>90 x 60</th>
+                  <td>90 x 60</td>
+                  <td>98 x 68</td>
+                  <td>± 0,7</td>
+                  <td>7</td>
+                  <td>3,5</td>
+                  <td>0,26</td>
+                </tr>
+                <tr>
+                  <th>100 x 100</th>
+                  <td>100 x 100</td>
+                  <td>108 x 108</td>
+                  <td>± 1,0</td>
+                  <td>8</td>
+                  <td>3,5</td>
+                  <td>0,26</td>
+                </tr>
+                <tr>
+                  <th>100 x 63</th>
+                  <td>100 x 63</td>
+                  <td>108 x 71</td>
+                  <td>± 1,0</td>
+                  <td>8</td>
+                  <td>3,5</td>
+                  <td>0,26</td>
+                </tr>
+                <tr>
+                  <th>102 x 52</th>
+                  <td>102 x 52</td>
+                  <td>110 x 60</td>
+                  <td>± 1,0</td>
+                  <td>8</td>
+                  <td>3,5</td>
+                  <td>0,26</td>
+                </tr>
+                <tr>
+                  <th>130 x 130</th>
+                  <td>130 x 130</td>
+                  <td>138 x 138</td>
+                  <td>± 1,0</td>
+                  <td>8</td>
+                  <td>3,5</td>
+                  <td>0,26</td>
+                </tr>
+                <tr>
+                  <th>130 x 60</th>
+                  <td>130 x 60</td>
+                  <td>138 x 68</td>
+                  <td>± 1,0</td>
+                  <td>8</td>
+                  <td>3,5</td>
+                  <td>0,26</td>
+                </tr>
+                <tr>
+                  <th>138 x 138</th>
+                  <td>138 x 138</td>
+                  <td>146 x 146</td>
+                  <td>± 1,0</td>
+                  <td>8</td>
+                  <td>3,5</td>
+                  <td>0,26</td>
+                </tr>
+                <tr>
+                  <th>140 x 80</th>
+                  <td>32 x 8</td>
+                  <td>40 x 40</td>
+                  <td>± 1,0</td>
+                  <td>8</td>
+                  <td>3,5</td>
+                  <td>0,26</td>
+                </tr>
+                <tr>
+                  <th>32 x 32</th>
+                  <td>32 x 32</td>
+                  <td>40 x 40</td>
+                  <td>± 1,0</td>
+                  <td>8</td>
+                  <td>3,5</td>
+                  <td>0,26</td>
+                </tr>
+                <tr>
+                  <th>32 x 32</th>
+                  <td>32 x 32</td>
+                  <td>40 x 40</td>
+                  <td>± 1,0</td>
+                  <td>8</td>
+                  <td>3,5</td>
+                  <td>0,26</td>
+                </tr>
+                <tr>
+                  <th>32 x 32</th>
+                  <td>32 x 32</td>
+                  <td>40 x 40</td>
+                  <td>± 1,0</td>
+                  <td>8</td>
+                  <td>3,5</td>
+                  <td>0,26</td>
+                </tr>
+                <tr>
+                  <th>32 x 32</th>
+                  <td>32 x 32</td>
+                  <td>40 x 40</td>
+                  <td>± 1,0</td>
+                  <td>8</td>
+                  <td>3,5</td>
+                  <td>0,26</td>
+                </tr>
+                <tr>
+                  <th>32 x 32</th>
+                  <td>32 x 32</td>
+                  <td>40 x 40</td>
+                  <td>± 1,0</td>
+                  <td>8</td>
+                  <td>3,5</td>
+                  <td>0,26</td>
+                </tr>
+                <tr>
+                  <th>32 x 32</th>
+                  <td>32 x 32</td>
+                  <td>40 x 40</td>
+                  <td>± 1,0</td>
+                  <td>8</td>
+                  <td>3,5</td>
+                  <td>0,26</td>
                 </tr>
               </tbody>
             </table>
