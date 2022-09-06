@@ -18,7 +18,7 @@
          <input type="checkbox" checked>
          </input>
          </td>
-                  <td><input type="checkbox" >
+                  <td><input type="checkbox" checked>
          </input></td>
          <td>GENERAL (common)</td>
       </tr>
@@ -27,7 +27,7 @@
          <input type="checkbox" checked>
          </input>
          </td>
-                  <td><input type="checkbox" >
+                  <td><input type="checkbox" checked>
          </input></td>
          <td>Home</td>
       </tr>
@@ -36,16 +36,16 @@
          <input type="checkbox" checked>
          </input>
          </td>
-                  <td><input type="checkbox" >
+                  <td><input type="checkbox" checked>
          </input></td>
          <td>Navbar</td>
       </tr>
       <tr>
          <td>
-         <input type="checkbox" >
+         <input type="checkbox" checked>
          </input>
          </td>
-                  <td><input type="checkbox" >
+                  <td><input type="checkbox" checked>
          </input></td>
          <td>About</td>
       </tr>
@@ -63,7 +63,7 @@
          <input type="checkbox" checked>
          </input>
          </td>
-                  <td><input type="checkbox" >
+                  <td><input type="checkbox" checked>
          </input></td>
          <td>Pc strands</td>
       </tr>
@@ -72,7 +72,7 @@
          <input type="checkbox" checked>
          </input>
          </td>
-                  <td><input type="checkbox" >
+                  <td><input type="checkbox" checked>
          </input></td>
          <td>Pc wires</td>
       </tr>
@@ -81,16 +81,16 @@
          <input type="checkbox" checked>
          </input>
          </td>
-                  <td><input type="checkbox" >
+                  <td><input type="checkbox" checked>
          </input></td>
          <td>Spring wires</td>
       </tr>
       <tr>
          <td>
-         <input type="checkbox" >
+         <input type="checkbox" checked>
          </input>
          </td>
-                  <td><input type="checkbox" >
+                  <td><input type="checkbox" checked>
          </input></td>
          <td>Corrugated</td>
       </tr>
@@ -126,7 +126,7 @@
          <input type="checkbox" checked>
          </input>
          </td>
-                  <td><input type="checkbox" >
+                  <td><input type="checkbox" checked>
          </input></td>
          <td>Protective foil</td>
       </tr>
@@ -141,10 +141,10 @@
       </tr>
       <tr>
          <td>
-         <input type="checkbox" >
+         <input type="checkbox" checked>
          </input>
          </td>
-                  <td><input type="checkbox" >
+                  <td><input type="checkbox" checked>
          </input></td>
          <td>Bollards</td>
       </tr>
