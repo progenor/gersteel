@@ -49,7 +49,7 @@ const PcStrands = () => {
                   </tr>
                   <tr>
                     <th>mm</th>
-                    <th>in</th>
+                    <th>in </th>
                     <th>
                       mm<sup>2</sup>
                     </th>
@@ -111,7 +111,7 @@ const PcStrands = () => {
                   </tr>
                   <tr>
                     <th>15,7</th>
-                    <td>6/10 S</td>
+                    <td>6/10S</td>
                     <td>150,0</td>
                     <td>1172,0</td>
                     <td>1860</td>

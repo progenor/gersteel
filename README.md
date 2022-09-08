@@ -4,8 +4,6 @@
 
 # TODO LIST
 
-torane din 2-3 sarme
-pc strands elso sor nem ugyan olyan S
 protective foil auto
 
 <table>
