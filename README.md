@@ -1,8 +1,12 @@
-## [This website preview](http://5.15.190.77:3500/)
+## [This website preview](http://5.15.13.11:3500/)
 
 ## [Gersteel](https://gersteel.netlify.app)
 
 # TODO LIST
+
+torane din 2-3 sarme
+pc strands elso sor nem ugyan olyan S
+protective foil auto
 
 <table>
    <thead>

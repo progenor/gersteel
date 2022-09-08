@@ -5,15 +5,13 @@ import useTranslation from "next-translate/useTranslation";
 //icons
 import { MdOutlineMailOutline } from "react-icons/md";
 import { MdCall } from "react-icons/md";
-import { RiInstagramLine } from "react-icons/ri";
-import { AiFillGithub } from "react-icons/ai";
 import { FiSend } from "react-icons/fi";
 import { GiRotaryPhone } from "react-icons/gi";
 
 function Contact() {
   const icon_size = 70;
 
-  const { t, lang } = useTranslation("contact");
+  const { t } = useTranslation("contact");
 
   const form = useRef();
 
