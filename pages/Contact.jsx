@@ -20,11 +20,11 @@ function Contact() {
 
     emailjs
       .sendForm(
-        "service_1g0dmi2", //service Id
-        "template_1oultbm",
+        "service_laimtoc", //service Id
+        "template_o05srk6",
         // form.current,
         form.current,
-        "VoA0qkSw7QZn4vVDR"
+        "Rj7Rb17aLmcpUjR2m"
       )
       .then(
         (result) => {

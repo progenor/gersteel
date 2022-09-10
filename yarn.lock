@@ -351,9 +351,9 @@
   "version" "3.1.0"
 
 "caniuse-lite@^1.0.30001332":
-  "integrity" "sha512-HpQhpzTGGPVMnCjIomjt+jvyUu8vNFo3TaDiZ/RcoTrlOq/5+tC8zHdsbgFB6MxmaY+jCpsH09aD80Bb4Ow3Sg=="
-  "resolved" "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001363.tgz"
-  "version" "1.0.30001363"
+  "integrity" "sha512-sS4CaUM+/+vqQUlCvCJ2WtDlV81aWtHhqeEVkLokVJJa3ViN4zDxAGfq9R8i1m90uGHxo99cy10Od+lvn3hf0g=="
+  "resolved" "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001390.tgz"
+  "version" "1.0.30001390"
 
 "chalk@^4.0.0":
   "integrity" "sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA=="
@@ -1262,7 +1262,7 @@
   "resolved" "https://registry.npmjs.org/next-translate/-/next-translate-1.5.0.tgz"
   "version" "1.5.0"
 
-"next@>= 10.0.0", "next@>=10.2.0", "next@12.1.6":
+"next@^12.1.6", "next@>= 10.0.0", "next@>=10.2.0":
   "integrity" "sha512-cebwKxL3/DhNKfg9tPZDQmbRKjueqykHHbgaoG4VBRH3AHQJ2HO0dbKFiS1hPhe1/qgc2d/hFeadsbPicmLD+A=="
   "resolved" "https://registry.npmjs.org/next/-/next-12.1.6.tgz"
   "version" "12.1.6"
@@ -1284,6 +1284,11 @@
     "@next/swc-win32-arm64-msvc" "12.1.6"
     "@next/swc-win32-ia32-msvc" "12.1.6"
     "@next/swc-win32-x64-msvc" "12.1.6"
+
+"nextjs@0.0.3":
+  "integrity" "sha512-mYbDUo4/sRAZ8TqK63PCpYnFiLg7BICG/ot9+guOrUKd4/Fo71ZmEQ41IZbH6nqbQvG7SXTBuofJXAIWfNho0w=="
+  "resolved" "https://registry.npmjs.org/nextjs/-/nextjs-0.0.3.tgz"
+  "version" "0.0.3"
 
 "normalize-path@^3.0.0", "normalize-path@~3.0.0":
   "integrity" "sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA=="

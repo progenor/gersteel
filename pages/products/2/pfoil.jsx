@@ -57,7 +57,7 @@ const Pfoil = () => {
               text={t("products_small:pfoil_sandwich_panel")}
             />
             <ImgBox
-              img="/pfoil9.jpg"
+              img="/pfoil_car.jpeg"
               title={t("automotive")}
               text={t("products_small:pfoil_sandwich_panel")}
             />
