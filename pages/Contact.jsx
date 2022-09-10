@@ -7,6 +7,7 @@ import { MdOutlineMailOutline } from "react-icons/md";
 import { MdCall } from "react-icons/md";
 import { FiSend } from "react-icons/fi";
 import { GiRotaryPhone } from "react-icons/gi";
+import emailjs from "@emailjs/browser";
 
 function Contact() {
   const icon_size = 70;
@@ -29,7 +30,7 @@ function Contact() {
       .then(
         (result) => {
           // console.log(form.current);
-          window.location.reload(false);
+          window.location.reload();
           console.log(result.text);
         },
         (error) => {
