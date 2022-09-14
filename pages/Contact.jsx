@@ -2,6 +2,7 @@ import sty from "../styles/contact.module.scss";
 //tools
 import { useRef } from "react";
 import useTranslation from "next-translate/useTranslation";
+import Head from "next/head";
 //icons
 import { MdOutlineMailOutline } from "react-icons/md";
 import { MdCall } from "react-icons/md";
@@ -42,6 +43,10 @@ function Contact() {
 
   return (
     <div className={sty.big_container}>
+      <Head>
+        <title>Gersteel | {t("common:contact")}</title>
+        <link rel="icon" href="/logo_G.ico" />
+      </Head>
       <div id="contact" className={sty.container}>
         <h1>{t("common:contact")}</h1>
         <div className={sty.form_container}>

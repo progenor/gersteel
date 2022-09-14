@@ -28,7 +28,7 @@ const Rcp = () => {
           </div>
         </div>
         <div>
-          <h3>{t("rectengular")}</h3>
+          <h3>{t("rectangular")}</h3>
           <p>{t("rectengular_desc")}</p>
           <h3>{t("design") + ":"}</h3>
           <p>{t("rcp_design_desc1")}</p>
