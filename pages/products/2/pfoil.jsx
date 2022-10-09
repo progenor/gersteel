@@ -63,7 +63,7 @@ const Pfoil = () => {
             />
             <ImgBox
               img="/pfoil10.png"
-              title={t("common:others")}
+              title={t("products_small:others_1")}
               text={t("products_small:pfoil_sandwich_panel")}
             />
           </div>

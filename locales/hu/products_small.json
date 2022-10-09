@@ -3,7 +3,7 @@
   "pfoil_desc2": "Ajánlatkérésekért kérjük vegyék fel velünk a kapcsolatot.",
   "pfoil_applications": "Felhasználások:",
   "pfoil_sandwich_panel": "Átlátszó vagy színes, sima vagy mikroperforált, szöveg nélkül, méretek az ügyfelek igényei szerint.",
-  "grinding_balls_desc1": "A bányaipar, cement előállítása és habtéglagyártáshoz szükséges acél örlőgolyókat is szállítjuk, elsősórban a következö átmérőket: 30mm,35mm,40mm.",
+  "grinding_balls_desc1": "A bányaipar, cement előállítása és habtéglagyártáshoz szükséges acél örlőgolyókat is szállítjuk, elsősorban a következö átmérőket: 30mm,35mm,40mm.",
   "grinding_balls_desc2": "Ajánlatkérésekért kérjük vegyék fel velünk a kapcsolatot.",
   "post_tensioning_desc": " A különböző utófeszítéses tervekhez flexibilisen tudunk hozzáállni. Szállíthatjuk csak az anyagokat, a szükséges felszerelést, illetve akár szakembereket is tudunk biztosítani. Kérésre a tervezésben is segítséget tudunk nyújtani.",
   "pfoilSandwichPanel": "Szendvicspanel",
@@ -11,8 +11,9 @@
   "steel": "Acéllemez",
   "aluminium": "Alumínium",
   "wood": "Laminátok, bútorok (fatermékek)",
-  "carpet": "Szönnyeg",
+  "carpet": "Szőnnyeg",
   "plastics": "Műanyag",
   "glass": "Üveg",
-  "automotive": "Autó"
+  "automotive": "Autó",
+  "others_1": "Egyéb"
 }
