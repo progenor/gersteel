@@ -9,7 +9,8 @@ const PvcSheets = () => {
   const { t, lang } = useTranslation();
 
   const en = "/assets/images/products/pvc_sheat_en.png";
-  const ro = "/assets/images/products/pvc_sheat_ro.png";
+  const ro = "/assets/images/products/PaszmaPapirRO.png";
+  const hu = "/assets/images/products/PaszmaPapir.png";
 
   const [isClicked, setisClicked] = useState(false);
   const [clickedImg, setclickedImg] = useState(null);
@@ -33,7 +34,15 @@ const PvcSheets = () => {
           >
             <Image
               alt="pvc"
-              src={lang == "ro" ? ro : en}
+              src={() => {
+                if (lang == "ro") {
+                  return ro;
+                } else if (lang == "hu") {
+                  return hu;
+                } else {
+                  return en;
+                }
+              }}
               width={900}
               height={1100}
               onClick={() => {
