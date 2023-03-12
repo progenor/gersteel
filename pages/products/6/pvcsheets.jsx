@@ -34,15 +34,7 @@ const PvcSheets = () => {
           >
             <Image
               alt="pvc"
-              src={() => {
-                if (lang == "ro") {
-                  return ro;
-                } else if (lang == "hu") {
-                  return hu;
-                } else {
-                  return en;
-                }
-              }}
+              src={lang == "ro" ? ro : lang == "hu" ? hu : en}
               width={900}
               height={1100}
               onClick={() => {
