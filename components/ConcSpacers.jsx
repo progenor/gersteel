@@ -231,36 +231,36 @@ const ConcSpacers = () => {
                 <th>WB 25</th>
                 <td>25</td>
                 <td>65</td>
-                <td>1500</td>
-                <td>900</td>
+                <td>1200</td>
+                <td>720</td>
               </tr>
               <tr>
                 <th>WB 30</th>
                 <td>30</td>
                 <td>65</td>
-                <td>1300</td>
-                <td>910</td>
+                <td>1000</td>
+                <td>700</td>
               </tr>
               <tr>
                 <th>WB 35</th>
                 <td>35</td>
                 <td>65</td>
-                <td>1200</td>
-                <td>960</td>
+                <td>900</td>
+                <td>720</td>
               </tr>
               <tr>
                 <th>WB 40</th>
                 <td>40</td>
                 <td>65</td>
-                <td>1000</td>
-                <td>1000</td>
+                <td>800</td>
+                <td>800</td>
               </tr>
               <tr>
                 <th>WB 50</th>
                 <td>50</td>
                 <td>65</td>
-                <td>700</td>
-                <td>980</td>
+                <td>600</td>
+                <td>840</td>
               </tr>
             </tbody>
           </table>
